@@ -1,0 +1,2619 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* Font size */
+    --fs-subhead: 16px;
+    --fs-head: 20px;
+    --fd-headone: 24px;
+    --font-bold: 18px;
+
+
+    /* Font style */
+    --fs-italic: italic;
+
+
+    /* Font weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-light: 300;
+
+    /* Font family */
+    --ff-spline: "Spline Sans", serif;
+    /* --ff-bold: */
+
+
+
+        /* color */
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color: navy;
+
+
+    /* bgcolor */
+    --primary-bg-color: #91C5F4;
+    --secondary-bg-color: #38A1FF;
+    --tertiary-bg-color: #7EBAEF;
+}
+
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+/* header start */
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* section one start */
+ .banner_one {
+    background-image: url(../Assets/Images/Home/banner-home.png);
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    margin-top: 20px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+ .banner_one .wrapper {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+
+}
+
+ .banner_one .wrapper .wrap {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+ .banner_one .wrapper .wrap h1 .ban {
+    color: white;
+    font-weight: 300;
+
+    font-size: 32px;
+
+    
+}
+
+ .banner_one .wrapper .wrap h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+
+}
+
+ .banner_one .wrapper .wrap p {
+    color: white;
+    font-size: 24px;
+}
+ .banner_one .wrapper .wrap a {
+    text-decoration: none;
+
+
+}
+
+
+
+
+
+#section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dff0ff;
+
+}
+
+#section .container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    gap: 30px;
+    padding: 40px 20px 40px 20px;
+}
+
+#section .container .image-container {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+#section .container .image-container img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.3s;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+#section .container .image-container img:hover {
+    transform: scale(1.1);
+
+}
+
+#section .container .content-container {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-evenly;  
+
+}
+
+#section .container .content-container h2 {
+    font-size: 32px;
+
+}
+
+#section .container .content-container p {
+    width: 90%;
+    font-size: 24px;
+    color: rgb(22, 22, 22);
+}
+
+/* section one end */
+
+/* section two start */
+
+#section-two {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#section-two .ddg {
+    /* height: 1%; */
+    display: flex;
+    align-items: center;
+
+
+}
+#section-two h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#section-two h2 .one {
+    color: var(--secondary-bg-color);
+    font-size: 32px;
+}
+
+#section-two .rectangle {
+    width: 90%;
+    height: 80%;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#section-two .rectangle .image-containertwo {
+    width: 40%;
+    height: 48%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#section-two .rectangle .image-containertwo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+#section-two .rectangle .icon-containertwo {
+    width: 90%;
+    height: 40%;
+
+    
+}
+
+#section-two .rectangle .icon-containertwo .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section-two .rectangle .icon-containertwo .box .card {
+    width: 25%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 100px rgba(24, 24, 24, 0.5);
+    overflow: hidden;
+
+
+
+}
+
+
+#section-two .rectangle .icon-containertwo .box .card .wrap {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: transform 0.3s;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+#section-two .rectangle .icon-containertwo .box .card .wrap:hover {
+
+    transform: scale(1.1);
+
+
+}
+
+#section-two .rectangle .icon-containertwo .box .card .wrap h3 {
+    font-size: 24px;
+}
+
+#section-two .rectangle .icon-containertwo .box .card .wrap p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#section-two .rectangle .icon-containertwo .box .card .wrap img {
+    width: 30%;
+    height: 30%;
+}
+
+
+/* section three start */
+#active-sts {
+    width: 100%;
+    height: 80vh;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+}
+#active-sts .head{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+#active-sts  .head h1 {
+    height: 20%;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: end;
+}
+#active-sts .head h1 .atm{
+    font-size: 30px;
+    color: #38A1FF;
+}
+
+#active-sts .cnt {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#active-sts .cnt .card {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #38A1FF;
+}
+
+#active-sts .cnt .card .pic {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#active-sts .cnt .card .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+#active-sts .cnt .card .text {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#active-sts .cnt .card .text h2 {
+    font-size: 30px;
+}
+
+#active-sts .cnt .card .text p {
+    font-size: 20px;
+    text-align: center;
+   
+}
+
+
+/* section three end */
+ #section-four{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+ } 
+ #section-four .head-two{
+    
+    height: 10%;
+    display: flex;
+    align-items: center;
+
+}
+#section-four .head-two h2{
+    text-align: center;
+    font-size: 32px;
+    display: flex;
+    align-items: start;
+}
+#section-four .head-two h2 .ben{
+    color: var(--secondary-bg-color);
+    font-size: 32px;
+
+}
+#section-four .icon{
+    display: flex;
+    width: 90%;
+    height: 80%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+ 
+}
+#section-four .icon .card{
+    width: 100%;
+    height: 80%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+#section-four .icon .card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    
+}
+
+#section-four .icon .card .box{
+    width: 70%;
+    height: 90%;
+    border: 3px solid var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+#section-four .icon .card .pic{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+#section-four .icon .card .pic:hover{
+    transform: scale(1.1);
+}
+#section-four .icon .card .pic img{
+    width: 100%;
+    height: 70%;
+}
+#section-four .icon .card .text h3{
+    font-size: 24px;
+
+}
+#section-four .icon .card .text p{
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+} 
+
+/* ṣection four end */
+
+
+
+/* section five start */
+#section-five {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#section-five .testimonial-wrapper {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#section-five .testimonial-wrapper .testimonial-heading-container h2{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container {
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card {
+    width: 30%;
+    height: 90%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-rating-container {
+    height: 10%;
+    width: 80%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-rating-container .icons i {
+    font-size: 24px;
+    color: gold;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container {
+    height: 50%;
+    width: 85%;
+    /* background-color: navy; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+    font-size: 20px;
+
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container {
+    height: 30%;
+    width: 90%;
+    /* background-color: skyblue; */
+    display: flex;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profImg-container {
+    height: 100%;
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profImg-container img {
+    height: 80px;
+    width: 80px;
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+#section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container h4 {
+    font-size: 26px;
+}
+
+ 
+
+
+
+@media only screen and (max-width:1440px){
+#section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#section .container{
+    height: 95%;
+}
+#section .container .image-container {
+            width: 40%;
+
+    height: 80%;
+}
+#section .container .image-container img{
+ width: 100%;
+
+    height: 100%;
+    object-fit: cover;
+}
+#section-two{
+    height: 140vh;
+    /* background-color: aqua; */
+}
+#section-two .ddg{
+    height: 10%;
+}
+#section-two .ddg h2{
+    font-size: 30px;
+}
+#section-two .ddg h2 .one{
+    font-size: 30px;
+}
+#section-two .rectangle{
+    height: 85%;
+}
+#section-two .rectangle .image-containertwo{
+    height:45%;
+}
+#section-two .rectangle .image-containertwo img{
+    height:100%;
+    object-fit: cover;
+}
+#section-two .rectangle .icon-containertwo{
+    height: 50%;
+} 
+#section-two .rectangle .icon-containertwo .box{
+    height: 110%;
+
+}
+#active-sts{
+}
+#active-sts .head h1{
+    font-size: 30px;
+}
+#active-sts .head h1 .atm{
+    font-size: 30px;
+}
+#section-five{
+    height: 100vh;
+    background-color: #d8edff;
+}
+#section-five .testimonial-wrapper {
+    height: 90%;
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+@media only screen and (max-width:1433px){
+    #section-two .rectangle .image-containertwo{
+        width: 70%;  
+    }
+    #section-two .rectangle .image-containertwo img{
+        width: 80%;
+        
+    }
+    #section-three .status-cards  .active .control .content p{ 
+        font-size: 24px;
+        line-height: 45px;
+    
+    }
+}
+@media only screen and (max-width:1374px){
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+
+font-size: 26px;   
+ }
+
+
+}
+@media only screen and (max-width:1333px){
+    #section-three{
+        height: 100vh;
+    }
+    #section-three .status-cards  .active .control .content { 
+        width: 75%;
+    }
+    
+}
+
+@media only screen and (max-width:1276px){
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+
+        font-size: 24px;   
+         }
+
+}
+@media only screen and (max-width:1269px){
+    #section-three .status-cards  .active .control .image h3{
+        font-size: 28px;
+    }
+    #section-three .status-cards  .active .control .content p{ 
+        font-size: 24px;
+        line-height: 45px;
+    
+    }
+   
+}
+
+
+@media only screen and (max-width:1245px){
+    #section-four .icon .card .text h3{
+        font-size: 22px;
+    }
+
+}
+@media only screen and (max-width:1228px){
+    #section .container .content-container p{
+        font-size: 18px;
+        line-height: 28px;
+        
+    }
+    #section-two .ddg{
+        align-items: center;
+    }
+}
+@media only screen and (max-width:1220px){
+    #section-two .rectangle .image-containertwo{
+        width: 60%;
+    }
+
+    #section-two .rectangle .icon-containertwo .box .card .wrap img{
+        width: 50%;
+
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        font-size: 22px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+
+
+@media only screen and (max-width:1189px){
+    
+    
+    #active-sts .head h1{
+        font-size: 28px;
+        
+    }
+    #active-sts .head h1 .atm{
+        font-size: 28px;
+    }
+    #active-sts .cnt .card {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #active-sts .cnt .card .text h2{
+        font-size: 22px;
+    }
+    #active-sts .cnt .card .text p{
+        font-size: 21px;
+    }
+    #active-sts .cnt .card .pic {
+        width: 40%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 30%;
+    }
+}
+@media only screen and (max-width:1166px){
+    #section-four .icon .card .text h3{
+        font-size: 22px;
+    
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container h4 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width:1154px){
+   
+    #section .container .image-container img{
+        height: 100%;
+    }
+    #section .container .content-container{
+        height: 70%;
+    }
+    #section .container .content-container h2{
+        font-size: 24px;
+
+    }
+    #section .container .content-container p{
+        width: 100%;
+        font-size: 18px;
+
+    }
+
+}
+@media only screen and (max-width:1147px){
+ #section-four .icon .card .text h3{
+     font-size: 20px;
+ }
+
+}
+
+@media only screen and (max-width:1114px){
+    #section .container .content-container h2 {
+        font-size: 24px;
+    
+    }
+    
+    #section .container .content-container p {
+
+        font-size: 18px;
+      
+    }
+}
+
+@media only screen and (max-width:1104px){
+    #active-sts .cnt .card .text h2 {
+        font-size: 34px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1101px){
+    #active-sts .cnt .card .text h2 {
+        font-size: 32px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 21px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:1088px){
+    #section-four .icon .card .text h3{
+        font-size: 20px;
+    }
+    #section-four .icon .card .text p{
+        font-size: 18px;
+    }
+    .banner_one .wrapper .wrap h1{
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+}
+@media only screen and (max-width:1084px){
+    #active-sts .cnt .card .text h2{
+        font-size: 20px;
+    }
+    #active-sts .cnt .card .text p{
+        font-size: 18px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 50%;
+    }
+ 
+
+}
+@media only screen and (max-width:1074px){
+    #section {
+        height: 80vh;
+    }
+    #section .container .image-container {
+        height: 90%;
+    }
+    #section .container .content-container {
+        height: 100%;
+        object-fit: cover;
+    }
+    #section .container .content-container h2 {
+        line-height: 40px;
+    }
+    #section .container .content-container p {
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width:1065px){
+    
+    #active-sts .cnt .card .pic {
+        height: 80%;
+    }
+    
+    
+}
+@media only screen and (max-width:1054px){
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container h4 {
+        font-size: 28px;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container h4 {
+        font-size: 20px;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container {
+        gap: 20px;
+    }
+
+
+}
+@media only screen and (max-width:1033px){
+
+    #section{
+        height: 80vh;
+    }
+    #section .container .image-container{
+        height: 80%;
+    }
+    #section .container .image-container img {
+        height: 100%;
+                object-fit: cover;
+
+    
+    }
+
+    #section .container .content-container {
+        height: 100%;
+    }
+    #section-two h2 {
+        font-size: 30px;
+    }   
+    #section-two{
+        height: 130vh;
+        margin-top: 40px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 30%;
+    }
+    #active-sts h1 {
+        font-size: 26px;
+    }
+    #active-sts h1 .atm{
+        font-size: 26px;
+    }
+
+
+}
+@media only screen and (max-width:1019px){
+   
+    #section{
+        height: 80vh;
+    }
+        #section .container .image-container{
+            height: 90%;
+        }
+    #section .container .image-container img {
+        height: 100%;
+    }
+
+    #section .content-container{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #section .content-container h2{
+        font-size: 36px;
+    }
+    #section .content-container p{
+        width: 100%;
+        line-height: 28px;
+    }
+    
+    #section-two{
+        height: 130vh;
+    }
+       #section-two .ddg{
+        height: 10%;
+       }
+    #section-two .ddg h2{
+        font-size: 24px;
+    }
+    #section-two .ddg h2 .one{
+        font-size: 24px;
+    }
+    #section-two .rectangle{
+        width: 90%;
+        height: 80%;
+        display: flex;
+
+        
+    }
+      #section-two .rectangle .image-containertwo{
+             width: 60%;
+        height: 50%;
+
+      }
+    #section-two .rectangle .image-containertwo img{
+   width: 70%;
+   height: 100%;
+        
+    }
+#section-two .rectangle .icon-containertwo{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-two .rectangle .icon-containertwo .box{
+    width: 90%;
+    height: 100%;
+}
+#section-four .head-two h2{
+    font-size: 24px;
+}
+#section-four .head-two h2 .ben{
+    font-size: 24px;
+
+}
+}
+@media only screen and (max-width:1018px){
+   
+    #active-sts{
+        height: 90vh;
+    }
+    #active-sts .head h1{
+        font-size: 26px;
+        height: 20%;
+    }
+    #active-sts .head h1 .atm{
+        font-size: 26px;
+    }
+    #active-sts .cnt {
+        height: 60%;
+
+    }
+    #active-sts .cnt .card {
+        width: 45%;
+        height: 70%;
+    }
+    #active-sts .cnt .card .pic{
+        height: 70%;
+        width: 40%;
+    }
+    #active-sts .cnt .card .text h2{
+        font-size: 24px;
+    }
+    #active-sts .cnt .card .text p{
+        font-size: 18px;
+    }
+    #section-four{
+        height: 80vh;
+    }   
+    #section-four .icon {
+        height: 80%;
+    }
+    #section-four .icon {
+        height: 80%;
+    }
+    #section-four .icon  .card{
+        height: 100%;
+    }
+    #section-four .icon  .card .wrap h3{
+        font-size: 20px;
+    }
+    #section-four .icon  .card .wrap p{
+        font-size: 20px;
+    }
+    #section-five{
+        height: 100vh;
+    }  
+    #section-five .testimonial-wrapper .testimonial-heading-container {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+    }
+    #section-five .testimonial-wrapper .testimonial-heading-container h2{
+        font-size: 28px;
+        text-align: center;
+    } 
+    #section-five .testimonal-wrapper .testimonial-card-container{
+        height: 70%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        height: 85%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container h4{
+        font-size: 24px;
+    }    
+    
+
+}
+
+
+@media only screen and (max-width:1009px){
+    #section-four .icon .card .text h3{
+        font-size: 20px;
+    }
+    #section-four .icon .card .text p{
+        font-size: 18px;
+    }
+}
+
+
+
+@media only screen and (max-width:991px){
+      #section .container .image-container{
+        height: 80%;
+    }
+    .container .content-container{
+        height: 60%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        font-size: 18px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p{
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width:985px){
+    #section .container .content-container {
+        height: 80%;
+
+    }
+    #section .container .content-container h2 {
+        font-size: 24px;
+    }
+    #section .container .content-container p {
+        font-size: 18px;
+    }
+
+
+}
+
+@media only screen and (max-width:980px){
+    .container .content-container{
+        height: 60%;
+    }
+    .content-container h2{
+        font-size: 30px;
+    }
+    
+}
+
+@media only screen and (max-width:979px){
+    #active-sts{
+        height: 80vh;
+    }
+    #active-sts .head h1{
+        font-size: 24px;
+    }
+    #active-sts .head h1 .atm{
+        font-size: 24px;
+    }
+    #active-sts .cnt .card .text h2 {
+        font-size: 20px;
+    }
+    #section-four .icon .card{
+        width: 40%;    
+    }
+    #section-four .icon .card .box{
+        width: 90%;
+        height: 70%;   
+    }
+
+}
+@media only screen and (max-width:973px){
+    #active-sts h1 {
+        font-size: 30px;
+    }
+    #active-sts .cnt .card .text h2 {
+        font-size: 20px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 20px;
+        text-align: center;
+    }
+    #section .container .content-container {
+        height: 100%;
+    }
+}
+@media only screen and (max-width:963px){
+    #section {
+        height: 80vh;
+    }
+    #section .container .image-container {
+        height: 80%;
+    }
+    #section .container .image-container img{
+        height: 100%;
+
+    }
+    
+
+}
+@media only screen and (max-width:939px){
+    #active-sts h1 {
+        font-size: 30px;
+    }
+    
+}
+@media only screen and (max-width:933px){
+    #section .container .content-container {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+#section .container .content-container h1{
+    font-size: 28px;
+    
+}
+#section .container .content-container p{
+    font-size: 20px;
+    
+}
+@media only screen and (max-width:933px){
+    #section .container .content-container{
+        height: 100%;
+    }
+}
+@media only screen and (max-width:917px){
+    #section .container .content-container{
+        height: 100%;
+    }
+    #section .content-container h2{
+        font-size: 26px;
+    }
+    
+    #section .content-container p{
+        font-size: 20px;
+        
+    }
+}
+
+
+@media only screen and (max-width:879px){
+  
+    #section .container .content-container h2{
+        font-size: 24px;
+    }
+    #section .container .content-container p{
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width:864px){
+ #section-four{
+        height: 250vh;
+    }
+    #section-four .icon{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        grid-area: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    #section-four .icon .card{
+        height: 80%;
+        width: 80%;
+    }
+    #section-four .icon .card .box{
+        width: 60%;
+        height: 70%;
+    }
+    #section-four .icon .card .box .pic{
+        width: 70%;
+        height: 100%;
+    }
+    #section-four .icon .card .text h3{
+        font-size: 24px;
+
+    }
+    #section-four .icon .card .text p{
+        width: 60%;
+        font-size: 22px;
+    }
+
+}
+@media only screen and (max-width:849px){
+    #section .container .content-container p {
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width:855px){
+    #section-two{
+        height: 170h;
+    }
+    #section-two .ddg {
+        height: 10%;
+    }
+    #section-two .ddg h2{
+        font-size: 22px;
+    }
+    #section-two .ddg h2 .one{
+        font-size: 22px;
+    }
+   
+    #section-five {
+        height: 230vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 60px;
+        
+    }
+  
+#section-five .testimonial-wrapper .testimonial-heading-container{
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+    #section-five .testimonial-wrapper .testimonial-heading-container h2 {
+        font-size: 30px;
+    }
+    #section-five .testimonial-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        width: 80%;
+        height: 100%;
+
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+        font-size: 28px;
+    }
+    #section-five .testimonal-wrapper .person-card .user-prof-container {
+        width: 50%;
+        background-color: aquamarine;
+    }
+
+}
+@media only screen and (max-width:840px){
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:829px){
+    #active-sts .cnt .card .text h2 {
+        font-size: 22px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:824px){
+
+   
+        #section .container .content-container{
+        height: 80%;
+    }
+    #section .content-container h2{
+        font-size: 26px;
+    }
+    
+    #section .content-container p{
+        font-size: 18px;
+        
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 30%;
+        height: 80%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        font-size: 16px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width:801px){
+    #active-sts h1 {
+        font-size: 30px;
+    }
+    #active-sts .cnt .card .text h2 {
+        font-size: 24px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:775px){
+    
+    #section .container .content-container h2{
+        font-size: 24px;
+    }
+    #section .container .content-container p{
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (max-width:773px){
+    #active-sts .cnt .card .text h2 {
+        font-size: 20px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 17px;
+        
+    }
+}
+@media only screen and (max-width:769px){
+
+     .banner_one .wrapper .wrap h1 {
+        font-weight: 300;
+        font-size: 28px;
+    }
+     .banner_one .wrapper .wrap p {
+        font-size: 20px;
+    }
+        
+    
+    #section{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section .container{
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #section .container .image-container{
+        height: 80%;
+    }
+    #section .container .image-container img{
+        height: 100%;
+    }
+    
+    
+    
+#section-two h2 {
+    height: 3%;
+}
+   
+    
+    #section-two {
+        
+        height: 230vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #section-two .rectangle{
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    #section-two h2 {
+        font-size: 28px;
+    }
+
+    #section-two .rectangle .image-containertwo{
+        width: 70%;
+        height: 30%;
+        margin-top: 10px;
+    }
+    #section-two .rectangle .image-containertwo img{
+        width: 100%;
+        height: 100%;
+    }
+    #section-two .rectangle .icon-containertwo{
+        width: 60%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #section-two .rectangle .icon-containertwo .box{
+        width: 90%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width:  90%;
+        height: 32%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap{
+        width: 90%;
+        height: 90%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap img{
+        width: 50%;
+        height: 50%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        font-size: 24px;
+
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p{
+        font-size: 18px;
+    }
+ 
+    #section .container{
+        width: 90%;
+    }
+    #active-sts {
+        height: 120vh;
+    }
+    #active-sts .head{
+        height: 10%;
+        display: flex;
+        align-items: end;
+    }
+    #active-sts .head h1{
+        font-size: 24px;
+    }
+    #active-sts .head h1 .atm{
+        font-size: 24px;
+
+    }
+    #active-sts .cnt {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #active-sts .cnt .card {
+        width: 70%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+    }
+   #active-sts .cnt .card .pic{
+    width: 40%;
+    height: 90%;
+   }
+   #active-sts .cnt .card .text{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    #active-sts .cnt .card .text h2{
+        text-align: center;
+    }
+    #active-sts .cnt .card .text p {
+        width: 80%;
+        font-size: 17px;
+    }
+    #section-four{
+        height: 240vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+   }
+    #section-four .head-two{
+        height: 5%;
+    }
+
+    #section-four .head-two h2{
+        font-size: 24px;
+    }
+    #section-four .head-two h2 .ben{
+        font-size: 24px;
+    }
+    #section-four .icon{
+        width: 100%;
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section-four .icon .card{
+        width: 80%;
+        height: 100%;
+    }
+    #section-four .icon .card .box{
+        width: 60%;
+        height: 100%;
+    }
+    #section-four .icon .card .box .pic{
+        width: 80%;
+        height: 110%;
+
+    }
+   
+    #section-five{
+        height: 250vh;
+      
+    }
+    #section-five .testimonial-wrapper {
+        height: 100%;
+          display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #section-five .testimonial-wrapper .testimonial-heading-container{
+        height: 5%;
+    }
+      #section-five .testimonial-wrapper .testimonial-card-container{
+        height: 85%;
+      }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        height: 80%;
+
+    }
+    #section-five .testimonial-wrapper .testimonial-heading-container h2 {
+        font-size: 26px;
+
+    }
+        #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p{
+            font-size: 20px;
+
+        }
+        /* #section-five .testimonial-wrapper .testimonial-card-container .user-prof-container{
+            width: 10%;
+            background-color: aqua;
+        }
+        #section-five .testimonial-wrapper .testimonial-card-container .user-prof-container .user-profImg-container{
+            width: 10%;
+
+        }
+         #section-five .testimonial-wrapper .testimonial-card-container .user-prof-container .user-profDetails-container{
+            width: 10%;
+            background-color: #7EBAEF;
+         } */
+   
+}
+
+
+@media only screen and (max-width:749px){
+    #section {
+        height: 80vh;
+    }
+    #section .container .image-container {
+        height: 80%;
+    }
+    #section .container .image-container img{
+        height: 100%;
+    }
+    #section .container .content-container {
+        height: 90%;
+       
+    }
+  
+    
+}
+@media only screen and (max-width:738px){
+    #section .container .image-container {
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width:706px){
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+        line-height: 28px;
+    }
+ 
+    /* #active-sts {
+        height: 120vh;
+    }
+    #active-sts .head{
+        height: 10%;
+    }
+    
+    #active-sts .cnt{
+        height: 80%;
+    } */
+    #section-two{
+        height: 220vh;
+    }
+       #section-two .rectangle .icon-containertwo .box .card{
+        width: 90%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap img{
+        height: 50%;
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width:685px){
+    #section .container{
+        height: 95%;
+    }
+    #section .container .content-container {
+        height: 100%;
+   
+    }
+    #section .container .content-container p {
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:651px){
+    #active-sts .head h1{
+        font-size: 22px;
+    }
+    #active-sts .head h1 .atm{
+        font-size: 22px;
+    }
+    #active-sts .cnt .card {
+        width: 80%;
+        
+    }
+    #active-sts .cnt .card .pic img{
+        height: 100%;
+    }
+    .content-container h2{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    header .banner_one .wrapper .wrap h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+}
+
+@media only screen and (max-width:649px){
+    
+   
+    #section .container .content-container h2{
+        font-size: 24px;
+    }
+    #section .container .content-container p{
+        font-size: 16px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        font-size: 22px;
+        
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p{
+        font-size: 18px;
+    }
+   
+    #section-four{
+        height: 230vh;
+        width: 100%;
+    }
+    #section-four .icon{
+        height: 90%;
+        width: 90%;
+    }
+    #section-four .icon .card{
+        width: 80%;
+        height: 40%;
+    }
+    #section-four .icon .card .box{
+        width: 80%;
+    }
+    #section-four .icon .card  .text h3{
+        font-size: 24px;
+
+    }
+    #section-four .icon .card .text p{
+        width: 80%;
+        font-size: 20px;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container .user-prof-container .user-profDetails-container h4 {
+        font-size: 28px;
+
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+        line-height: 40px;
+        font-size: 20px;
+    }
+        #section-four .head-two h2{
+            font-size: 24px;
+        }
+        #active-sts {
+            height: 150vh;
+            margin-top: 60px;
+        }
+    
+        
+        #section-four .icon .card{
+            width: 70%;
+        }  
+}
+
+@media only screen and (max-width:648px){
+    #active-sts{
+        height: 80vh;
+        background-color: #ffffff;
+    }
+    #active-sts .head{
+        height: 5%;
+    }
+    #active-sts .cnt{
+        height: 90%;
+    }
+    #active-sts .cnt .card{
+        height: 45%;
+    }
+
+}
+@media only screen and (max-width:644px){
+    .banner_one .wrapper .wrap p{
+        width: 70%;
+     
+    }
+
+}
+@media only screen and (max-width:620px){
+    #section .container{
+        gap: 10px;
+    }
+    #section .container .content-container h2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #section .container .content-container p{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:591px){
+       #section-five {
+        height: 220vh;
+        width: 100%;
+       }
+#section-five .testimonial-wrapper{
+    width: 100%;
+    height: 100%;
+    
+}
+#section-five .testimonial-wrapper .testimonial-card-container .person-card{
+    width: 90%;
+}
+
+}
+@media only screen and (max-width:585px){
+    #section {
+        height: 110vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section .container{
+        height: 100%;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    #section .container .content-container{
+        width: 90%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        
+    }
+    #section .container .content-container h2{
+        width: 90%;
+        
+        font-size: 24px;
+        line-height: 30px;
+        text-align: start;
+        display: flex;
+        align-items: start;
+    }
+    #section .container .content-container p{
+        width: 100%;
+        text-align: start;
+        font-size: 18px;
+    }
+    #section .container {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #section .container .image-container {
+        width: 90%;
+        height: 55%;
+        object-fit: cover;
+        
+        
+    }
+    #section .container .image-container img{
+        width: 100%;
+        height: 100%;
+    }
+    #active-sts .head h1 {
+        font-size: 19px;
+    }
+
+    #section-four{
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+    } 
+     
+    #section-four .head-two h2{
+    
+        height: 5%;
+    
+    } 
+    #section-four .icon{
+        height: 90%;
+    }
+    #section-four .icon .card{
+        width: 60%;
+    }
+    #section-four .icon .card .box{
+        width: 90%;
+        height: 100%;
+    }
+    #section-four .icon .card  .text p{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #section-five{
+        width: 100%;
+        height: 230vh;
+    }
+    #section-five .testimonial-wrapper{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    
+}
+#section-five .testimonial-wrapper .testimonial-heading-container{
+    height: 5%;
+}
+#section-five .testimonial-wrapper .testimonial-card-container{
+    width: 80%;
+    height: 90%
+}
+#section-five .testimonial-wrapper .testimonial-card-container .person-card{
+    width: 90%;
+    height: 100%;
+}
+
+
+}
+
+@media only screen and (max-width:590px){
+    .content-container h2{
+        font-size: 20px;
+    }
+    .content-container p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .container .image-container{
+        width: 50%;
+        height: 80%;
+    }
+
+}
+@media only screen and (max-width:585px){
+    
+    #active-sts .head h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #active-sts .head h1 .atm{
+       font-size: 20px;
+        text-align: center;
+      
+    }
+}
+
+@media only screen and (max-width:561px){
+  
+    .container .image-container{
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width:553px){
+    
+    .container .image-container{
+        
+        width: 50%;
+        height: 80%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 90%;
+    }
+    
+    
+    
+}
+
+
+
+
+@media only screen and (max-width:524px){
+    #section-two h2{
+        font-size: 24px;
+    }
+    #section-two h2 .one {
+        font-size: 20px;
+    }
+    #section-four .icon .card .text h3{
+        font-size: 20px;
+        
+    } 
+    #section-four .icon .card .text p{
+        font-size: 18px;
+    }
+
+
+}
+
+@media only screen and (max-width:516px){
+    
+    #section{
+        height: auto;
+    }
+    .container .image-container img{
+        height: 100%;
+    }
+    .content-container h2{
+        font-size: 24px;
+    }
+    .content-container p{
+        font-size: 16px;
+    }  
+    #section-two{
+        height: 220vh;
+    }
+    #section-two h2{
+        font-size: 20px;
+        line-height: 40px;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #section-two .rectangle .icon-containertwo {
+        width: 90%;
+        height: 80%;
+    }
+    #section-two .rectangle .icon-containertwo .box {
+        width: 90%;
+        height: 100%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 80%;
+        height: 32%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3 {
+        font-size: 18px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p {
+        font-size: 16px;
+    }
+    #active-sts{
+        height: 100vh;
+       
+    }
+    #active-sts .head{
+        height: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #active-sts .head h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #active-sts .head h1 .atm{
+       font-size: 20px;
+        text-align: center;
+      
+    }
+   
+    #active-sts .cnt{
+        height: 85%;
+    }
+    #active-sts .cnt .card{
+        height: 45%;
+        width: 90%;
+    }
+
+    #active-sts .cnt .card .txt{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #section-four .icon{
+        width: 90%;
+    }
+    #section-four .icon .card{
+        width: 80%;
+    }
+
+    
+    
+    
+}
+
+@media only screen and (max-width:480px){
+ #section .container .content-container p{
+    font-size: 16px;
+     
+ }
+    #section-four .head-two{
+        height: 5%;
+
+    }
+    #section-four .icon{
+        height: 100%;
+    }
+    #section-four .icon .card{
+        width: 60%;
+        height: 30%;
+        
+    }
+    #section-five{
+        height: 240vh;
+    }
+    #section-five .testimonial-wrapper{
+        height: 100%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container{
+        height: 85%;
+        width: 80%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card{
+        height: 100%;
+        width: 100%;
+    }
+
+    }
+ 
+@media only screen and (max-width:465px){
+    #active-sts{
+        height: 100vh;
+    }
+    #active-sts .cnt{
+        height: 80%;
+    }
+    #active-sts .head{
+        height: auto;
+        width: 70%;
+        display: flex;
+        justify-content: start;
+    }
+    #active-sts .head h1 {
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+        gap:10px;
+
+    }
+    #active-sts h1 .atm{
+        font-size: 18px;
+
+
+    }
+    #section-four .head-two{
+        height: 3%;
+        
+    }
+    #section-four .head-two h2 {
+        font-size: 20px;
+    } 
+    #section-four .head-two h2 .ben{
+        font-size: 20px;
+    } 
+    #section-four{
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #section-four .icon{
+        width: 80%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+    #section-four .icon .card{
+        width: 80%;
+        height: 30%;
+
+    }
+    #section-four .icon .card .box{
+        width: 100%;
+        height: 100%;
+    }
+    #section-four .icon .card .box .pic{
+        width: 80%;
+        height: 100%;
+    }
+    #section-five {
+        height: 200vh;
+    }
+    #section-four .icon .card .text{
+        height: 50%;
+    }
+    #section-four .icon .card .text h3{
+        font-size: 20px;
+    }
+    #section-four .icon .card .text p{
+        font-size: 18px;
+    }
+    #section-five {
+        height: 300vh;
+
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+        font-size: 18px;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        width: 90%;
+    }
+
+
+
+    
+}
+
+
+@media only screen and (max-width:461px){
+    #active-sts .cnt{
+        width: 90%;
+    }
+    #active-sts .cnt .card{
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width:462px){
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:455px){
+    
+    #section .container{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .image-container{
+        width: 80%;
+        height: 50%;
+    }
+    .container .content-container{
+        width: 100%;
+        height: auto;
+    }
+    .content-container h2{
+        text-align: center;
+        
+    }
+    .content-container p    {
+        text-align: center;
+        
+    }
+    
+    
+    
+}
+
+
+@media only screen and (max-width:450px){
+    #section-five {
+        width:  100%;
+        height: 250vh;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container {
+        width: 80%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        width: 100%;
+    }
+    
+    
+    
+}
+@media only screen and (max-width:429px){
+    .banner_one .wrapper .wrap h1 {
+    font-size: 20px; 
+    font-weight: 200;   
+}
+#section-two{
+        height: 220vh;
+    }
+    #section-two h2{
+        font-size: 20px;
+        line-height: 40px;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #section-two .rectangle  .image-containertwo{
+        width: 90%;
+    }
+    #section-two .rectangle .icon-containertwo {
+        width: 100%;
+        height: 80%;
+    }
+    #section-two .rectangle .icon-containertwo .box {
+        width: 90%;
+        height: 100%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card{
+        width: 80%;
+        height: 32%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3 {
+        font-size: 18px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap p {
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:425px){
+    #active-sts{
+        justify-content: start;
+    }
+    #section-four{
+        height: 200vh;
+    }
+    #section-four .icon{
+        height: 100%;
+    }
+    .banner_one {
+        background-position: center;
+    }
+    .banner_one .wrapper .wrap a button{
+        width: 130px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: #38A1FF;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        justify-content: center;
+    }
+   
+    
+    
+}
+
+
+@media only screen and (max-width:394px){
+ #section-four .icon .card .text h3{
+        font-size: 20px;
+    }
+ #section-four .icon .card .text p{
+        width: 80%;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap img{
+        width: 50%;
+        height: 40%;
+    }
+     
+ 
+}
+@media only screen and (max-width:375px){
+    #active-sts .cnt{
+        width: 100%;
+    }
+    #active-sts .cnt .card{
+        width: 90%;
+    }
+    #active-sts .cnt .card .txt{
+        width: 50%;
+    }
+    #active-sts .cnt .card .txt h2{
+        font-size: 18px;
+    }
+    #active-sts .cnt .card .txt p{
+        font-size: 15px;
+    }
+    #active-sts .cnt .card .pic{
+        width: 40%;
+    }
+    
+    #active-sts .cnt .card .pic img{
+        width: 100%;
+    }
+
+    #section-four .icon .card .text{
+        width: 90%;
+    }
+    #section-four .icon .card .text h3{
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+    #section-four .icon .card .text p{
+        font-size: 14px;
+    }
+    
+    #section-five{
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #section-five .testimonial-wrapper{
+        width: 100%;
+        height: 100%;
+
+    }
+    #section-five .testimonial-wrapper .testimonial-heading-container{
+        height: 5%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container{
+        width: 100%;
+        height: 90%;
+      
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card {
+        width: 90%;
+        height: 30%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-prof-container .user-profDetails-container h4 {
+        font-size: 18px;
+    }
+  
+    
+}
+@media only screen and (max-width:352px){
+  
+    .banner_one .wrapper  {
+        height: 100%;
+    }
+    .banner_one .wrapper .wrap{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 20px;
+
+
+    }
+    .banner_one .wrapper .wrap h1 {
+        font-size: 16px; 
+        font-weight: 200;   
+    }
+    .banner_one .wrapper .wrap p {
+        font-size: 15px;
+    }
+    #section-five{
+        height: 240vh;
+    }
+    #section-five .testimonial-wrapper{
+        width: 95%; 
+        height: 100%;  
+    }
+    #section-five .testimonial-wrapper .testimonial-heading-container{
+        height: 5%;
+        display: flex;
+        align-items: end;
+  
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container{
+        width: 100%;
+        height: 95%;
+    }
+    #section-five .testimonial-wrapper .testimonial-card-container .person-card{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:351px){
+    #section-two .rectangle .icon-containertwo .box .card .wrap h3{
+        font-size: 20px;
+    }
+    #section-two .rectangle .icon-containertwo .box .card .wrap {
+        font-size: 20px;
+    }
+    #section-two {
+        height: 200vh;
+        
+    }
+    
+}
+
+@media only screen and (max-width:341px){
+    #active-sts .cnt .card .text h2 {
+        font-size: 18px;
+    }
+    
+    #active-sts .cnt .card .text p {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:328px){
+    #section-four .icon .card .text h3{
+        font-size: 18px;
+    }
+    #section-four .icon .card .text P{
+        font-size: 18px;
+    }
+
+
+}
+@media only screen and (max-width:321px){
+    #section .container .content-container p {
+        width: 100%;
+    }
+  
+}

@@ -1,0 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@600&display=swap');
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /* Font size */
+    --fs-subhead:16px;
+    --fs-head:20px;
+    --fd-headone:24px;
+    --font-bold:18px;
+    
+
+    /* Font style */
+    --fs-italic:italic;
+
+
+    /* Font weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-light: 300; 
+
+    /* Font family */
+    --ff-spline: "Spline Sans", serif;
+    --ff-bold:
+    
+
+
+    /* color */
+    --primary-color: black;
+    --secondary-color: white;
+    --tertiary-color:navy;
+    
+
+    /* bgcolor */
+    --primary-bg-color:#91C5F4;
+    --secondary-bg-color: #38A1FF;
+    --tertiary-bg-color: #7EBAEF;
+}
+
+
+.fs-24{
+    font-size: var(--fs-24);
+}
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.banner .image{
+width: 40%;
+height: 80%;
+}
+.banner .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.banner .text-content{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+}
+.banner .text-content h1{
+    width: 70%;
+    font-size: 30px;
+  
+}
+.banner .text-content P{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+/* features section start */
+#features{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+        background-color: #91C5F4;
+
+}
+#features .features-hd{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#features .features-hd h1 .one{
+    color: #38A1FF;
+        font-size: 32px;
+
+}
+
+#features h1{
+    font-size: 32px;
+    text-align: center;
+}
+#features .image-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#features .image-container .image {
+    width: 15%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#features .image-container .image img{
+    width: 90%;
+    height: 70%;
+
+
+
+}
+#features .image-container .image h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+/* features section end */
+
+/* map section start */
+#map{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#map .status{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+  
+}
+
+#map .status .map-hd{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#map .status .map-hd h1 .two{
+        font-size: 32px;
+     
+    color: #38A1FF;
+}
+#map .status h1{
+    font-size: 32px;
+    font-weight: 700;
+text-align: center;
+}
+#map .status p{
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+#map .map-image{
+    width: 70%;
+    height: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+#map .map-image .image{
+    width: 80%;
+    height: 100%;
+}
+#map .map-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+#map .text{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#map .text .red{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  
+}
+#map .text .green{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+#map .text .green p{
+    font-size: 20px;
+
+}
+#map .text .red p{
+    font-size: 20px;
+
+}
+/* map section end */
+
+/* service section strat */
+
+#service{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   
+}
+#service .control{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+
+
+}
+#service .control .service-hd{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+#service .control .service-hd h1 .three{
+    color: #38A1FF;
+        font-size: 32px;
+
+
+}
+#service .control .service-hd h1{
+
+    font-size: 32px;
+text-align: center;
+}
+
+#service .control .cards{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color: #91C5F4;
+        border-radius: 20px;
+
+}
+#service .control .cards .card{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#service .control .cards .card .pic {
+    width: 70%;
+    height: 70%;
+    
+}
+#service .control .cards .card .pic img{
+    width: 100%;
+    height: 100%;
+
+}
+#service .control .cards .card .txt{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+#service .control .cards .card .txt p{
+    font-size: 20px;
+    width: 90%;
+}
+
+
+/* service section end */
+
+
+
+
+
+
+
+/* meadi query */
+
+
+
+
+
+@media only screen and (max-width:1440px){
+   
+ 
+    .banner{
+        height: 100vh;
+
+    }
+    .banner .image{
+        width: 40%;
+    }
+    .banner .text-content{
+        width: 50%;
+    }
+    .banner .text-content h1{
+        width: 100%;
+    }
+    .banner .text-content p{
+        width: 100%;
+    }
+
+
+    #features{
+        height: 100vh;
+    }
+  
+    #map .status p{
+        width: 80%;
+        font-size: 22px;
+
+    }
+    #service{
+        height: 100vh;
+    }
+
+    } 
+
+
+
+@media only screen and (max-width:1320px){
+    #service .control .cards .card .pic {
+        width: 100%;
+        height: 100%;
+    }
+    #service .control .cards .card .pic img{
+        height: 100%;
+    }
+    #service .control .cards .card .txt{
+        width: 100%;
+        height: 30%;
+    }
+    #service .control .cards .card .txt p{
+        font-size: 22px;
+    }
+    .banner .text-content h1{
+        font-size: 26px;
+    }
+    .banner .text-content p{
+        font-size: 22px;
+    }
+    #service .control .cards .card .txt p{
+        font-size: 22px;
+
+   
+
+
+
+}
+@media only screen and (max-width:1293px){
+    
+    #features .image-container .image h3{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:1227px){
+    #features{
+        height: 100vh;
+    }
+
+}
+@media only screen and (max-width:1185px){
+    #service .control .service-hd h1{
+        font-size: 26px;
+    }
+    #service .control .service-hd h1 .three{
+        font-size: 26px;
+    }
+    #service .control .cards{
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #service .control .cards .card{
+        width: 90%;
+        height: 50%;
+        
+    }
+    #service .control .cards .card .txt{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #service .control  .cards .card .txt p{
+        /* line-height: 50px; */
+        height: 80%;
+        
+    }
+
+    #service .control .cards .card .pic {
+        width: 70%;
+        height: 80%;
+     
+    }
+    #service .control .cards .card .pic img{
+        width: 90%;
+    }
+
+
+
+}
+
+@media only screen and (max-width:1141px){
+    #features{
+        width: 100%;
+    }
+    #features .image-container .image {
+
+        width: 13%;
+        height: auto;
+    
+    }
+
+    .banner .text-content h1{
+        font-size: 25px;
+    }
+} 
+    .banner .text-content p{
+        font-size: 22px;
+    }
+    #map  {
+        height: 150vh;
+    }
+    #map .status{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+  
+} 
+@media only screen and (max-width:1124px){
+    .banner .text-content P{
+        font-size: 20px;
+    }
+    .banner .text-content h1{
+        font-size: 28px;
+    }
+
+
+
+
+}
+@media only screen and (max-width:1058px){
+    #features{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        }
+    .banner{
+        height: 90vh;
+        display: flex;
+        background-color: #38A1FF;
+        
+
+    }
+    .banner .image{
+        height: 90%;
+    }
+    .banner .image img{
+        height: 100%;
+    }
+    .banner .text-content{
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .banner .text-content h1{
+        font-size: 24px;
+    }
+
+    .banner .text-content P{
+        width: 100%;
+    }
+    #service .control h1{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width:955px){
+    .banner .text-content{
+        gap: 20px;
+    }
+
+    .banner .text-content P{
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .banner .text-content h1{
+       font-size: 26px; 
+    }
+
+
+
+    
+    
+}
+
+@media only screen and (max-width:887px){
+    #features{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    #features .features-hd h1{
+        font-size: 26px;
+    }
+    #features .features-hd h1 .one{
+        font-size: 26px;
+    }
+    #features .heading{
+        width: 100%;
+        height: 10%;
+    
+    }
+    #features .image-container{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        height: 80%;
+        gap: 20px;
+    }
+    #features .image-container .image {
+        width: 25%;
+        height: auto;
+    }
+    #map{
+        height: 150vh;
+        margin-top: 30px;
+    }
+    #map .status{
+        height: 30%;
+    }
+    #map .status .map-hd h1{
+        font-size: 24px;
+    }
+    #map .status .map-hd h1 .two{
+        font-size: 24px;
+    }
+    #map .map-image .image{
+        height: 90%;
+    }
+    #map .text{
+        height: 50%;
+    }
+
+
+
+}
+@media only screen and (max-width:842px){
+    .banner .text-content{
+        width: 50%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .banner .text-content h1{
+        font-size: 26px;
+
+    }
+    .banner .text-content P{
+        width: 100%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    
+
+}
+@media only screen and (max-width:774px){
+    .banner{
+        height: 90vh;
+    }
+    .banner .image{
+        height: 80%;
+    }
+    .banner .image img{
+        height: 100%;
+    }
+    .banner .text-content{
+        height: 80%;
+    }
+
+}
+@media only screen and (max-width:768px){
+    .banner{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        justify-content: start;
+    }
+    .banner .image{
+        height: 50%;
+        width: 80%;
+        display: flex;
+        align-items: end;
+    }
+    .banner .image img{
+        width: 90%;
+        height: 90%;
+
+    }
+    .banner .text-content{
+        height: 45%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        
+    }
+    .banner .text-content p{
+        width: 85%;
+
+    }
+    .banner .text-content h1{
+        width: 90%;
+        font-size: 22px;
+        list-style: 24px;
+    }
+    #features{
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #features .image-container{
+        width: 90%;
+        height: 80%;
+    }
+    #map {
+        height: 130vh;
+    }
+    #map .status{
+        height: 30%;
+    }
+    #map .status .map-hd h1{
+        font-size: 24px;
+    }
+    #map .status .map-hd h1 .two{
+        font-size: 24px;
+    }
+    #map .status p{
+        width: 85%;
+        font-size: 18px;
+    }
+    #map .map-image{
+        height: 70%;
+    }
+    #map .map-image .image{
+        width: 90%;
+        height: 100%;
+    }
+    #map .text .red p{
+        font-size: 20px;
+    }
+    
+    #map .text .green p{
+        font-size: 20px;
+    }
+    #service .control .cards{
+        width: 90%;
+    }
+    #service .control .cards .card .txt{
+        height: 100%;
+    }
+    #service .control .cards .card .txt p{
+        height: 90%;
+        font-size: 20px;
+    }
+    
+    
+    
+    
+}
+@media only screen and (max-width:721px){
+    #map .text .green{
+        width: 45%;
+    }
+    #map .text .red{
+        width: 45%;
+    }
+    #map .text .green p{
+        font-size: 20px;
+        
+    }
+    #map .text .red p{
+        font-size: 20px;
+        
+    }
+}
+@media only screen and (max-width:680px){
+    .banner .image{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner .text-content p{
+        font-size: 18px;
+        
+    }
+    #service .control {
+        align-items: center;
+        justify-content: center;
+    }
+    #service .control .service-hd h1{
+        font-size: 24px;
+    }
+    #service .control .service-hd h1 .three{
+        font-size: 24px;
+    }
+    #service .control .cards{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+    #service .control .cards .card{
+        width: 80%;
+        /* margin-left: 100px; */
+    }
+    #service .control .cards .card .txt p{
+        width: 40%;
+        height: 80%;
+        font-size: 18px;
+        display: flex;
+        align-items: end;
+    }
+    #service .control .cards .card .txt{
+        width: 70%;
+        display: flex;
+        align-items: end;
+        height: 70%;
+    }
+    #service .control .cards .card .pic {
+        width: 40%;
+
+    }
+
+
+
+
+
+
+}
+@media only screen and (max-width:652px){
+    #service .control .cards .card .txt p{
+        font-size: 17px;
+    }
+    #service .control .service-hd h1{
+        font-size: 22px;
+    }
+    #service .control .service-hd h1 .three{
+        font-size: 22px;
+    }
+
+
+
+}
+@media only screen and (max-width:616px){
+    #service .control .cards .card .txt p{
+        width: 50%;
+        height: 80%;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:607px){
+    #service {
+        height: 180vh;
+
+    }
+    #service .control .cards .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    #service .control .cards .card .pic {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #service .control .cards .card .pic img{
+        width: 80%;
+        height: 100%;
+    }
+    #service .control .cards .card .txt{
+        width: 90%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #service .control .cards .card .txt p{
+        width: 90%;
+        font-size: 22px;
+    }
+    
+
+}
+@media only screen and (max-width:596px){
+    .banner{
+        height: 130vh;
+    }
+
+
+}
+@media only screen and (max-width:582px){
+    #map {
+        height: 170vh;
+        
+    }
+    #map .status{
+        height: 30%;
+    }
+    #map .map-image{
+        width: 90%;
+        height: 40%;
+
+    }
+    #map .map-image .image{
+        width: 100%;
+        height: 100%;
+    }
+    #map .map-image .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+
+    } 
+    #map .text{
+
+        height: 20%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    #map .text .red{
+        width: 80%;
+        
+    }
+    #map .text .red p{
+        font-size: 18px;
+    }
+    #map .text .green p{
+        font-size: 18px;
+    }
+    #map .text .green{
+        width: 80%;
+    }
+    #service{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #service .control{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #service .control .cards{
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    #service .control .cards .card{
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #service .control .cards .card .pic {
+        width: 90%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #service .control .cards .card .pic img{
+        width: 90%;
+        height: 100%;
+    }
+    #service .control .cards .card .txt{
+        width: 90%;
+        height: 30%;
+    }
+    #service .control .cards .card .txt p{
+        width: 90%;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:550px){
+    .banner{
+        height: 120vh;
+    }
+    .banner .image{
+        
+        height: 50%;
+    }
+    .banner .image img{
+        width: 100%;
+    }
+    .banner .text-content{
+        width: 90%;
+        height: 40%;
+        gap: 70px;
+        
+    }
+    .banner .text-content h1{
+        width: 100%;
+    }
+    .banner .text-content p{
+        width: 100%;
+    }
+ 
+    #map{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #map .status h1{
+        font-size: 24px;
+    }
+    #map .status p{
+        font-size: 20px;
+    }
+    #map .text{
+        height: 30%;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    #map .text .red{
+        height: 45%;
+    }
+    #map .text .green{
+        height: 45%;
+    }
+
+    #map .map-image .image{
+        width: 100%;
+        height: 70%;
+    }
+    #map .map-image .image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #service{
+        height: 200vh;
+    }
+    #service .control .cards .card .txt p{
+        font-size: 20px;
+    }
+
+
+    #features{
+        height: 230vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+    #features .image-container{
+        width: 100%;
+    }
+    #features .image-container .image {
+        width: 40%;
+    }
+    #features .image-container .image h3{
+        font-size: 22PX;
+    }
+}
+@media only screen and (max-width:480px){
+    .banner{
+        height: 130vh;
+    }
+    .banner .text-content h1{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .banner .text-content P{
+        font-size: 18px;
+    }
+
+
+}
+@media only screen and (max-width:425px){
+    #map .map-image .image{
+        width: 90%;
+        height: 60%;
+    }
+
+
+}
+@media only screen and (max-width:399px){
+    .banner{
+        height: 140vh;
+    }
+    #features{
+        height: 370vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 50px;
+    }
+    #features .image-container{
+        width: 100%;
+    }
+    #features .image-container .image {
+        width: 60%;
+    }
+    #features .image-container .image h3{
+        font-size: 22PX;
+    }
+    #map{
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    #map .map-image{
+        width: 100%;
+        height: 40%;
+        object-fit: fill;
+    }
+
+
+    #map .map-image .image {
+        width: 90%;
+        height: 90%;
+  
+    }
+
+    #map .text{
+        width: 100%;
+        height: 20%;
+    }
+    #map .text .red{
+        width: 90%;
+        height: 40%;
+    }
+    #map .text .green{
+        width: 90%;
+
+        height: 40%;
+    }
+
+    #map .status{
+        height: 35%;
+    }
+    #map .status p{
+        font-size: 18px;
+    }
+    #service .control h1{
+        font-size: 22px;
+    }
+
+    
+    
+    
+    
+}
+@media only screen and (max-width:360px){
+       .banner{
+        height: 110vh;
+       }
+    .banner .text-content h1{
+        font-size: 20px;
+    }
+    .banner .text-content p{
+        font-size: 16px;
+    }
+    .banner .text-content{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    
+}
+    #map{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #map .text{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:339px){
+    .banner{
+        height: 120vh;
+    }
+    #service{
+        height: 230vh;
+    }
+    #service .control .service-hd{
+        font-size: 20px;
+    }
+    #service .control .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #service .control .cards .card .pic{
+
+        width: 80%;
+        height: 90%;
+    }
+    #service .control .cards .card .pic img{
+
+        width: 100%;
+        height: 80%;
+    }
+    #service .control .cards .card .txt{
+        height: 15%;
+        width: 90%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+

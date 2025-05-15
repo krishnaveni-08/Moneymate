@@ -1,0 +1,1110 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* Font size */
+    --fs-24: 24px;
+    --fd-head: 40px;
+
+
+    /* Font style */
+    --fs-italic: italic;
+
+
+    /* Font weight */
+    --fw-600: 600;
+    --fw-700: 700;
+
+
+    /* Font family */
+    --ff-spline: "Spline Sans", serif;
+
+
+
+    /* color */
+    --primary-color: #DCEEFF;
+    --secondary-color: #1877F;
+    --tertiary-color: #91C5F4;
+
+
+    /* bgcolor */
+    --primary-bg-color: #91C5F4;
+    --secondary-bg-color: #38A1FF;
+    --tertiary-bg-color: #7EBAEF;
+}
+
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+/* header start */
+
+
+#withdraw {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#withdraw .withdraw-hd {
+    height: 10%;
+}
+
+#withdraw .withdraw-hd h1 {
+    font-size: 30px;
+
+}
+
+#withdraw .withdraw-hd h1 .one {
+    color: #388FFF;
+    font-size: 30px;
+
+}
+
+#withdraw .container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+
+#withdraw .container .head {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#withdraw .container .card-one {
+    height: 80%;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+#withdraw .container .card-one .two {
+    border: 2px solid black;
+
+}
+
+#withdraw .container .card-one .one {
+    background-color: #38A1FF;
+}
+
+#withdraw .container .card-one .box {
+    width: 45%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#withdraw .container .card-one .box .image {
+    width: 40%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#withdraw .container .card-one .box .image img {
+    width: 100%;
+ border-radius: 10px;
+
+}
+
+
+#withdraw .container .card-one .box .text {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+#withdraw .container .card-one .box .text h2 {
+    font-size: 30px;
+
+}
+
+#withdraw .container .card-one .box .text p {
+    font-size: 20px;
+}
+
+
+
+
+#withdraw .container .card-two {
+    height: 80%;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+#withdraw .container .card-two .two {
+    border: 2px solid black;
+
+}
+
+#withdraw .container .card-two .one {
+    background-color: #38A1FF;
+}
+
+#withdraw .container .card-two .box {
+    width: 45%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#withdraw .container .card-two .box .image {
+    width: 40%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#withdraw .container .card-two .box .image img {
+    width: 100%;
+ border-radius: 10px;
+
+}
+
+
+#withdraw .container .card-two .box .text {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+#withdraw .container .card-two .box .text h2 {
+    font-size: 30px;
+
+}
+
+#withdraw .container .card-two .box .text p {
+    font-size: 20px;
+}
+
+
+/* features st */
+#features {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#features h1 {
+    text-align: center;
+    font-family: var(--fd-head);
+    font-size: 30px;
+}
+
+#features .container {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+#features .container .box {
+    width: 20%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #388FFF;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+
+#features .container .box .icon {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#features .container .box .icon img {
+    width: 100%;
+    height: 70%;
+}
+
+#features .container .box .text {
+    width: 90%;
+    
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#features .container .box .text h3 {
+    width: 100%;
+    height: 50%;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+
+#features .container .box .text p {
+    width: 100%;
+    font-size: 20px;
+    height:  50%;
+}
+
+
+/* features end */
+
+/* faq st */
+#faq {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq .container {
+    width: 84%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d1e8fc;
+    border-radius: 10px;
+
+}
+
+#faq .container .head {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#faq .container .head h3 {
+    font-family: var(--fs-24);
+    font-weight: 700;
+    font-size: 34px;
+}
+
+#faq .container .head h2 {
+    font-family: var(--fd-head);
+    font-weight: 900;
+    font-size: 64px;
+}
+
+#faq .container .question {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#faq .container .question .qns {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+#faq .container .question .qns p {
+    font-family: var(--fd-head);
+    font-size: 20px;
+}
+
+/* faq end */
+
+
+
+
+
+
+/* media query */
+
+
+
+@media only screen and (max-width:1440px) {
+    #withdraw {
+        height: 100vh;
+    }
+
+    #withdraw .withdraw-hd {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    #withdraw .container {
+        height: 90%;
+    }
+
+    #features {
+        height: 90vh;
+
+    }
+
+    #features .container {
+        height: 80%;
+    }
+
+    #features .container .box {
+        height: 80%;
+    }
+
+    #faq {
+        height: 120vh;
+    }
+
+    #faq .container {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #faq .container .head {
+        height: 80%;
+    }
+
+    #faq .container .question {
+        width: 60%;
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width:1317px) {
+    #features .container .box .text h3 {
+        font-size: 21px;
+
+    }
+
+    #features .container .box .text p {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1251px) {
+    #withdraw .withdraw-hd h1 {
+        font-size: 26px;
+    }
+
+    #withdraw .withdraw-hd h1 .one {
+        font-size: 26px;
+    }
+
+    #features {
+        height: 80vh;
+    }
+
+    #features h1 {
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #features .container {
+        height: 70%;
+    }
+
+    #features .container .box {
+        width: 23%;
+        height: 80%;
+    }
+
+    #features .container .box .text h3 {
+        font-size: 18px;
+
+    }
+
+    #features .container .box .text p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #features h1 {
+        height: 20%;
+        display: flex;
+        align-items: start;
+    }
+
+}
+
+@media only screen and (max-width:1225px) {
+    #withdraw .container .card-one .box .text h2 {
+        font-size: 28px;
+    }
+
+    #withdraw .container .card-two .box .text h2 {
+        font-size: 28px;
+    }
+
+    #withdraw .container .card-one .box .text p {
+        font-size: 20px;
+    }
+
+    #withdraw .container .card-two .box .text p {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    #faq .container .head h3 {
+        font-size: 30px;
+
+    }
+
+    #faq .container .head h2 {
+        font-size: 54px;
+    }
+
+
+}
+
+@media only screen and (max-width:1161px) {
+    #withdraw .container .card-one .box .image {
+        height: 100%;
+    }
+
+    #withdraw .container .card-one .box .image img {
+        height: 70%;
+    }
+
+    #withdraw .container .card-two .box .image {
+        height: 100%;
+    }
+
+    #withdraw .container .card-two .box .image img {
+        height: 70%;
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    #faq .container {
+        height: 100%;
+    }
+
+    #faq .container .question {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #faq .container .question .qns p {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:1021px) {
+    #features {
+        height: 100vh;
+        /* background-color: blueviolet; */
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    #withdraw {
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #withdraw .container {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #features {
+        height: 70vh;
+    }
+
+    #features h1 {
+        height: 10%;
+    }
+
+    #features .container {
+        height: 90%;
+
+    }
+    #features .container .box {
+        height: 70%;
+    }
+
+
+}
+
+@media only screen and (max-width:1000px) {
+    #faq h1 {
+        height: 25%;
+    }
+
+    #faq .container .head h3 {
+
+        font-size: 28px;
+    }
+
+    #faq .container .head h2 {
+
+        font-size: 46px;
+    }
+
+}
+
+@media only screen and (max-width:963px) {
+    #withdraw .container .card-one .box .text h2 {
+        font-size: 24px;
+
+    }
+
+    #withdraw .container .card-one .box .text p {
+        font-size: 18px;
+    }
+
+    #withdraw .container .card-two .box .text h2 {
+        font-size: 24px;
+
+    }
+
+    #withdraw .container .card-two .box .text p {
+        font-size: 18px;
+    }
+
+    #withdraw h1 {
+        font-size: 28px;
+    }
+
+    #features {
+        height: 80vh;
+    }
+
+    #features h1 {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    #features .container {
+        height: 90%;
+        gap: 10px;
+    }
+
+    #features .container .box {
+        height: 90%;
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width:963px) {
+    #features {
+
+        height: 80vh;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #features .container {
+        height: 80%;
+        background-color: blueviolet
+
+    }
+;
+
+}
+
+@media only screen and (max-width:915px) {
+    #faq {
+        height: 150vh;
+
+    }
+
+    #faq h1 {
+        height: 10%;
+    }
+
+    #faq .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #faq .container .head {
+        width: 100%;
+        display: flex;
+        height: 25%;
+        text-align: center;
+    }
+
+    #faq .container .question .qns {
+        width: 100%;
+    }
+
+    #faq .container .question .qns p {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:769px) {
+    #withdraw {
+        height: 220vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+    }
+
+    #withdraw .withdraw-hd {
+        height: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    #withdraw .withdraw-hd h1 {
+        font-size: 24px;
+    }
+
+    #withdraw .withdraw-hd h1 .one {
+        font-size: 24px;
+    }
+
+    #withdraw .container {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #withdraw .container .card-one {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        gap: 10px;
+
+        flex-direction: column;
+
+    }
+
+    #withdraw .container .card-one .box {
+        height: 50%;
+        width: 80%;
+        gap: 10px;
+    }
+
+    #withdraw .container .card-two .box {
+        height: 50%;
+        width: 80%;
+        gap: 10px;
+    }
+
+    #withdraw .container .card-two {
+        height: 50%;
+        display: flex;
+        gap: 10px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #withdraw h1 {
+        height: 10%;
+        display: flex;
+        align-items: end;
+        font-size: 22px;
+    }
+
+    #features {
+        height: 230vh;
+        margin-top: 80px;
+
+    }
+
+    #features .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    #features .container .box {
+        height: 60%;
+
+        width: 50%;
+    }
+
+    #features h1 {
+        height: 8%;
+        font-size: 22px;
+    }
+
+    #faq {
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #faq h1 {
+        width: 10 0%;
+        height: 10%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+
+    }
+
+    #faq .container {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #faq .container .head {
+        width: 100%;
+        display: flex;
+        height: 20%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #faq .container .question .qns {
+        width: 100%;
+    }
+
+    #faq .container .question .qns p {
+        width: 100%;
+    }
+
+    #faq .container .question .qns i {
+        height: 80%;
+    }
+
+
+
+}
+
+@media only screen and (max-width:752px) {
+    #withdraw {
+        height: 200vh;
+    }
+
+    #withdraw h1 {
+        height: 3%;
+        /* margin-top: 50px; */
+
+    }
+
+    #withdraw .container {
+        height: 90%;
+    }
+
+}
+
+@media only screen and (max-width:678px) {
+    #faq .container .question {
+        width: 80%;
+
+
+
+    }
+
+}
+
+@media only screen and (max-width:548px) {
+    #withdraw .withdraw-hd h1 {
+        font-size: 20px;
+    }
+
+    #withdraw .withdraw-hd h1 .one {
+        font-size: 20px;
+    }
+
+    #withdraw .container .card-one .box .text h2 {
+        font-size: 20px;
+
+    }
+
+    #withdraw .container .card-one .box .text p {
+        font-size: 18px;
+    }
+
+    #withdraw .container .card-two .box .text h2 {
+        font-size: 20px;
+
+    }
+
+    #withdraw .container .card-two .box .text p {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width:521px) {
+    #withdraw {
+        height: 250vh;
+    }
+    #withdraw .withdraw-hd{
+        height: 8%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #withdraw .withdraw-hd h1 {
+        width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#withdraw .withdraw-hd h1 .one {
+    width: 100%;
+    color: #388FFF;
+    font-size: 20px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+ #withdraw .container{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+
+ }
+ #withdraw .container .card-one{
+    width: 90%;
+    height: 50%;
+ }
+ #withdraw .container .card-two{
+    width: 90%;
+    height: 50%;
+ }
+    #withdraw .container .card-one .box {
+               height: 400px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+    }
+
+    #withdraw .container .card-one .box .text {
+        width: 75%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+                order: 1;
+
+    }
+        #withdraw .container .card-one .box .image {
+            height: 50%;
+            width: 75%;
+
+        }
+
+        #withdraw .container .card-one .box .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+/*  */
+    #withdraw .container .card-two .box {
+            height: 400px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+    }
+
+    #withdraw .container .card-two .box .text {
+        width: 75%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+                order: 1;
+
+    }
+        #withdraw .container .card-two .box .image {
+            height: 50%;
+            width: 75%;
+
+        }
+
+        #withdraw .container .card-two .box .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    @media only screen and (max-width:425px) {
+        #withdraw {
+            height: 250vh;
+        }
+
+        #withdraw .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #withdraw .container .card-one .box-one .text h2 {
+            font-size: 20px;
+        }
+
+        #withdraw .container .card-one .box-one .text p {
+            font-size: 18px;
+        }
+
+        #features .container .box {
+            width: 70%;
+        }
+      
+
+
+    }
+
+    @media only screen and (max-width:375px) {
+                #withdraw{
+                    height: 250vh;
+                }
+                #withdraw .container{
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                #withdraw .withdraw-hd {
+                    height: 5%;
+                }
+                #withdraw .container .card-one {
+                    height: 50%;
+                }
+                #withdraw .container .card-two {
+                    height: 50%;
+                }
+        #withdraw .container .card-one .box {
+            width: 250px;
+            height: 320px;
+            
+        }
+        #withdraw .container .card-two .box {
+            width: 250px;
+            height: 320px;
+            
+        }
+                
+        #withdraw .container .card-one .box .text h2 {
+            font-size: 18px;
+
+        }
+
+        #withdraw .container .card-one .box .text p {
+            font-size: 16px;
+        }
+
+        #withdraw h1 {
+            width: 80%;
+            text-align: center;
+        }
+
+    }
+
+    @media only screen and (max-width:320px) {
+        #withdraw .container .card-two .box .text h2 {
+            font-size: 17px;
+
+        }
+
+        #withdraw .container .card-two .box .text p {
+            font-size: 15px;
+        }
+    }
