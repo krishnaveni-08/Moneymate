@@ -50,15 +50,15 @@
 
 .banner{
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 .banner .image{
-width: 40%;
-height: 80%;
+width: 550px;
+height: 450px;
 }
 .banner .image img{
     width: 100%;
@@ -66,20 +66,20 @@ height: 80%;
     border-radius: 10px;
 }
 .banner .text-content{
-    width: 45%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: space-around;
 
     flex-direction: column;
 }
 .banner .text-content h1{
-    width: 70%;
+    width: 100%;
     font-size: 30px;
   
 }
 .banner .text-content P{
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -91,8 +91,8 @@ height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-        background-color: #91C5F4;
-
+    background-color: #91C5F4;
+    
 }
 #features .features-hd{
     width: 100%;
@@ -102,45 +102,48 @@ height: 80%;
     align-items: center;
     justify-content: center;
 }
-#features .features-hd h1 .one{
-    color: #38A1FF;
-        font-size: 32px;
-
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
 }
 
-#features h1{
-    font-size: 32px;
-    text-align: center;
+.wrap {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
 }
-#features .image-container{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
+
+.image {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0 10px;
+  text-align: center;
 }
-#features .image-container .image {
-    width: 15%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
-#features .image-container .image img{
-    width: 90%;
-    height: 70%;
+
+.image h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 
-
-}
-#features .image-container .image h3{
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-
-}
 
 /* features section end */
 
@@ -152,7 +155,7 @@ height: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 #map .status{
     width: 90%;
@@ -360,7 +363,9 @@ text-align: center;
     #features{
         height: 100vh;
     }
-  
+   #map{
+    height: 150vh;
+   }
     #map .status p{
         width: 80%;
         font-size: 22px;
@@ -401,6 +406,12 @@ text-align: center;
    
 
 
+
+}
+@media only screen and (max-width:1304px){
+    #map .status{
+        height: 25%;
+    }
 
 }
 @media only screen and (max-width:1293px){
@@ -459,15 +470,7 @@ text-align: center;
 }
 
 @media only screen and (max-width:1141px){
-    #features{
-        width: 100%;
-    }
-    #features .image-container .image {
-
-        width: 13%;
-        height: auto;
     
-    }
 
     .banner .text-content h1{
         font-size: 25px;
@@ -499,16 +502,10 @@ text-align: center;
 
 }
 @media only screen and (max-width:1058px){
-    #features{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        }
+
     .banner{
         height: 90vh;
         display: flex;
-        background-color: #38A1FF;
         
 
     }
@@ -537,6 +534,60 @@ text-align: center;
     #service .control h1{
         font-size: 24px;
     }
+     #map{
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+
+     }
+     #map .status{
+        height: 30%;
+     }
+     #map .text .red{
+         height: 50%;
+        }
+        #map .text .red img{
+            height: 70%;
+        }
+        #map .text .green img{
+            height: 70%;
+        }
+     #map .text .green{
+        height: 50%;
+     }
+
+     #map .map-image .image{
+        width: 660px;
+        height: 400px;
+     }
+     #map .map-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
+
+
+    #map .text{
+
+        height: 20%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    #map .text .red{
+        width: 80%;
+        
+    }
+    #map .text .red p{
+        font-size: 18px;
+    }
+    #map .text .green p{
+        font-size: 18px;
+    }
+    #map .text .green{
+        width: 80%;
+    }
 }
 @media only screen and (max-width:955px){
     .banner .text-content{
@@ -559,38 +610,8 @@ text-align: center;
 }
 
 @media only screen and (max-width:887px){
-    #features{
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 30px;
-    }
-    #features .features-hd h1{
-        font-size: 26px;
-    }
-    #features .features-hd h1 .one{
-        font-size: 26px;
-    }
-    #features .heading{
-        width: 100%;
-        height: 10%;
     
-    }
-    #features .image-container{
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-    
-        height: 80%;
-        gap: 20px;
-    }
-    #features .image-container .image {
-        width: 25%;
-        height: auto;
-    }
-    #map{
+    /* #map{
         height: 150vh;
         margin-top: 30px;
     }
@@ -608,7 +629,29 @@ text-align: center;
     }
     #map .text{
         height: 50%;
-    }
+    } */
+       #map{
+        height: 160vh;
+       }
+     #map .text .green p{
+        font-size: 16;
+     }
+     #map .text .red p{
+        font-size: 16;
+     }
+     #map .status h1{
+        font-size: 24px;
+     }
+     #map .status .map-hd h1 .two{
+        font-size: 24px;
+     }
+     #map .status p{
+        font-size: 20px;
+     }
+
+
+
+
 
 
 
@@ -653,16 +696,15 @@ text-align: center;
 @media only screen and (max-width:768px){
     .banner{
         width: 100%;
-        height: 120vh;
+        height: 135vh;
         display: flex;
         flex-direction: column;
         
         align-items: center;
-        justify-content: start;
     }
     .banner .image{
-        height: 50%;
-        width: 80%;
+        height: 390px;
+        width: 610px;
         display: flex;
         align-items: end;
     }
@@ -677,7 +719,7 @@ text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        gap: 20px;
         
     }
     .banner .text-content p{
@@ -687,24 +729,35 @@ text-align: center;
     .banner .text-content h1{
         width: 90%;
         font-size: 22px;
-        list-style: 24px;
     }
-    #features{
-        height: 130vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    #features {
+        height: 90vh;
+    }
+    .image {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 10px;
+  text-align: center;
+}
 
-    }
-    #features .image-container{
-        width: 90%;
-        height: 80%;
-    }
+.image img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.image h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+    
     #map {
-        height: 130vh;
+        height: 170vh;
     }
     #map .status{
-        height: 30%;
+        height: 25%;
     }
     #map .status .map-hd h1{
         font-size: 24px;
@@ -717,18 +770,27 @@ text-align: center;
         font-size: 18px;
     }
     #map .map-image{
-        height: 70%;
+        width: 70%;
+        height: 50%;
     }
     #map .map-image .image{
         width: 90%;
+        height: 90%;
+    }
+    #map .map-image .image img{
+        width: 100%;
         height: 100%;
     }
+ #map .text{
+    height: 20%;
+ }
+
     #map .text .red p{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     #map .text .green p{
-        font-size: 20px;
+        font-size: 18px;
     }
     #service .control .cards{
         width: 90%;
@@ -746,7 +808,7 @@ text-align: center;
     
 }
 @media only screen and (max-width:721px){
-    #map .text .green{
+    /* #map .text .green{
         width: 45%;
     }
     #map .text .red{
@@ -759,7 +821,7 @@ text-align: center;
     #map .text .red p{
         font-size: 20px;
         
-    }
+    } */
 }
 @media only screen and (max-width:680px){
     .banner .image{
@@ -826,6 +888,41 @@ text-align: center;
     #service .control .service-hd h1 .three{
         font-size: 22px;
     }
+    .image-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+#features{
+    height: 75vh;
+}
+.wrap {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+
+.image {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.image img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.image h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 
 
 
@@ -879,12 +976,32 @@ text-align: center;
     .banner{
         height: 130vh;
     }
+    .image {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.image img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.image h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 
 
 }
 @media only screen and (max-width:582px){
     #map {
-        height: 170vh;
+        height: 150vh;
         
     }
     #map .status{
@@ -896,37 +1013,21 @@ text-align: center;
 
     }
     #map .map-image .image{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
     #map .map-image .image img{
         height: 100%;
-        width: 100%;
+        width: 90%;
         object-fit: cover;
         
 
     } 
     #map .text{
+        width: 90%;
+    }
 
-        height: 20%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }   
-    #map .text .red{
-        width: 80%;
-        
-    }
-    #map .text .red p{
-        font-size: 18px;
-    }
-    #map .text .green p{
-        font-size: 18px;
-    }
-    #map .text .green{
-        width: 80%;
-    }
+    
     #service{
         height: 150vh;
         display: flex;
@@ -987,7 +1088,7 @@ text-align: center;
     .banner .text-content{
         width: 90%;
         height: 40%;
-        gap: 70px;
+        gap: 30px;
         
     }
     .banner .text-content h1{
@@ -1001,7 +1102,6 @@ text-align: center;
         height: 150vh;
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
     #map .status h1{
         font-size: 24px;
@@ -1021,13 +1121,13 @@ text-align: center;
         height: 45%;
     }
 
-    #map .map-image .image{
-        width: 100%;
+#map .map-image .image{
+        width: 20px;
         height: 70%;
     }
     #map .map-image .image img{
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
     }
 
     #service{
@@ -1038,23 +1138,41 @@ text-align: center;
     }
 
 
-    #features{
-        height: 230vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 25px;
-    }
-    #features .image-container{
-        width: 100%;
-    }
-    #features .image-container .image {
-        width: 40%;
-    }
-    #features .image-container .image h3{
-        font-size: 22PX;
-    }
+    
 }
+@media only screen and (max-width:550px){
+#map{
+    height: 160vh;
+}
+#map .status{
+    height: 30%;
+}
+#map .status h1{
+    font-size: 24px;
+}
+#map .status p{
+    font-size: 18px;
+}
+#map .map-image{
+    width: 90%;
+    height: 50%;
+}
+#map .map-image .image{
+    width: 100%;
+    height: 100%;
+}
+#map .map-image .image img{
+    width: 100%;
+    height: 100%;
+}
+#map .text{
+    width: 100%;
+height: 20%;
+}
+
+}
+
+
 @media only screen and (max-width:480px){
     .banner{
         height: 130vh;
@@ -1066,6 +1184,12 @@ text-align: center;
     .banner .text-content P{
         font-size: 18px;
     }
+    #features .image-container .image {
+  flex: 0 0 auto;
+  width: 180px;
+  margin: 0 10px;
+  text-align: center;
+}
 
 
 }
@@ -1081,22 +1205,7 @@ text-align: center;
     .banner{
         height: 140vh;
     }
-    #features{
-        height: 370vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        gap: 50px;
-    }
-    #features .image-container{
-        width: 100%;
-    }
-    #features .image-container .image {
-        width: 60%;
-    }
-    #features .image-container .image h3{
-        font-size: 22PX;
-    }
+    
     #map{
         height: 180vh;
         display: flex;
@@ -1148,7 +1257,7 @@ text-align: center;
 }
 @media only screen and (max-width:360px){
        .banner{
-        height: 110vh;
+        height: 130vh;
        }
     .banner .text-content h1{
         font-size: 20px;
@@ -1160,7 +1269,7 @@ text-align: center;
         height: 40%;
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 20px;
     
 }
     #map{
@@ -1175,7 +1284,7 @@ text-align: center;
 }
 @media only screen and (max-width:339px){
     .banner{
-        height: 120vh;
+        height: 140vh;
     }
     #service{
         height: 230vh;

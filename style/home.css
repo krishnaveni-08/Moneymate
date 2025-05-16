@@ -73,12 +73,13 @@ body {
     width: 90%;
     height: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
 
 }
 
  .banner_one .wrapper .wrap {
-    width: 100%;
+    width: 50%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -86,18 +87,19 @@ body {
 }
 
  .banner_one .wrapper .wrap h1 .ban {
+    width: 50%;
     color: white;
-    font-weight: 300;
+    font-weight: 700;
 
-    font-size: 32px;
+    font-size: 36px;
 
     
 }
 
  .banner_one .wrapper .wrap h1 {
     color: white;
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 36px;
+    font-weight: 700;
 
 }
 
@@ -132,7 +134,7 @@ body {
     justify-content: space-around;
     align-items: center;
     border-radius: 50px;
-    gap: 30px;
+    gap: 10px;
     padding: 40px 20px 40px 20px;
 }
 
@@ -166,7 +168,8 @@ body {
     display: flex;
     flex-direction: column;
     color: black;
-    justify-content: space-evenly;  
+    justify-content: center;  
+    gap: 20px;
 
 }
 
@@ -627,7 +630,7 @@ body {
     object-fit: cover;
 }
 #section-two{
-    height: 140vh;
+    height: 180vh;
     /* background-color: aqua; */
 }
 #section-two .ddg{
@@ -640,22 +643,27 @@ body {
     font-size: 30px;
 }
 #section-two .rectangle{
-    height: 85%;
+    height: 90%;
 }
 #section-two .rectangle .image-containertwo{
-    height:45%;
+    height:400px;
 }
 #section-two .rectangle .image-containertwo img{
     height:100%;
     object-fit: cover;
 }
 #section-two .rectangle .icon-containertwo{
-    height: 50%;
+    height: 40%;
 } 
 #section-two .rectangle .icon-containertwo .box{
     height: 110%;
 
 }
+#section-two .rectangle .icon-containertwo .box .card .wrap img {
+    width: 100px;
+    height: 100px;
+}
+
 #active-sts{
 }
 #active-sts .head h1{
@@ -663,6 +671,10 @@ body {
 }
 #active-sts .head h1 .atm{
     font-size: 30px;
+}
+#section-four{
+    height: 100vh;
+
 }
 #section-five{
     height: 100vh;
@@ -708,6 +720,15 @@ font-size: 26px;
 
 }
 @media only screen and (max-width:1333px){
+     .banner_one .wrapper .wrap {
+        gap: 20px;
+     }
+      .banner_one .wrapper .wrap h1 {
+        font-size: 30px;
+      }
+
+
+    
     #section-three{
         height: 100vh;
     }
@@ -902,10 +923,10 @@ font-size: 26px;
     #active-sts .cnt .card .text p{
         font-size: 18px;
     }
-    #section-two .rectangle .icon-containertwo .box .card{
+    /* #section-two .rectangle .icon-containertwo .box .card{
         width: 50%;
     }
- 
+  */
 
 }
 @media only screen and (max-width:1074px){
@@ -971,16 +992,7 @@ font-size: 26px;
     #section .container .content-container {
         height: 100%;
     }
-    #section-two h2 {
-        font-size: 30px;
-    }   
-    #section-two{
-        height: 130vh;
-        margin-top: 40px;
-    }
-    #section-two .rectangle .icon-containertwo .box .card{
-        width: 30%;
-    }
+    
     #active-sts h1 {
         font-size: 26px;
     }
@@ -1016,46 +1028,7 @@ font-size: 26px;
         line-height: 28px;
     }
     
-    #section-two{
-        height: 130vh;
-    }
-       #section-two .ddg{
-        height: 10%;
-       }
-    #section-two .ddg h2{
-        font-size: 24px;
-    }
-    #section-two .ddg h2 .one{
-        font-size: 24px;
-    }
-    #section-two .rectangle{
-        width: 90%;
-        height: 80%;
-        display: flex;
-
-        
-    }
-      #section-two .rectangle .image-containertwo{
-             width: 60%;
-        height: 50%;
-
-      }
-    #section-two .rectangle .image-containertwo img{
-   width: 70%;
-   height: 100%;
-        
-    }
-#section-two .rectangle .icon-containertwo{
-    width: 90%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#section-two .rectangle .icon-containertwo .box{
-    width: 90%;
-    height: 100%;
-}
+     
 #section-four .head-two h2{
     font-size: 24px;
 }
@@ -1153,6 +1126,13 @@ font-size: 26px;
 
 
 @media only screen and (max-width:991px){
+     .banner_one .wrapper .wrap h1 {
+        font-size: 28px;
+     }
+ .banner_one .wrapper .wrap p {
+    font-size: 18px;
+ }
+
       #section .container .image-container{
         height: 80%;
     }
@@ -1285,9 +1265,20 @@ font-size: 26px;
         font-size: 20px;
         
     }
+        #section-two .rectangle .icon-containertwo .box .card {
+        width: 230px;
+        height: 300px;
+
+    }
 }
 
 
+@media only screen and (max-width:899px){
+#section-two .rectangle .icon-containertwo .box .card {
+    width: 220px;
+    height: 300px;
+}
+}
 @media only screen and (max-width:879px){
   
     #section .container .content-container h2{
@@ -1296,6 +1287,8 @@ font-size: 26px;
     #section .container .content-container p{
         font-size: 17px;
     }
+
+
 }
 
 
@@ -1334,12 +1327,7 @@ font-size: 26px;
     }
 
 }
-@media only screen and (max-width:849px){
-    #section .container .content-container p {
-        font-size: 18px;
-    }
 
-}
 @media only screen and (max-width:855px){
     #section-two{
         height: 170h;
@@ -1353,6 +1341,11 @@ font-size: 26px;
     #section-two .ddg h2 .one{
         font-size: 22px;
     }
+    #section-two .rectangle .icon-containertwo .box .card {
+        width: 210px;
+        height: 280px;
+    }
+
    
     #section-five {
         height: 230vh;
@@ -1403,6 +1396,12 @@ font-size: 26px;
     #section-five .testimonal-wrapper .person-card .user-prof-container {
         width: 50%;
         background-color: aquamarine;
+    }
+
+}
+@media only screen and (max-width:849px){
+    #section .container .content-container p {
+        font-size: 18px;
     }
 
 }
@@ -1518,7 +1517,8 @@ font-size: 26px;
         
     }
     #section .container .image-container{
-        height: 80%;
+        height: 300PX;
+        width: 300PX;
     }
     #section .container .image-container img{
         height: 100%;
@@ -1533,7 +1533,7 @@ font-size: 26px;
     
     #section-two {
         
-        height: 230vh;
+        height: 280vh;
         display: flex;
         flex-direction: column;
 
@@ -1543,7 +1543,10 @@ font-size: 26px;
         height: 95%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0px 10px 0px;
 
     }
     #section-two h2 {
@@ -1551,9 +1554,8 @@ font-size: 26px;
     }
 
     #section-two .rectangle .image-containertwo{
-        width: 70%;
-        height: 30%;
-        margin-top: 10px;
+        width: 450px;
+        height: 300px;
     }
     #section-two .rectangle .image-containertwo img{
         width: 100%;
@@ -1561,11 +1563,12 @@ font-size: 26px;
     }
     #section-two .rectangle .icon-containertwo{
         width: 60%;
-        height: 90%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: end;
+
     }
     #section-two .rectangle .icon-containertwo .box{
         width: 90%;
@@ -1744,9 +1747,9 @@ font-size: 26px;
 }
 
 @media only screen and (max-width:706px){
-    #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
+    /* #section-five .testimonial-wrapper .testimonial-card-container .person-card .user-desc-container p {
         line-height: 28px;
-    }
+    } */
  
     /* #active-sts {
         height: 120vh;
@@ -1759,7 +1762,7 @@ font-size: 26px;
         height: 80%;
     } */
     #section-two{
-        height: 220vh;
+        height: 290vh;
     }
        #section-two .rectangle .icon-containertwo .box .card{
         width: 90%;
@@ -1772,6 +1775,23 @@ font-size: 26px;
 }
 
 @media only screen and (max-width:685px){
+     .banner_one .wrapper .wrap {
+        width: 80%;
+        gap: 50px;
+     }
+     .banner_one .wrapper .wrap h1 .ban {
+        font-size: 24px;
+     }
+
+     .banner_one .wrapper .wrap h1 {
+        font-size: 22px;
+     }
+      .banner_one .wrapper .wrap p {
+        width: 60%;
+        font-size: 18px;
+      }
+
+
     #section .container{
         height: 95%;
     }
@@ -1905,6 +1925,10 @@ font-size: 26px;
     #section .container .content-container p{
         font-size: 17px;
     }
+    #section-two .rectangle .icon-containertwo .box .card {
+        width: 320px;
+    }
+
 }
 @media only screen and (max-width:591px){
        #section-five {
@@ -1923,7 +1947,7 @@ font-size: 26px;
 }
 @media only screen and (max-width:585px){
     #section {
-        height: 110vh;
+        height: 150vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1937,18 +1961,18 @@ font-size: 26px;
     }
     #section .container .content-container{
         width: 90%;
-        height: 50%;
+        height: 60%;
         display: flex;
         flex-direction: column;
         align-items: start;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 20PX;
         
     }
     #section .container .content-container h2{
         width: 90%;
         
         font-size: 24px;
-        line-height: 30px;
         text-align: start;
         display: flex;
         align-items: start;
@@ -1965,8 +1989,9 @@ font-size: 26px;
     }
     #section .container .image-container {
         width: 90%;
-        height: 55%;
+        height: 600PX;
         object-fit: cover;
+     
         
         
     }
@@ -2029,6 +2054,15 @@ font-size: 26px;
     height: 100%;
 }
 
+    #active-sts .head h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #active-sts .head h1 .atm{
+       font-size: 20px;
+        text-align: center;
+      
+    }
 
 }
 
@@ -2046,18 +2080,7 @@ font-size: 26px;
     }
 
 }
-@media only screen and (max-width:585px){
-    
-    #active-sts .head h1{
-        font-size: 20px;
-        text-align: center;
-    }
-    #active-sts .head h1 .atm{
-       font-size: 20px;
-        text-align: center;
-      
-    }
-}
+
 
 @media only screen and (max-width:561px){
   
@@ -2074,10 +2097,12 @@ font-size: 26px;
         width: 50%;
         height: 80%;
     }
-    #section-two .rectangle .icon-containertwo .box .card{
-        width: 90%;
+    #section-two .rectangle .image-containertwo {
+        width: 400px;
+        height: 350px;
     }
-    
+
+  
     
     
 }
@@ -2105,9 +2130,9 @@ font-size: 26px;
 
 @media only screen and (max-width:516px){
     
-    #section{
+    /* #section{
         height: auto;
-    }
+    } */
     .container .image-container img{
         height: 100%;
     }
@@ -2118,7 +2143,7 @@ font-size: 26px;
         font-size: 16px;
     }  
     #section-two{
-        height: 220vh;
+        height: 270vh;
     }
     #section-two h2{
         font-size: 20px;
@@ -2130,6 +2155,11 @@ font-size: 26px;
         justify-content: center;
         
     }
+    #section-two .rectangle .image-containertwo {
+        width: 350px;
+        height: 30  0px;
+    }
+
     #section-two .rectangle .icon-containertwo {
         width: 90%;
         height: 80%;
@@ -2197,8 +2227,15 @@ font-size: 26px;
     
 }
 
+@media only screen and (max-width:499px){
+#section-two .rectangle .icon-containertwo .box .card .wrap img {
+    width: 120px;
+    height: 120px;
+}
+
+}
 @media only screen and (max-width:480px){
- #section .container .content-container p{
+#section-two .rectangle .icon-containertwo .box .card .wrap img {
     font-size: 16px;
      
  }
@@ -2390,7 +2427,7 @@ font-size: 26px;
     font-weight: 200;   
 }
 #section-two{
-        height: 220vh;
+        height: 250vh;
     }
     #section-two h2{
         font-size: 20px;
@@ -2403,7 +2440,7 @@ font-size: 26px;
         
     }
     #section-two .rectangle  .image-containertwo{
-        width: 90%;
+        width: 85%;
     }
     #section-two .rectangle .icon-containertwo {
         width: 100%;
@@ -2471,6 +2508,21 @@ font-size: 26px;
  
 }
 @media only screen and (max-width:375px){
+  #section {
+    height: 120vh;
+  }
+  #section .container {
+    gap: 20px;
+  }
+  #section .container .content-container {
+    width: 90%;
+  }
+  #section .container .content-container h2 {
+    width: 90%;
+  }
+
+
+
     #active-sts .cnt{
         width: 100%;
     }
@@ -2537,26 +2589,7 @@ font-size: 26px;
 }
 @media only screen and (max-width:352px){
   
-    .banner_one .wrapper  {
-        height: 100%;
-    }
-    .banner_one .wrapper .wrap{
-        height: 70%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        gap: 20px;
 
-
-    }
-    .banner_one .wrapper .wrap h1 {
-        font-size: 16px; 
-        font-weight: 200;   
-    }
-    .banner_one .wrapper .wrap p {
-        font-size: 15px;
-    }
     #section-five{
         height: 240vh;
     }
@@ -2586,7 +2619,7 @@ font-size: 26px;
         font-size: 20px;
     }
     #section-two {
-        height: 200vh;
+        height: 250vh;
         
     }
     
