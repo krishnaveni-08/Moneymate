@@ -48,7 +48,7 @@
 
 #withdraw {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,11 +88,12 @@
 }
 
 #withdraw .container .card-one {
-    height: 80%;
+    height: 90%;
     display: flex;
     width: 90%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
 
 
 }
@@ -108,7 +109,7 @@
 
 #withdraw .container .card-one .box {
     width: 45%;
-    height: 80%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,11 +155,12 @@
 
 
 #withdraw .container .card-two {
-    height: 80%;
+    height: 90%;
     display: flex;
     width: 90%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 30px;
 
 
 }
@@ -174,7 +176,7 @@
 
 #withdraw .container .card-two .box {
     width: 45%;
-    height: 80%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,7 +222,7 @@
 /* features st */
 #features {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,9 +231,12 @@
 }
 
 #features h1 {
+    height: 20%;
     text-align: center;
     font-family: var(--fd-head);
-    font-size: 30px;
+    font-size: 32px;
+    display: flex;
+    align-items: end;
 }
 
 #features .container {
@@ -275,11 +280,11 @@
 #features .container .box .text {
     width: 90%;
     
-    height: auto;
+    height: 30%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-evenly;
 }
 
 #features .container .box .text h3 {
@@ -314,9 +319,8 @@
     height: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center ;
     background-color: #d1e8fc;
-    border-radius: 10px;
 
 }
 
@@ -353,7 +357,6 @@
     height: 15%;
     display: flex;
     gap: 10px;
-    border-bottom: 1px solid white;
     align-items: center;
 }
 
@@ -375,7 +378,7 @@
 
 @media only screen and (max-width:1440px) {
     #withdraw {
-        height: 140vh;
+        height: 120vh;
     }
 
     #withdraw .withdraw-hd {
@@ -447,25 +450,28 @@
     }
 
     #features {
-        height: 80vh;
+        height: 90vh;
     }
 
     #features h1 {
-        height: 15%;
+        height: 20%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: end;
+        align-items: end;
     }
 
     #features .container {
-        height: 70%;
+        height: 80%;
     }
 
     #features .container .box {
         width: 23%;
         height: 80%;
     }
+       #features .container .box .text{
+        gap: 20px;
+       }
 
     #features .container .box .text h3 {
         font-size: 18px;
@@ -545,6 +551,11 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        align-items: start;
+    }
+    
+    #faq .container .question .qns {
+        align-items: start;
     }
 
     #faq .container .question .qns p {
@@ -566,8 +577,8 @@
         height: 130vh;
         display: flex;
         flex-direction: column;
-    }
 
+    }
     #withdraw .container {
         height: 80%;
         display: flex;
@@ -590,6 +601,9 @@
     }
     #features .container .box {
         height: 70%;
+    }
+    #faq .container .head {
+        height: 60%;
     }
 
 
@@ -693,8 +707,7 @@
 
 @media only screen and (max-width:915px) {
     #faq {
-        height: 150vh;
-
+        height: 130vh;
     }
 
     #faq .container {
@@ -722,17 +735,15 @@
         width: 50px;
         height: 50px;
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
+       
     }
-
-  
-
 }
 
 @media only screen and (max-width:824px) {
     #features {
-        height: 80vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -745,7 +756,7 @@
 }
 #features .container .box {
     width: 100%;
-    height: 80%;
+    height: 60%;
 }
 
 
@@ -822,8 +833,7 @@
     }
 
     #features {
-        height: 230vh;
-        margin-top: 80px;
+        height: 240vh;
 
     }
 
@@ -853,35 +863,28 @@
 
 
     #faq {
-        height: 200vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
 
-    #faq h1 {
-        width: 10 0%;
-        height: 10%;
+#faq .container .head {
+        width: 100%;
+        height: 25%;
         display: flex;
-        align-items: end;
+        align-items: center;
         justify-content: center;
 
     }
 
     #faq .container {
-        height: 80%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    #faq .container .head {
-        width: 100%;
-        display: flex;
-        height: 20%;
-        text-align: center;
-        justify-content: center;
-    }
 
     #faq .container .question .qns {
         width: 100%;
@@ -894,9 +897,6 @@
     #faq .container .question .qns i {
         height: 80%;
     }
-
-
-
 }
 
 @media only screen and (max-width:752px) {
@@ -939,6 +939,21 @@
         font-size: 20px;
 
     }
+#features .container .box .icon {
+    width: 80px;
+    height: 80px;
+}
+#features .container .box .icon img{
+    width: 100px;
+    height: 100px
+}
+  #features .container .box {
+        gap: 40px;
+    }
+    #features .container .box .text {
+        gap: 20px;
+    }
+
 
     #withdraw .container .card-one .box .text p {
         font-size: 18px;
@@ -952,6 +967,7 @@
     #withdraw .container .card-two .box .text p {
         font-size: 18px;
     }
+  
 
 }
 
@@ -1070,20 +1086,25 @@
 
     @media only screen and (max-width:494px) {
           #features{
-            height: 270vh;
+            height: 240vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
           }
           #features h1 {
             height: 10%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: end;
           }
+            #features .container{
+                margin-bottom: 40px;
+            }
         #features .container .box {
             width: 280px;
             height: 310px;
         }
-
-
     }
     @media only screen and (max-width:425px) {
         #withdraw {
@@ -1131,12 +1152,12 @@
                 }
         #withdraw .container .card-one .box {
             width: 250px;
-            height: 320px;
+            height: 330px;
             
         }
         #withdraw .container .card-two .box {
             width: 250px;
-            height: 320px;
+            height: 330px;
             
         }
                 
@@ -1154,7 +1175,7 @@
             text-align: center;
         }
         #features {
-            height: 230vh;
+            height: 220vh;
         }
         #features .container .box {
             width: 250px;
@@ -1164,7 +1185,7 @@
 
 
     }
-
+/* 
     @media only screen and (max-width:320px) {
         #withdraw{
             gap: 20px;
@@ -1181,4 +1202,4 @@
         #withdraw .container .card-two .box .text p {
             font-size: 15px;
         }
-    }
+    } */

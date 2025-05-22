@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@600&display=swap');
-*
-{
+
+* {
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     /* Font size */
-    --fs-subhead:16px;
-    --fs-head:20px;
-    --fd-headone:24px;
-    --font-bold:18px;
-    
+    --fs-subhead: 16px;
+    --fs-head: 20px;
+    --fd-headone: 24px;
+    --font-bold: 18px;
+
 
     /* Font style */
-    --fs-italic:italic;
+    --fs-italic: italic;
 
 
     /* Font weight */
@@ -23,22 +23,22 @@
     --fw-medium: 500;
     --fw-bold: 700;
     --fw-semibold: 600;
-    --fw-light: 300; 
+    --fw-light: 300;
 
     /* Font family */
     --ff-spline: "Spline Sans", serif;
     --ff-bold:
-    
 
 
-    /* color */
-    --primary-color: black;
+
+        /* color */
+        --primary-color: black;
     --secondary-color: white;
-    --tertiary-color:navy;
-    
+    --tertiary-color: navy;
+
 
     /* bgcolor */
-    --primary-bg-color:#91C5F4;
+    --primary-bg-color: #91C5F4;
     --secondary-bg-color: #38A1FF;
     --tertiary-bg-color: #7EBAEF;
 }
@@ -50,38 +50,42 @@
 
 
 
-.banner_about{
+.banner_about {
     background-image: url(../Assets/Images/about/ban-about.png);
     width: 100%;
-    height: 90vh;
-   display: flex;
-   justify-content: center;
-align-items: center;
-   background-size: cover;
-   background-position: center;
-   flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
 }
-.banner_about .wrap{
+
+.banner_about .wrap {
     width: 90%;
     height: 40%;
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
-.banner_about .wrap h2{
+.banner_about .wrap h2 {
     color: white;
     font-size: 34px;
 }
-.banner_about .wrap p{
+
+.banner_about .wrap p {
     width: 40%;
     color: white;
     font-size: 20px;
 }
- .banner_about .wrap a{
+
+.banner_about .wrap a {
     text-decoration: none;
- }
- .banner_about .wrap a button {
+}
+
+.banner_about .wrap a button {
     width: 145px;
     height: 55px;
     border-radius: 15px;
@@ -93,32 +97,39 @@ align-items: center;
     font-size: 16px;
     justify-content: center;
     cursor: pointer;
+    margin-top: 30px;
 }
+
 /* about start */
-#about{
+#about {
     width: 100%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.about-container{
+
+#about .about-container {
     width: 90%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-container .image-left{
+
+#about .about-container .image-left {
     width: 40%;
-    height: 100%;
+    height: 80%;
 }
-.about-container .image-left img{
+
+#about .about-container .image-left img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
-.about-container .content-right{
+
+#about .about-container .content-right {
     width: 50%;
     height: 90%;
     display: flex;
@@ -127,55 +138,63 @@ align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.about-container .content-right .head{
-width: 80%;
-display: flex;
-flex-direction: column;
+
+.about-container .content-right .head {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 
 }
-.about-container .content-right .head h1{
+
+.about-container .content-right .head h1 {
     width: 100%;
     font-size: 30px;
 }
-.about-container .content-right .head  p{
+
+.about-container .content-right .head p {
     width: 100%;
     font-size: 20px;
-}
-.about-container .content-right .mission{
-width: 80%;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
 }
 
-.about-container .content-right .mission h1{
-    width: 100%;
-    font-size: 30px;
-}
-.about-container .content-right .mission p{
-    width: 100%;
-    font-size: 20px;
-}
-.about-container .content-right .vision{
+.about-container .content-right .mission {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-} 
-.about-container .content-right .vision h1{
+}
+
+.about-container .content-right .mission h1 {
     width: 100%;
-    
     font-size: 30px;
 }
 
-.about-container .content-right .vision p{
+.about-container .content-right .mission p {
     width: 100%;
-    
     font-size: 20px;
 }
+
+.about-container .content-right .vision {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-container .content-right .vision h1 {
+    width: 100%;
+
+    font-size: 30px;
+}
+
+.about-container .content-right .vision p {
+    width: 100%;
+
+    font-size: 20px;
+}
+
 /* about end */
 /* features start */
-#features{
+#features {
     width: 100%;
     height: 130vh;
     display: flex;
@@ -183,40 +202,49 @@ justify-content: space-evenly;
     align-items: center;
     justify-content: space-evenly;
     background-color: #d2e7fa;
+    padding: 20px 0px;
 }
-#features .heading{
-    height: 8%;
+
+#features .heading {
+    height: 15%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    gap: 30px;
+
 }
-#features .heading .head h1{
+
+#features .heading .head h1 {
     font-size: 32px;
 
 }
-#features .heading .head{
+
+#features .heading .head {
 
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-#features .heading .head .one{
-        font-size: 32px;
+
+#features .heading .head .one {
+    font-size: 32px;
 
     color: #38A1FF;
 }
-#features .heading  .para {
+
+#features .heading .para {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#features .heading  .para p{
+
+#features .heading .para p {
     font-size: 20px;
     text-align: center;
 }
-#features .box{
+
+#features .box {
     width: 90%;
     height: 80%;
     display: flex;
@@ -224,126 +252,148 @@ justify-content: space-evenly;
     justify-content: center;
     align-content: center;
     align-items: center;
-    
+    gap: 20px;
+
+
 }
-#features .box .card-one{
+
+#features .box .card-one {
     width: 85%;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    
+    /* background-color: lightgreen; */
 }
+
 #features .box .card-one .card {
     width: 40%;
-    height: 90%;
+    height: 100%;
     background-color: #7EBAEF;
     border-radius: 20px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
+
 }
- 
-#features .box .card-one .card .text h2{
+
+#features .box .card-one .card .text h2 {
     width: 100%;
     font-size: 24px;
     text-align: start;
 
 }
-#features .box .card-one .card .text{
+
+#features .box .card-one .card .text {
     width: 80%;
     height: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
-#features .box .card-one .card p{
+
+#features .box .card-one .card p {
     width: 100%;
     font-size: 20px;
     text-align: start;
 }
-#features .box .card-one .card .image{
-        width: 90%;
-    height: 50%;
+
+#features .box .card-one .card .image {
+        width: 85%;
+    height: 40%;
 
 
 }
-#features .box .card-one .image img{
+
+#features .box .card-one .image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
 
 
-#features .box .card-two{
+#features .box .card-two {
     width: 85%;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    /* background-color: lightgreen; */
 }
+
 #features .box .card-two .card {
     width: 40%;
-    height: 90%;
+    height: 100%;
     background-color: #7EBAEF;
     border-radius: 20px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
+
 }
- 
-#features .box .card-two .card .text h2{
+
+#features .box .card-two .card .text h2 {
     width: 100%;
     font-size: 24px;
     text-align: start;
 
 }
-#features .box .card-two .card .text{
-     width: 80%;
+
+#features .box .card-two .card .text {
+    width: 80%;
     height: 40%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
 }
-#features .box .card-two .card p{
+
+#features .box .card-two .card p {
     width: 100%;
     font-size: 20px;
     text-align: start;
 }
-#features .box .card-two .card .image{
-        width: 90%;
-    height: 50%;
+
+#features .box .card-two .card .image {
+    width: 85%;
+    height: 40%;
 
 
 }
-#features .box .card-two .image img{
+
+#features .box .card-two .image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* fearures end */
 /* challenges start*/
-#challenges{
+#challenges {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#challenges .container{
+
+#challenges .container {
     width: 90%;
     height: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
 }
-#challenges .container .text-card{
+
+#challenges .container .text-card {
     width: 50%;
     height: 100%;
     display: flex;
@@ -352,7 +402,8 @@ justify-content: space-evenly;
     align-items: center;
     margin-left: 30px;
 }
-#challenges .container .text-card h1{
+
+#challenges .container .text-card h1 {
     width: 70%;
     height: 10%;
     display: flex;
@@ -360,121 +411,153 @@ justify-content: space-evenly;
     font-size: 36px;
     font-weight: 800;
     color: #38A1FF;
+    margin-bottom: 10px;
 }
-#challenges .container .text-card h2{
+
+#challenges .container .text-card h2 {
     font-size: 22px;
 
 }
-#challenges .container .text-card p{
+
+#challenges .container .text-card p {
     width: 80%;
 
-    font-size: 18px; 
+    font-size: 18px;
 }
 
-#challenges .container .text-card .son{
+#challenges .container .text-card .son {
     width: 100%;
     height: 20%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  
+
 }
-#challenges .container .text-card .fear{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-#challenges .container .text-card .confuse{
+
+#challenges .container .text-card .fear {
     width: 100%;
     height: 20%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-#challenges .container .text-card .dependency{
+
+#challenges .container .text-card .confuse {
     width: 100%;
     height: 20%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-#challenges .container .image-container{
+
+#challenges .container .text-card .dependency {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#challenges .container .image-container {
     width: 40%;
-    height: 65%;
+    height: 90%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#challenges .container .image-container img{
+
+#challenges .container .image-container img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
+
 /* challenges end */
 
 /* solution start */
-#solution{
-    width: 100%;
-    height: 80vh;
+#solution {
+   width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#solution .cards {
+      width: 90%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#solution .cards{
-width: 90%;
-height: 90%;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+        gap: 30px;
+
+
 
 }
-#solution .cards .image{
-    width: 40%;
-    height: 75%;
-    display: flex;
+
+#solution .cards .image {
+  width: 40%;
+    height: 90%;
+        display: flex;
     align-items: center;
     justify-content: center;
 }
-#solution .cards .image img{
-    width: 100%;
+
+#solution .cards .image img {
+      width: 100%;
     height: 100%;
+    object-fit: contain;;
 }
-#solution .cards .text-head{
-    width: 50%;
-    height: 80%;
+
+#solution .cards .text-head {
+    width: 45%;
+    height: 100%;
     display: flex;
-    
-    justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-#solution .cards .text-head h1{
-    color: #38A1FF;
-    font-weight: 800;
+
+#solution .cards .text-head h1 {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    align-self: self-start;
     font-size: 36px;
+    font-weight: 800;
+    color: #38A1FF;
+    margin-bottom: 20px;
 }
-#solution .cards .text-head h2{
+
+#solution .cards .text-head h2 {
     font-size: 22px;
 
 }
-#solution .cards .text-head p{
+
+#solution .cards .text-head p {
     font-size: 20px;
 }
-#solution .cards .text-head .tips{
-    /* width: 100%;
-    height: auto; */
+
+#solution .cards .text-head .tips {
+   
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-#solution .cards .text-head .guides{
+
+#solution .cards .text-head .guides {
     display: flex;
     flex-direction: column;
-    gap: 20px;  
+    gap: 20px;
 }
-#solution .cards .text-head .practice{
+
+#solution .cards .text-head .practice {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
 }
+
 /* solution end */
 
 
@@ -483,675 +566,966 @@ align-items: center;
 /*media query */
 
 
-@media only screen and (max-width:1440px){
-    body{
-        display: flex;
-        flex-direction: column;
+@media only screen and (max-width:1440px) {
+   
+.banner_about{
+    height: 100vh;
+}
+ .banner_about .wrap {
         gap: 20px;
+
     }
-  #about{
-    height: 110vh;
-  }
-  #features{
-      width: 100%;
-      height: 150vh;
+    #about {
+        height: 110vh;
     }
-    #features .box .card-one .card{
+
+    #features {
+        width: 100%;
+        height: 150vh;
+    }
+
+   
+
+    #features .box .card-one .card {
         width: 45%;
     }
-    #features .box .card-two .card{
+
+    #features .box .card-two .card {
         width: 45%;
     }
-    #features .box .card-two .card .image{
+
+    #features .box .card-two .card .image {
         width: 10%;
         height: 40%;
-        padding-left: 20px;
-        
+        /* padding-left: 20px; */
+
     }
-    #features .box .card-two .card .image img{
-        width: 30%;
+
+    #features .box .card-two .card .image img {
+        width: 100%;
         height: 100%;
         object-fit: contain;
     }
-    #features .box .card-one .card .image{
+
+    #features .box .card-one .card .image {
         width: 450px;
         height: 150px;
 
     }
-    #features .box .card-one .card .image img{
+
+    #features .box .card-one .card .image img {
         width: 30%;
         height: 100%;
         object-fit: contain;
     }
-    #features .box .card-two .card .image{
+
+    #features .box .card-two .card .image {
         width: 450px;
         height: 150px;
 
     }
-    #features .box .card-two .card .image img{
+
+    #features .box .card-two .card .image img {
         width: 30%;
         height: 100%;
         object-fit: contain;
     }
-     #features .box .card-two .card .text{
+
+    #features .box .card-two .card .text {
         width: 90%;
         height: 45%;
 
-     }
-     #features .box .card-one .card .text{
+    }
+
+    #features .box .card-one .card .text {
         width: 90%;
         height: 45%;
 
-     }
-    #features .box .card-one .card .text h2{
+    }
+
+    #features .box .card-one .card .text h2 {
         font-size: 22px;
     }
-    #features .box .card-two .card .text h2{
+
+    #features .box .card-two .card .text h2 {
         font-size: 22px;
     }
-    #features .box .card-one .card p{
+
+    #features .box .card-one .card p {
         font-size: 20px;
     }
-    #features .box .card-two .card p{
+
+    #features .box .card-two .card p {
         font-size: 20px;
     }
-    #challenges{
+
+    #challenges {
         width: 100%;
         height: 110vh;
     }
-    #solution{
+
+    /* #solution {
         width: 100%;
         height: 100vh;
     }
+
     #solution .cards .text-head {
         height: 100%;
     }
-       #solution .cards .image{
+
+    #solution .cards .image {
         height: 60%;
-       }
-    
+    } */
+
 
 }
-@media only screen and (max-width:1343px){
-    #about-container .content-right{
+
+@media only screen and (max-width:1343px) {
+    #about-container .content-right {
         width: 50%;
         height: 70%;
     }
 }
-@media only screen and (max-width:1342px){
-    .about-container .content-right{
+
+@media only screen and (max-width:1342px) {
+    .about-container .content-right {
         width: 50%;
         height: 80%;
     }
-    .about-container .content-right .head  p{
+
+    .about-container .content-right .head p {
         font-size: 18px;
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 18px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 18px;
     }
-    .about-container .content-right .head  h1{
+
+    .about-container .content-right .head h1 {
         font-size: 24px;
     }
-    .about-container .content-right .mission h1{
+
+    .about-container .content-right .mission h1 {
         font-size: 24px;
-        
+
     }
-    .about-container .content-right .vision h1{
+
+    .about-container .content-right .vision h1 {
         font-size: 24px;
     }
 }
-@media only screen and (max-width:1341px){
-    #features .box .card-one .card .image{
+
+@media only screen and (max-width:1341px) {
+    #features .box .card-one .card .image {
         width: 100%;
         height: 35%;
     }
-  
-    #features .box .card-two .card .image{
+
+    #features .box .card-two .card .image {
         width: 100%;
         height: 35%;
     }
-    
+
 }
 
-@media only screen and (max-width:1337px){
-   
-    .about-container .content-right .head  p{
-        width: 100%;
-    }
-    .about-container .content-right .mission p{
-        width: 100%;
-        
-    }
-    .about-container .content-right .vision p{
+@media only screen and (max-width:1337px) {
+
+    .about-container .content-right .head p {
         width: 100%;
     }
 
-    .about-container .content-right .head{
+    .about-container .content-right .mission p {
+        width: 100%;
+
+    }
+
+    .about-container .content-right .vision p {
+        width: 100%;
+    }
+
+    .about-container .content-right .head {
         gap: 10px;
     }
-    .about-container .content-right .mission{
+
+    .about-container .content-right .mission {
         gap: 10px;
     }
-    .about-container .content-right .vision{
+
+    .about-container .content-right .vision {
         gap: 10px;
     }
-    .about-container .image-left{
+
+    .about-container .image-left {
         width: 550px;
     }
-    .about-container .content-right{
+
+    .about-container .content-right {
         width: 600px;
     }
 
 }
-@media only screen and (max-width:1317px){
-    #features .box .card-one .card{
+
+@media only screen and (max-width:1317px) {
+    #features .box .card-one .card {
         width: 45%;
     }
-    #features .box .card-one .card .image{
+
+    #features .box .card-one .card .image {
         width: 100%;
         height: 35%;
     }
-    #challenges{
+
+    #challenges {
         height: 100vh;
     }
-    #challenges .container{
+
+    #challenges .container {
         height: 100%;
     }
-    #challenges .container .text-card{
-        width: 40%;
+
+    #challenges .container .text-card {
+        width: 50%;
         height: 100%;
-        grid-area: 10px;
+        
     }
-    #challenges .container .text-card p{
+
+    #challenges .container .text-card p {
+        width: 90%;
         font-size: 18px;
     }
 
 
-    #challenges .container .image-container{
+    #challenges .container .image-container {
         height: 80%;
         width: 40%;
     }
-    #challenges .container .image-container img{
+
+    #challenges .container .image-container img {
         width: 100%;
-        height: 100%;
+        height: 65%;
+        object-fit: cover;
 
     }
-}
-@media only screen and (max-width:1230px){
+    #solution .cards .image {
+        height: 80%;
+        width: 45%;
+    }
+    #solution .cards .image img{
+        height: 70%;
+        width: 90%;
+        object-fit: cover;
+    }
 
-    .about-container .content-right{
+
+}
+
+@media only screen and (max-width:1230px) {
+    #challenges{
+        height: 110vh;
+    }
+    #challenges .container {
+        height: 90%;
+    }
+    #challenges .container .text-card h1 {
+        /* margin-top: 50px; */
+    }
+
+    #features .box .card-one .card .image {
+        width: 90%;
+        height: 35%;
+        /* padding-left: 20px; */
+
+    }
+    #features .box .card-two .card .image {
+        width: 90%;
+        height: 35%;
+
+    }
+
+    .about-container .content-right {
         width: 50%;
         height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .about-container .content-right .head  p{
+
+    .about-container .content-right .head p {
         font-size: 18px;
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 18px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 18px;
     }
 
 
 }
-@media only screen and (max-width:1171px){
-    .about-container .content-right .head  p{
+
+@media only screen and (max-width:1171px) {
+    .about-container .content-right .head p {
         font-size: 18px;
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 18px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 18px;
     }
 
 }
-@media only screen and (max-width:1129px){
-    .about-container .content-right{
+
+@media only screen and (max-width:1129px) {
+    .about-container .content-right {
         height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .about-container .content-right .head  p{
+
+    .about-container .content-right .head p {
         font-size: 18px;
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 18px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 18px;
     }
 }
-#features .box .card-one .image img{
+
+#features .box .card-one .image img {
     width: 40%;
 }
-#features .box .card-two .image img{
+
+#features .box .card-two .image img {
     width: 40%;
 }
 
 
 
-@media only screen and (max-width:1091px){
-#solution .cards{
-    height: 100%;
+@media only screen and (max-width:1091px) {
+     #solution{
+        height: 90vh;
+     }
+    #solution .cards {
+        height: 100%;
+    }
+
+    #solution .cards .text-head {
+        height: 100%;
+    }
+    #solution .cards .text-head p {
+        font-size: 18px;
+    }
+    #solution .cards .text-head h2 {
+        font-size: 20px;
+    }
+
+
 }
-    #solution .cards .text-head{
+
+@media only screen and (max-width:1077px) {
+       #features{
+        height: 130vh;
+       }
+    #features .box {
         height: 80%;
+        display: flex;
+        align-content: space-around;
     }
- 
+
+    #features .box .card-one .card {
+        height: 100%;
+
+    }
+
+    #features .box .card-two .card {
+        height: 100%;
+
+    }
+
+    #features .box .card-one .card .text h2 {
+        font-size: 20px;
+    }
+
+    #features .box .card-two .card .text h2 {
+        font-size: 20px;
+    }
+
+    #features .box .card-one .card p {
+        font-size: 18px;
+    }
+
+    #features .box .card-two .card p {
+        font-size: 18px;
+    }
 }
-@media only screen and (max-width:1073px){
-    .about-container .content-right .mission h1{
+
+@media only screen and (max-width:1073px) {
+    .about-container .content-right .mission h1 {
         font-size: 20px;
-        
+
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 16px;
-        
+
     }
-    .about-container .content-right .head h1{
+
+    .about-container .content-right .head h1 {
         font-size: 20px;
-        
+
     }
-    .about-container .content-right .head p{
+
+    .about-container .content-right .head p {
         font-size: 16px;
-        
+
     }
-    .about-container .content-right .vision h1{
+
+    .about-container .content-right .vision h1 {
         font-size: 20px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 16px;
-        
+
     }
-    .about-container .image-left{
+
+    .about-container .image-left {
         height: 450px;
     }
-    .about-container .content-right{
+
+    .about-container .content-right {
         width: 70%;
         height: 50%;
         /* background-color: aqua; */
     }
 
-
-
-}
-@media only screen and (max-width:1077px){
-            #features .box{
-                display: flex;
-                align-content: space-around;
-            }
-        #features .box .card-one .card {
-            height: 80%;
-            
-        }
-        #features .box .card-two .card {
-            height: 80%;
-            
-        }   
-    #features .box .card-one .card .text h2{
-        font-size: 20px;
-    }
-    #features .box .card-two .card .text h2{
-        font-size: 20px;
-    }
-    #features .box .card-one .card p{
-        font-size: 18px;
-    }
-    #features .box .card-two .card p{
-        font-size: 18px;
-    }    
-}
-@media only screen and (max-width:1073px){
-    #about{
+    #about {
         height: 100vh;
-    }   
-    #about .content-right{
+    }
+
+    #about .content-right {
         height: 100%;
         justify-content: center;
     }
-    #about .content-right .head  p{
+
+    #about .content-right .head p {
         font-size: 20px;
     }
-    #about .content-right .mission p{
+
+    #about .content-right .mission p {
         font-size: 20px;
-        
+
     }
-    #about .content-right .vision p{
+
+    #about .content-right .vision p {
         font-size: 20px;
     }
 
 }
-@media only screen and (max-width:1069px){
-    .banner_about .wrap p{
-        font-size: 30px;
-    } 
-    .about-container .content-right .head  p{
+
+@media only screen and (max-width:1069px) {
+    .banner_about .wrap p {
+        font-size: 18px;
+    }
+
+    .about-container .content-right .head p {
         font-size: 19px;
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 19px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 19px;
-    }  
+    }
 }
-@media only screen and (max-width:1035px){
-    .about-container .content-right{
+
+@media only screen and (max-width:1035px) {
+    .about-container .content-right {
         height: 80%;
     }
-    #challenges .container .image-container{
+
+    #challenges .container .image-container {
         height: 80%;
         width: 50%;
     }
-    #challenges .container .text-card{
+
+    #challenges .container .text-card {
         width: 50%;
         height: 100%;
-    }   
-  
-    
-   
+    }
+    #solution .cards .image {
+             height: 80%;
+        width: 50%;
+    }
+
+
+
+
 
 }
-@media only screen and (max-width:1025px){
-    #features .box .card-one .card .text h2{
+
+@media only screen and (max-width:1025px) {
+    #features .box .card-one .card .text h2 {
         font-size: 20px;
-        
+
     }
-    #features .box .card-one .card p{
-        font-size: 18px;
-    }
-    #features .box .card-one .card .text h2{
-        font-size: 20px;
-        
-    }
-    #features .box .card-two .card .text h2{
-        font-size: 20px;
-        
-    }
-    #features .box .card-two .card p{
-        font-size: 18px;
-    }
-    #features .heading  .para p{
+
+    #features .box .card-one .card p {
         font-size: 18px;
     }
 
-    #features .heading .head{
+    #features .box .card-one .card .text h2 {
+        font-size: 20px;
+
+    }
+
+    #features .box .card-two .card .text h2 {
+        font-size: 20px;
+
+    }
+
+    #features .box .card-two .card p {
+        font-size: 18px;
+    }
+
+    #features .heading .para p {
+        font-size: 18px;
+    }
+
+    #features .heading .head {
         font-size: 28px;
     }
 }
-@media only screen and (max-width:989px){
-    #solution{
+
+@media only screen and (max-width:989px) {
+    #solution {
         height: 90vh;
     }
-    #solution .cards .text-head{
+
+    #solution .cards .text-head {
         height: 90%;
 
     }
-    #solution .cards .text-head p{
+
+    #solution .cards .text-head p {
         font-size: 18px;
     }
-#solution .cards .image{
-    height: 75%;
+
+    #solution .cards .image img{
+               height: 73%;
+        width: 90%;
+        object-fit: cover;
+    }
 }
-}
-@media only screen and (max-width:953px){
-    #features .heading .head{
+
+@media only screen and (max-width:953px) {
+    #features .heading .head {
         font-size: 24px;
     }
 }
-@media only screen and (max-width:950px){
-    .banner_about .wrap p{
-        font-size: 26px;
-    } 
+
+@media only screen and (max-width:950px) {
+    .banner_about .wrap p {
+        font-size: 18px;
+    }
 }
 
-@media only screen and (max-width:942px){
-    #about{
+@media only screen and (max-width:942px) {
+    #features .box .card-one .card .image {
+    width: 300px;
+    height: 130px;
+
+
+}
+
+#features .box .card-one .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    #features .box .card-two .card .image {
+    width: 300px;
+    height: 130px;
+
+
+}
+
+#features .box .card-two .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    #about {
         width: 100%;
         height: 100vh;
     }
-    #about .about-container{
+
+    #about .about-container {
         width: 90%;
         height: 90%;
-        
+
     }
-    #about .about-container .image-left{
+
+    #about .about-container .image-left {
         width: 50%;
         height: 90%;
     }
-    #about .about-container .content-right{
+
+    #about .about-container .content-right {
         width: 50%;
         height: 90%;
     }
-    #about .about-container .content-right .head  p{
+
+    #about .about-container .content-right .head p {
         font-size: 18px;
     }
-    #about .about-container .content-right .mission p{
+
+    #about .about-container .content-right .mission p {
         font-size: 18px;
-        
+
     }
-    #about .about-container .content-right .vision p{
+
+    #about .about-container .content-right .vision p {
         font-size: 18px;
     }
 
 }
-@media only screen and (max-width:880px){
-    .banner_about .wrap p{
+
+@media only screen and (max-width:917px) {
+    #features .box .card-one .card .image {
+    width: 90%;
+    height: 40%; 
+    display: flex;
+    justify-content: start;
+
+}
+    #features .box .card-one .card .image img{
+    width: 40%;
+    height: 100%;   
+
+}
+    #features .box .card-two .card .image {
+    width: 90%;
+    height: 40%; 
+    display: flex;
+    justify-content: start;
+
+}
+    #features .box .card-two .card .image img{
+    width: 40%;
+    height: 100%;   
+
+}
+
+}
+@media only screen and (max-width:880px) {
+    .banner_about .wrap p {
         width: 70%;
         font-size: 24px;
-    }   
+    }
 }
-@media only screen and (max-width:877px){
-.about-container .image-left{
-    width: 450px;
-    height: 500px;
-}
-.about-container .content-right{
-    width: 600px;
-    height: 100px;
-}
-.about-container .content-right .head  p{
+
+@media only screen and (max-width:877px) {
+    .about-container .image-left {
+        width: 450px;
+        height: 500px;
+    }
+
+    .about-container .content-right {
+        width: 600px;
+        height: 100px;
+    }
+
+    .about-container .content-right .head p {
         font-size: 16px;
     }
-    .about-container .content-right .mission p{
+
+    .about-container .content-right .mission p {
         font-size: 16px;
-        
+
     }
-    .about-container .content-right .vision p{
+
+    .about-container .content-right .vision p {
         font-size: 16px;
     }
-    .about-container .content-right .head  h1{
+
+    .about-container .content-right .head h1 {
         font-size: 20px;
     }
-    .about-container .content-right .mission h1{
+
+    .about-container .content-right .mission h1 {
         font-size: 20px;
-        
+
     }
-    .about-container .content-right .vision h1{
+
+    .about-container .content-right .vision h1 {
         font-size: 20px;
     }
 
 }
 
-@media only screen and (max-width:869px){
-#about{
+@media only screen and (max-width:869px) {
+    #about {
         width: 100%;
-        height: 170vh;
+        height: 150vh;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-        #about .about-container{
-            height: 90%;
+
+    #about .about-container {
+        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    }  
-        #about .about-container .image-left{
+    }
+
+    #about .about-container .image-left {
         width: 80%;
         height: 50%;
     }
-        #about .about-container .content-right{
-            width: 100%;
-            height: 45%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            }
-        #about .about-container .content-right .head p{
-            width: 100%;
-        }
-        #about .about-container .content-right .mission p{
-            width: 100%;
-        }
-        #about .about-container .content-right .vision p{
-            width: 100%;
-        }
-    
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    #about .about-container .content-right .head p {
+        width: 100%;
+    }
+
+    #about .about-container .content-right .mission p {
+        width: 100%;
+    }
+
+    #about .about-container .content-right .vision p {
+        width: 100%;
+    }
+
 }
-@media only screen and (max-width:843px){
+
+@media only screen and (max-width:843px) {
     #features .box .card-one .card {
         width: 45%;
     }
+
     #features .box .card-two .card {
         width: 45%;
     }
-    #features .heading  p{
+
+    #features .heading p {
         font-size: 20px;
     }
 
-    #features .heading .head{
+    #features .heading .head {
         font-size: 28px;
     }
 
-    #features .box .card-one .card .text h2{
+    #features .box .card-one .card .text h2 {
         font-size: 20px;
 
     }
-    #features .box .card-two .card .text h2{
+
+    #features .box .card-two .card .text h2 {
         font-size: 20px;
 
     }
-    #features .box .card-one .card p{
+
+    #features .box .card-one .card p {
         font-size: 18px;
     }
 
 }
-@media only screen and (max-width:817px){
-    #challenges .container .text-card h1{
+
+@media only screen and (max-width:817px) {
+    #challenges .container .text-card h1 {
         font-size: 30px;
     }
 
-    #challenges{
-        height: 160vh;
+    #challenges {
+        height: 150vh;
+        /* background-color: #becedb; */
     }
-    #challenges .container{
+
+    #challenges .container {
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #challenges .container .text-card {
+        width: 85%;
+        height: 60%;
+        /* gap: 20px; */
         display: flex;
         flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        
+        /* background-color: blanchedalmond; */
     }
-    #challenges .container .text-card{
+
+    #challenges .container .text-card h2 {
+        font-size: 20px;
+    }
+
+
+    #challenges .container .image-container {
         width: 80%;
+        height: 40%;
+        /* background-color: chartreuse; */
     }
-    #challenges .container .image-container{
+
+    #challenges .container .image-container img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    #solution {
+        height: 150vh;
+        /* background-color: aqua; */
+    }
+
+    #solution .cards {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #solution .cards .image {
+           width: 80%;
+        height: 40%;
+    }
+
+    #solution .cards .image img {
+     width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #solution .cards .text-head {
         width: 80%;
-        height: 70%;
+        height: 45%;
+        gap: 20px;  
     }
-    #challenges .container .image-container img{
+}
+
+@media only screen and (max-width:768px) {
+    .banner_about {
+        height: 100vh;
+    }
+
+    .banner_about .wrap h2 {
+        font-size: 30px;
+
+    }
+
+    .banner_about .wrap p {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    #features {
+        width: 100%;
+        height: 150vh;
+    }
+
+    #features .box .card-one {
+        width: 100%;
+    }
+
+    #features .box .card-one .card {
+        width: 45%;
+    }
+
+    #features .box .card-two {
+        width: 100%;
+    }
+
+    #features .box .card-two .card {
+        width: 45%;
+    }
+
+
+}
+
+@media only screen and (max-width:742px) {
+    #challenges {
+        height: 160vh;
+    }
+
+    #challenges .container .text-card {
+        width: 90%;
+    }
+
+    #challenges .container .image-container {
+        width: 85%;
+        height: 50%;
+    }
+
+    #challenges .container .image-container img {
         width: 100%;
         height: 90%;
     }
-    #solution{
+   
+      #solution{
         height: 160vh;
-    }
-    #solution .cards{
-        display: flex;
-        flex-direction: column;
-    }
-    #solution .cards .image{
-        width: 80%;
+      }
+    #solution .cards .image {
+        width: 85%;
         height: 50%;
     }
     #solution .cards .image img{
-        width: 100%;
+          width: 100%;
         height: 90%;
     }
-    #solution .cards .text-head{
-        width: 80%;
-        height: 40%;
-        gap: 20px;
-    }
-}
-@media only screen and (max-width:768px){
-    .banner_about{
-        height: 100vh;
-    }
-    .banner_about .wrap h2{
-        font-size: 30px;
-        
-    }
-    .banner_about .wrap p{
-        width: 90%;
-        font-size: 24px;
-    } 
-        #features{
-            width: 100%;
-            height: 150vh;
-        }
-        #features .box .card-one{
-            width: 100%;
-        }
-        #features .box .card-one .card {
-            width: 45%;
-        }
-        #features .box .card-two{
-            width: 100%;
-        }
-        #features .box .card-two .card {
-            width: 45%;
-        }
-   
-        
-}
-@media only screen and (max-width:742px){
-    #challenges{
-        height: 180vh;
-    }
-     #challenges .container .text-card{
+    #solution .cards .text-head {
         width: 85%;
+        height: 40%;
     }
-    #challenges .container .image-container{
-        width: 80%;
-        height: 60%;
-    }
-    #challenges .container .image-container img{
-        width: 100%;
-        height: 90%;
-    }
+
+
 
 }
 
-@media only screen and (max-width:705px){
-     #features{
+@media only screen and (max-width:705px) {
+    #features {
         width: 100%;
-        height: 270vh;
+        height: 220vh;
         margin-top: 20px;
     }
+
     #features .heading {
 
         width: 100%;
@@ -1161,11 +1535,13 @@ align-items: center;
         justify-content: space-evenly;
         align-items: center;
     }
-    #features .heading .head{
+
+    #features .heading .head {
 
         font-size: 22px;
     }
-    #features .heading  .para {
+
+    #features .heading .para {
         width: 60%;
         font-size: 18px;
         display: flex;
@@ -1173,228 +1549,432 @@ align-items: center;
         justify-content: center;
 
     }
-    #features .heading  .para p{
+
+    #features .heading .para p {
         text-align: center;
 
     }
-    #features .box{
+
+    #features .box {
         width: 100%;
         height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         /* gap: 20px; */
-        
-    }
-    #features .box .card-one{
-        height: 48%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #features .box .card-one .card{
-        width: 450px;
-        height: 400px;
-    }
-    #features .box .card-one .card .text{
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-    }
-    #features .box .card-two .card .text{
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-    }
-      #features .box .card-two .card{
-        width: 450px;
-        height: 400px;
-    }
-    #features .box .card-two{
-        width: 100%;
-        height: 48%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #features .box .card-one .image img{
-        width: 30%;
-        height: 90%;
-    }
-    #features .box .card-two .image img{
-        width: 30%;
-        height: 90%;
+
     }
 
-}
-@media only screen and (max-width:687px){
-    .about-container{
+    #features .box .card-one {
+        height: 48%;
         width: 100%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .about-container .content-right{
-        width: 50%;
-        height: 80%;
+
+    #features .box .card-one .card {
+             width: 401px;
+        height: 310px
+    }
+
+    #features .box .card-one .card .text {
+        height: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 30px;
+    }
+
+    #features .box .card-two .card .text {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #features .box .card-two .card {
+               width: 401px;
+        height: 310px
+    }
+
+    #features .box .card-two {
+        width: 100%;
+        height: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ #features .box .card-one .image{
+    width: 100px;
+    height: 50px;
+ }
+
+    #features .box .card-two .image img {
+        width: 30%;
+        height: 90%;
+    }
+    #challenges {
+    }
+    #challenges .container .image-container {
+        width: 95%;
+        height: 40%;
+    }
+    #challenges .container .image-container img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+#solution{
+    height: 140vh;
+}
+#solution .cards{
+    height: 90%;
+
+}
+#solution .cards .image {
+    width: 85%;
+    height: 50%;
+
+}
+#solution .cards .image img{
+    width: 100%;
+    height: 90%;
+        object-fit: cover;
+}
+
+#solution .cards .text-head {
+    height: 50%;
+
+}
+
+}
+
+@media only screen and (max-width:687px) {
+    .about-container {
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .about-container .content-right {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        gap: 10px;
         /* gap: 20px; */
     }
 
 }
-@media only screen and (max-width:630px){
-    .banner_about .wrap{
+
+@media only screen and (max-width:630px) {
+    .banner_about .wrap {
         height: 60%;
     }
 
 
 }
-@media only screen and (max-width:575px){
-        #features .box .card-one .card {
-            width: 400px;
-        }
-        #features .box .card-two .card {
-            width: 400px;
-        }
 
-     #solution {
-        height: 150vh;
-     }
-    #solution .cards .image{
-        height: 40%;
-        width: 90%;
-    }
-    #solution .cards .image img{
+@media only screen and (max-width:575px) {
+    #about .about-container .image-left img {
         width: 100%;
         height: 100%;
+
     }
-    #solution .cards .text-head h1{
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    #features .box .card-one .card {
+        width: 400px;
+    }
+
+    #features .box .card-two .card {
+        width: 400px;
+    }
+    #challenges {
+        height: 160vh;
+        /* background-color: beige; */
+    }
+#challenges .container .image-container {
+    height: 50%;
+    width: 85%;
+}
+#challenges .container .image-container img{
+       width: 100%;
+        height: 80%;
+}
+#challenges .container .text-card {
+    height: 60%;
+    gap: 20px;
+}
+
+
+    #solution {
+        height: 140vh;
+        /* background-color: bisque; */
+    }
+
+    #solution .cards .image {
+        height: 50%;
+        width: 85%;
+    }
+
+    #solution .cards .image img {
+        width: 100%;
+        height: 80%;
+    }
+
+    #solution .cards .text-head {
+        width: 85%;
+    }
+    #solution .cards .text-head h1 {
         font-size: 30px;
     }
-    #solution .cards .text-head h2{
+
+    #solution .cards .text-head h2 {
         font-size: 20px;
     }
 
-    #solution .cards .text-head p{
+    #solution .cards .text-head p {
         font-size: 18px;
     }
 
 }
-@media only screen and (max-width:509px){
-    #about{
-        height: 160vh;
+
+@media only screen and (max-width:535px) {
+    #about {
+        height: 130vh;
     }
-    #features{
-        height: 300vh;
+
+    .about-container .content-right {
+        margin-top: 10px;
     }
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #about .about-container .image-left img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+}
+
+@media only screen and (max-width:509px) {
+    #about {
+        height: 140vh;
+    }
+
+    #about .about-container .image-left img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 70%;
+
+    }
+
+    #about .about-container .image-left img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    #features {
+        height: 230vh;
+    }
+
     #features .box .card-one .card {
         width: 350px;
         height: 320px;
     }
+
+    #features .heading {
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 15px; */
+    }
+
+
     #features .box .card-two .card {
         width: 350px;
         height: 320px;
     }
-    #features .box .card-one .card .image{
-        width: 350px;
-        height: 180px
+
+    #features .box .card-one .card .image {
+        width: 300px;
+        height: 150px;
     }
+
     /* #features .box .card-one .card .image img{
         width: 40%;
     } */
-    #features .box .card-two .card .image{
-        width: 350px;
-        height: 180px
+    #features .box .card-two .card .image {
+       width: 300px;
+        height: 150px;
+
     }
+
     /* #features .box .card-two .card .image img{
         width: 30%;
     } */
 
 
-    #challenges .container .image-container{
-        width: 90%;
-        height: 60%;
+    #challenges .container .image-container {
+        width: 85%;
+        height: 40%;
+    }
+    #challenges .container .image-container img{
+        width: 100%;
+        height: 80%;
+    }
+    #solution .cards .image {
+               width: 85%;
+        height: 40%;
+    }
+    #solution .cards .image img{
+     width: 100%;
+        height: 90%;
     }
 
-        #sollution{
+
+    #sollution {
         height: 200vh;
     }
-    #solution .cards .text-head{
-        width: 90%;
+
+    #solution .cards .text-head {
+        width: 85%;
         height: 60%;
     }
-    #solution .cards .text-head h2{
+
+    #solution .cards .text-head h2 {
         font-size: 20px;
     }
-    #solution .cards .text-head p{
+
+    #solution .cards .text-head p {
         font-size: 19px;
     }
+    
 
 
 
 
 }
-@media only screen and (max-width:489px){
-    #features{
-        height: 320vh;
+
+@media only screen and (max-width:489px) {
+    #features {
+        height: 230vh;
     }
-    #features .heading{
+
+    #features .heading {
         height: 10%;
-        justify-content: end;
-        gap: 20px;
+        justify-content: center;
+        /* gap: 20px; */
     }
 
-}
-@media only screen and (max-width:453px){
-    .banner_about .wrap h2{
-        font-size: 24px;
-        
+    #about {
+        height: 140vh;
     }
-    .banner_about .wrap p{
+
+    #about .about-container .image-left img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 70%;
+
+    }
+
+    #about .about-container .image-left img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+}
+
+@media only screen and (max-width:453px) {
+    .banner_about .wrap h2 {
+        font-size: 24px;
+
+    }
+
+    .banner_about .wrap p {
         width: 90%;
         font-size: 20px;
-    }   
-    #features{
-        height: 350vh;
+    }
+
+    #features {
+        height: 250vh;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        /* gap: 10px; */
     }
+
     /* #features .heading {
         margin-top: 30px;
     } */
-     #features .box .card-one .card .image{
+    #features .box .card-one .card .image {
         width: 320px;
         height: 180px
     }
-     #features .box .card-two .card .image{
+
+    #features .box .card-two .card .image {
         width: 320px;
         height: 180px
     }
-     }
-
-
 }
-@media only screen and (max-width:447px){
-     .banner_about .wrap{
+
+
+
+@media only screen and (max-width:447px) {
+    .banner_about .wrap {
         height: 50%;
-     }
-    .banner_about .wrap h2{
-        font-size: 20px;
-        
     }
-    .banner_about .wrap p{
+
+    .banner_about .wrap h2 {
+        font-size: 20px;
+
+    }
+
+    .banner_about .wrap p {
         width: 90%;
         font-size: 18px;
-    } 
-     .banner_about .wrap a button {
+    }
+
+    .banner_about .wrap a button {
         width: 135px;
         height: 45px;
         border-radius: 15px;
@@ -1406,232 +1986,428 @@ align-items: center;
         font-size: 16px;
         justify-content: center;
         cursor: pointer;
-     }
-
-     #solution{
-        height: 180vh;
-     }
-    #solution .cards .image{
-        width: 90%;
+    }
+#challenges .container .image-container {
+       width: 90%;
         height: 40%;
-    }  
-    #solution .cards .image img{
+}
+#challenges .container .text-card{
+    width: 95%;
+}
+
+    #solution {
+        height: 150vh;
+        margin-bottom: 30px;
+    }
+
+    #solution .cards .image {
+        width: 90%;
+        height: 50%;
+    }
+
+    #solution .cards .image img {
         width: 100%;
-        height: 90%;
+        height: 70%;
         object-fit: cover;
-    }  
-    #solution .cards .text-head{
+    }
+
+    #solution .cards .text-head {
         height: 50%;
     }
 
 
 }
-@media only screen and (max-width:443px){
-    #features{
-        height: 290vh;
+    @media only screen and (max-width:444px) {
+        .banner_about {
+            height: 80vh;
+        }
+    #solution{
+        height: 150vh;
+    }
+    #solution .cards .image {
+        width: 85%;
+    }
+
+    #solution .cards .text-head {
+        width: 85%;
+        height: 50%;
+    }
+    #challenges .container .text-card h1 {
+        /* margin-bottom: 10px; */
+            margin-top: 10px;
+    }
+
+
+}
+@media only screen and (max-width:443px) {
+    #features {
+        height: 250vh;
         display: flex;
         flex-direction: column;
-        
+
     }
+
     #features .heading {
         height: 10%;
-    } 
+    }
+
     #features .box {
         width: 100%;
         height: 85%;
     }
-    #features .box .card-one{
+
+    #features .box .card-one {
         width: 100%;
         height: 50%;
 
     }
-    #features .box .card-one .card{
+
+    #features .box .card-one .card {
         width: 80%;
     }
-    #features .box .card-two{
+
+    #features .box .card-two {
         width: 100%;
         height: 50%;
     }
-    #features .box .card-two .card{
+
+    #features .box .card-two .card {
         width: 80%;
     }
-    
 }
-@media only screen and (max-width:392px){
-    #challenges{
+
+
+@media only screen and (max-width:439px) {
+    #about {
+        width: 100%;
+        height: 130vh;
+    }
+
+    #about .about-container .image-left {
+        width: 100%;
+        height: 40%;
+
+    }
+
+    #about .about-container .image-left img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #about .about-container .content-right {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    #about .about-container .content-right .head p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #about .about-container .content-right .mission p {
+        font-size: 16px;
+    }
+
+    #about .about-container .content-right .vision p {
+        font-size: 16px;
+    }
+}
+
+
+
+@media only screen and (max-width:411px) {
+    #features .box .card-one .card .image {
+        width: 300px;
+        height: 180px
+    }
+    #features .box .card-two .card .image {
+        width: 300px;
+        height: 180px
+    }
+
+}
+
+@media only screen and (max-width:392px) {
+    #challenges {
         height: 150vh;
     }
-    #challenges .container .text-card{
+
+    #challenges .container .text-card {
         width: 100%;
     }
-    #challenges .container .image-container{
+
+    #challenges .container .image-container {
         width: 95%;
-        height: 60%;
+        height: 40%;
     }
-    #challenges .container .image-container img{
+
+    #challenges .container .image-container img {
         width: 100%;
-        height: 90%;
+        height: 75%;
     }
-    #challenges .container .text-card h1{
+    /* #solution .cards .image {
+        width: 95%;
+        height: 40%;
+    }
+    #solution .cards .image img{
+        width: 95%;
+        height: 40%;
+    } */
+
+
+    #challenges .container .text-card h1 {
         font-size: 28px;
     }
-     #challenges .container .son h2{
+
+    #challenges .container .son h2 {
         font-size: 20px;
-     }
-     #challenges .container .fear h2{
+    }
+
+    #challenges .container .fear h2 {
         font-size: 20px;
-     }
-     #challenges .container .confuse h2{
+    }
+
+    #challenges .container .confuse h2 {
         font-size: 20px;
-     }
-     #challenges .container .dependency h2{
+    }
+
+    #challenges .container .dependency h2 {
         font-size: 20px;
-     }
-     #challenges .container .son p{
+    }
+
+    #challenges .container .son p {
         font-size: 16px;
-     }
-     #challenges .container .fear p{
+    }
+
+    #challenges .container .fear p {
         font-size: 16px;
-     }
-     #challenges .container .confuse p{
+    }
+
+    #challenges .container .confuse p {
         font-size: 16px;
-     }
-     #challenges .container .dependency p{
+    }
+
+    #challenges .container .dependency p {
         font-size: 16px;
-     }
+    }
 
 }
-@media only screen and (max-width:385px){
-    #features .box .card-one .image img{
+
+@media only screen and (max-width:385px) {
+    #features .box .card-one .image img {
         width: 40%;
     }
-    #features .box .card-two .image img{
+
+    #features .box .card-two .image img {
         width: 40%;
     }
 }
-@media only screen and (max-width:378px){
-    #about{
+
+@media only screen and (max-width:378px) {
+    #about {
         width: 100%;
-        height: 160vh;
+        height: 120vh;
     }
-       #about .about-container{
-           width: 100%;
-           height: 100%;
-       }
-    #about .about-container .image-left{
+
+    #about .about-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about .about-container .image-left {
         width: 300px;
         height: 450px;
         display: flex;
         align-items: end;
         justify-content: end;
     }
-    #about .about-container .image-left img{
+
+    #about .about-container .image-left img {
         width: 100%;
         height: 90%;
     }
-    #about .about-container .content-right{
+
+    #about .about-container .content-right {
         height: 70%;
     }
-    #about .about-container .content-right .head  p{
+
+    #about .about-container .content-right .head p {
         font-size: 16px;
     }
-    #about .about-container .content-right .mission p{
+
+    #about .about-container .content-right .mission p {
         font-size: 16px;
-        
+
     }
-    #about .about-container .content-right .vision p{
+
+    #about .about-container .content-right .vision p {
         font-size: 16px;
     }
-        #features{
-            height: 250vh;
-        }
+
+    #features {
+        height: 250vh;
+    }
+
     #features .box .card-one .card {
         width: 90%;
     }
+
     #features .box .card-two .card {
         width: 90%;
     }
-    #solution{
+
+    #solution {
         height: 140vh;
+        margin-top: 30px;
     }
-    #solution .cards .image{
+
+    #solution .cards .image {
         height: 30%;
         width: 95%;
     }
-    #solution .cards .image img{
+
+    #solution .cards .image img {
         width: 100%;
-        height: 90%;
+        height: 100%;
     }
-    #solution .cards .text-head{
+
+    #solution .cards .text-head {
         width: 95%;
         height: 70%;
     }
 
 }
-@media only screen and (max-width:337px){
-    #about{
+
+@media only screen and (max-width:348px) {
+    #features .box .card-one .card{
+        width: 80%;
+        height: 50%;
+    }
+    #features .box .card-two .card{
+        width: 80%;
+        height: 50%;
+    }
+#features .box .card-one .card .image {
+    width: 300px;
+    height: 100px;
+    margin-left: 30px;
+}
+#features .box .card-two .card .image {
+    width: 300px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+}
+@media only screen and (max-width:337px) {
+    #about {
         height: 130vh;
-        
+
     }
+
+    .about-container {
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .about-container .image-left {
+        width: 100%;
+        height: 30%;
+    }
+
+    #about .about-container .content-right {
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    #challenges {
+        height: 130vh;
+    }
+     #challenges .container {
+        gap: 30px;
+     }
+
+
+    #challenges .container .text-card {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    #challenges .container .image-container {
+        width: 95%;
+        height: 40%;
+    }
+
+    #challenges .container .image-container img {
+        width: 100%;
+        height: 70%;
+    }
+    /* #solution .cards .image {
+        width: 95%;
+        height: 30%;
+    }
+    #solution .cards .image img{
+ width: 95%;
+        height: 30%;
+    } */
+
+
+    #challenges .container .text-card h1 {
+        font-size: 24px;
+    }
+
+    #challenges .container .son h2 {
+        font-size: 20px;
+    }
+    #solution .cards .text-head h1 {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:332px) {
+    #about {
+        height: 130vh;
+
+    }
+
     .about-container {
         height: 95%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-     }
-     .about-container .image-left{
-         width: 100%;
-         height: 30%;
-        }
-        #about .about-container .content-right{
-            height: 70%;
-            margin-top: 20px;
-        }
-        #challenges{
-            height: 160vh;
-        }
-        #challenges .container .text-card{
-            width: 100%;
-        }
-        #challenges .container .image-container{
-            width: 95%;
-            height: 40%;
-        }
-        #challenges .container .image-container img{
-            width: 100%;
-            height: 90%;
-        }
-        #challenges .container .text-card h1{
-            font-size: 28px;
-        }
-         #challenges .container .son h2{
-            font-size: 20px;
-         }
     }
-    @media only screen and (max-width:332px){
-          #about{
-        height: 150vh;
-        
-    }
-    .about-container {
-        height: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-     }
-     .about-container .image-left{
-         width: 100%;
-         height: 30%;
-        }
-        #about .about-container .content-right{
-            height: 70%;
-            margin-top: 20px;
-        }
-        #solution{
-            height: 16#solution{
-0vh;
-        }
 
+    .about-container .image-left {
+        width: 100%;
+        height: 30%;
+    }
+
+    #about .about-container .content-right {
+        height: 70%;
+        /* margin-top: 20px; */
+    }
+    #features .box .card-one .card .image {
+        margin-left: 50px;
+    }
+    #features .box .card-two .card .image {
+        margin-left: 50px;
     }
 
 
+    #solution {
+        height: 130vh;
+
+    }
+    #solution .cards .text-head {
+        margin-top: 30px;
+    }
+
+  
+
+}
