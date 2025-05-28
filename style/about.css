@@ -1443,7 +1443,7 @@
 
 @media only screen and (max-width:768px) {
     .banner_about {
-        height: 100vh;
+        height: 80vh;
     }
 
     .banner_about .wrap h2 {
