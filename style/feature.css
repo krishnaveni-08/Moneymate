@@ -511,6 +511,7 @@ text-align: center;
     }
     #service .control .cards .card .pic img{
         width: 100%;
+        object-fit: contain;
     }
 
 

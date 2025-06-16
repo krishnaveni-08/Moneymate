@@ -343,6 +343,7 @@ body {
 #active-sts .head h1 .atm{
     font-size: 30px;
     color: #38A1FF;
+    margin-left: 10px;
 }
 
 #active-sts .cnt {
