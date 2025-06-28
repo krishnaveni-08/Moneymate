@@ -2619,10 +2619,7 @@ font-size: 26px;
      
  
 }
-@media only screen and (max-width:389px){
 
-
-}
 @media only screen and (max-width:375px){
   #section {
     height: 120vh;

@@ -311,6 +311,7 @@ text-align: center;
 #service .control .cards .card .pic img{
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 
 }
 #service .control .cards .card .txt{
@@ -507,14 +508,11 @@ text-align: center;
     #service .control .cards .card .pic {
         width: 350px;
         height: 280px;
-     
     }
     #service .control .cards .card .pic img{
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
-
-
 
 }
 

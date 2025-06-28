@@ -1024,6 +1024,10 @@ footer .details .menu ul {
 }
 
 @media only screen and (max-width:321px) {
+    
+    .banner_one{
+        height: auto;
+    }
     footer .details .contact {
         width: 100%;
     }
