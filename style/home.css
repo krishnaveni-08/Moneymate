@@ -2039,19 +2039,12 @@ font-size: 26px;
 }
 @media only screen and (max-width:585px){
     #section {
-        height: 130vh;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
-    #section .container{
-        height: 100%;  
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-    }
     #section .container .content-container{
         width: 90%;
         height: 60%;
@@ -2079,10 +2072,11 @@ font-size: 26px;
         height: 80%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
     }
     #section .container .image-container {
         width: 90%;
-        height: 600PX;
+        height: 500PX;
         object-fit: cover;
      
         
@@ -2095,6 +2089,8 @@ font-size: 26px;
     #active-sts .head h1 {
         font-size: 19px;
     }
+
+
 
     #section-four{
         height: 220vh;
@@ -2227,9 +2223,9 @@ font-size: 26px;
 
 @media only screen and (max-width:516px){
     
-    /* #section{
+    #section{
         height: auto;
-    } */
+    }
     .container .image-container img{
         height: 100%;
     }
@@ -2563,6 +2559,7 @@ font-size: 26px;
 
 }
 @media only screen and (max-width:425px){
+
     #active-sts{
         justify-content: start;
     }
@@ -2588,8 +2585,6 @@ font-size: 26px;
         justify-content: center;
     }
    
-    
-    
 }
 
 
@@ -2601,6 +2596,16 @@ font-size: 26px;
 
 }
 @media only screen and (max-width:394px){
+        /* #section-two {
+        height: auto;
+    }
+    #section-two .rectangle {
+        height: 80%;
+    }
+    #section-two .rectangle .icon-containertwo {
+
+        
+    } */
  #section-four .icon .card .text h3{
         font-size: 20px;
     }

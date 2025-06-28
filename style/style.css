@@ -499,7 +499,7 @@ footer .details .menu ul {
 }
 
 @media only screen and (max-width:768px) {
-    header {
+    .banner_one{
         height: auto;
     }
 
@@ -699,8 +699,12 @@ footer .details .menu ul {
 }
 
 @media only screen and (max-width:585px) {
+     .banner_one{
+        height: auto;
+    }
     footer {
-        height: 120vh;
+        height: auto;
+        padding-bottom: 40px;
     }
 
     footer .details {
@@ -896,6 +900,9 @@ footer .details .end {
 }
 
 @media only screen and (max-width:480px) {
+     .banner_one{
+        height: auto;
+    }
     footer .footer-logo {
         width: 30%;
 
@@ -991,6 +998,10 @@ footer .details .menu ul {
 }
 
 @media only screen and (max-width:375px) {
+    .banner_one{
+        height: auto;
+    }
+
     footer .footer-logo {
         width: 30%;
         height: 7%;
