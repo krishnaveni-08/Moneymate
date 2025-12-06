@@ -51,103 +51,183 @@
     margin-top: 30px;
 }
 
-/* about start */
-#about {
+/* MAIN SECTION */
+#info-section {
     width: 100%;
-    height: 80vh;
+    padding: 80px 0;
+    background: #f5f8ff;
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 }
 
-#about .about-container {
+/* Main Container */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* margin: auto; */
 }
 
-#about .about-container .image-left {
-    width: 40%;
-    height: 80%;
-}
-
-#about .about-container .image-left img {
+/* LEFT IMAGE BOX */
+.info-image-box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    max-width: 550px;
+    object-fit: contain;
 }
 
-#about .about-container .content-right {
-    width: 50%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+/* RIGHT CONTENT */
+.info-text-box {
+    flex: 1;
 }
 
-.about-container .content-right .head {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-
+/* Headings */
+.info-title-block h1,
+.info-mission-block h1,
+.info-vision-block h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #38A1FF;
+}
+.info-title-block ,
+.info-mission-block ,
+.info-vision-block  {
+    background-color: white;
+    margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #38A1FF;
 }
 
-.about-container .content-right .head h1 {
-    width: 100%;
-    font-size: 30px;
+/* Paragraphs */
+.info-title-block p,
+.info-mission-block p,
+.info-vision-block p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.about-container .content-right .head p {
-    width: 100%;
-    font-size: 20px;
+/* ------------------------------------------------------ */
+/*                  RESPONSIVE BREAKPOINTS                */
+/* ------------------------------------------------------ */
+
+/* 1️⃣ 1440px & above - make it clean large layout */
+@media (min-width: 1440px) {
+    .info-container {
+        width: 90%;
+        gap: 60px;
+    }
+
+    .info-title-block h1,
+    .info-mission-block h1,
+    .info-vision-block h1 {
+        font-size: 38px;
+    }
+
+    .info-title-block p,
+    .info-mission-block p,
+    .info-vision-block p {
+        font-size: 18px;
+    }
 }
 
-.about-container .content-right .mission {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-        gap: 7px;
+/* 2️⃣ 1024px - Tablets / small laptops */
+@media (max-width: 1024px) {
+    .info-container {
+        gap: 30px;
+    }
+
+    .info-title-block h1,
+    .info-mission-block h1,
+    .info-vision-block h1 {
+        font-size: 30px;
+    }
+
+    .info-title-block p,
+    .info-mission-block p,
+    .info-vision-block p {
+        font-size: 15px;
+    }
 }
 
-.about-container .content-right .mission h1 {
-    width: 100%;
-    font-size: 30px;
+/* 3️⃣ 768px - Tablets & portrait mode */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        /* text-align: center; */
+        gap: 40px;
+    }
+
+    .info-image-box img {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .info-text-box {
+        width: 100%;
+    }
 }
 
-.about-container .content-right .mission p {
-    width: 100%;
-    font-size: 20px;
+/* 4️⃣ 480px - Mobile screens */
+@media (max-width: 480px) {
+    #info-section {
+        padding: 50px 0;
+    }
+
+    .info-title-block h1,
+    .info-mission-block h1,
+    .info-vision-block h1 {
+        font-size: 25px;
+    }
+
+    .info-title-block p,
+    .info-mission-block p,
+    .info-vision-block p {
+        font-size: 14px;
+    }
+
+    .info-container {
+        width: 95%;
+        gap: 25px;
+    }
 }
 
-.about-container .content-right .vision {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-        gap: 7px;
- 
+/* 5️⃣ 360px - Extra small mobile */
+@media (max-width: 360px) {
+    .info-title-block h1,
+    .info-mission-block h1,
+    .info-vision-block h1 {
+        font-size: 21px;
+    }
+
+    .info-title-block p,
+    .info-mission-block p,
+    .info-vision-block p {
+        font-size: 13px;
+    }
 }
 
-.about-container .content-right .vision h1 {
-    width: 100%;
+/* 6️⃣ 320px - Smallest mobile (safe layout) */
+@media (max-width: 320px) {
+    .info-title-block h1,
+    .info-mission-block h1,
+    .info-vision-block h1 {
+        font-size: 19px;
+    }
 
-    font-size: 30px;
+    .info-title-block p,
+    .info-mission-block p,
+    .info-vision-block p {
+        font-size: 12px;
+    }
 }
 
-.about-container .content-right .vision p {
-    width: 100%;
 
-    font-size: 20px;
-}
 
-/* about end */
 /* features start */
 #features {
     width: 100%;
@@ -169,19 +249,19 @@
 
 }
 
-#features .heading .head h1 {
+#features .heading .headd h1 {
     font-size: 32px;
 
 }
 
-#features .heading .head {
+#features .heading .headd {
 
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-#features .heading .head .one {
+#features .heading .headd .one {
     font-size: 32px;
 
     color: #38A1FF;
@@ -410,7 +490,7 @@ l
 /* challenges start*/
 #challenges {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,7 +524,7 @@ l
     font-size: 36px;
     font-weight: 800;
     color: #38A1FF;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #challenges .container .text-card h2 {
@@ -510,7 +590,7 @@ l
 /* solution start */
 #solution {
    width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1143,7 +1223,7 @@ l
         font-size: 18px;
     }
 
-    #features .heading .head {
+    #features .heading .headd {
         font-size: 28px;
     }
 }
@@ -1170,7 +1250,7 @@ l
 }
 
 @media only screen and (max-width:953px) {
-    #features .heading .head {
+    #features .heading .headd {
         font-size: 24px;
     }
 }
@@ -1317,50 +1397,7 @@ l
 
 }
 
-@media only screen and (max-width:869px) {
-    #about {
-        width: 100%;
-        height: 150vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    #about .about-container {
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    #about .about-container .image-left {
-        width: 80%;
-        height: 50%;
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        align-items: center;
-    }
-
-    #about .about-container .content-right .head p {
-        width: 100%;
-    }
-
-    #about .about-container .content-right .mission p {
-        width: 100%;
-    }
-
-    #about .about-container .content-right .vision p {
-        width: 100%;
-    }
-
-}
 
 @media only screen and (max-width:843px) {
     #features .box .card-one .card {
@@ -1697,29 +1734,7 @@ l
 
 }
 
-@media only screen and (max-width:687px) {
-    .about-container {
-        width: 100%;
-        height: 110vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
 
-    .about-container .content-right {
-        width: 50%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: center;
-        gap: 10px;
-        /* gap: 20px; */
-    }
-
-}
 
 @media only screen and (max-width:630px) {
     .banner_about .wrap {
@@ -1730,17 +1745,7 @@ l
 }
 
 @media only screen and (max-width:575px) {
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 50%;
-
-    }
+ 
 
     #features .box .card-one .card {
         width: 400px;
@@ -1799,177 +1804,7 @@ l
 
 }
 
-@media only screen and (max-width:535px) {
-    #about {
-        height: 130vh;
-    }
 
-    .about-container .content-right {
-        margin-top: 10px;
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-
-}
-
-@media only screen and (max-width:509px) {
-    #about {
-        height: 140vh;
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 70%;
-
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 50%;
-
-    }
-
-    #features {
-        height: 230vh;
-    }
-
-    #features .box .card-one .card {
-        width: 350px;
-        height: 320px;
-    }
-
-    #features .heading {
-        height: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* gap: 15px; */
-    }
-
-
-    #features .box .card-two .card {
-        width: 350px;
-        height: 320px;
-    }
-
-    /* #features .box .card-one .card .image {
-        width: 300px;
-        height: 150px;
-    } */
-
-    /* #features .box .card-one .card .image img{
-        width: 40%;
-    } */
-    /* #features .box .card-two .card .image {
-       width: 300px;
-        height: 150px;
-
-    } */
-
-    /* #features .box .card-two .card .image img{
-        width: 30%;
-    } */
-
-
-    #challenges .container .image-container {
-        width: 85%;
-        height: 40%;
-    }
-    #challenges .container .image-container img{
-        width: 100%;
-        height: 80%;
-    }
-    #solution .cards .image {
-               width: 85%;
-        height: 40%;
-    }
-    #solution .cards .image img{
-     width: 100%;
-        height: 90%;
-    }
-
-
-    #sollution {
-        height: 200vh;
-    }
-
-    #solution .cards .text-head {
-        width: 85%;
-        height: 60%;
-    }
-
-    #solution .cards .text-head h2 {
-        font-size: 20px;
-    }
-
-    #solution .cards .text-head p {
-        font-size: 19px;
-    }
-    
-
-
-
-
-}
-
-@media only screen and (max-width:489px) {
-    #features {
-        height: 230vh;
-    }
-
-    #features .heading {
-        height: 10%;
-        justify-content: center;
-        /* gap: 20px; */
-    }
-
-    #about {
-        height: 140vh;
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 70%;
-
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-
-}
 
 @media only screen and (max-width:453px) {
     .banner_about .wrap h2 {
@@ -2123,42 +1958,7 @@ l
 }
 
 
-@media only screen and (max-width:439px) {
-    #about {
-        width: 100%;
-        height: 130vh;
-    }
 
-    #about .about-container .image-left {
-        width: 100%;
-        height: 40%;
-
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #about .about-container .content-right {
-        width: 100%;
-        height: 50%;
-    }
-
-    #about .about-container .content-right .head p {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    #about .about-container .content-right .mission p {
-        font-size: 16px;
-    }
-
-    #about .about-container .content-right .vision p {
-        font-size: 16px;
-    }
-}
 @media only screen and (max-width:411px) {
     /* #features .box .card-one .card .image {
         width: 300px;
@@ -2234,46 +2034,7 @@ l
 }
 
 @media only screen and (max-width:378px) {
-    #about {
-        width: 100%;
-        height: 120vh;
-        margin-bottom: 20px;
-    }
-
-    #about .about-container {
-        width: 100%;
-        height: 100%;
-    }
-
-    #about .about-container .image-left {
-        width: 300px;
-        height: 450px;
-        display: flex;
-        align-items: end;
-        justify-content: end;
-    }
-
-    #about .about-container .image-left img {
-        width: 100%;
-        height: 90%;
-    }
-
-    #about .about-container .content-right {
-        height: 70%;
-    }
-
-    #about .about-container .content-right .head p {
-        font-size: 16px;
-    }
-
-    #about .about-container .content-right .mission p {
-        font-size: 16px;
-
-    }
-
-    #about .about-container .content-right .vision p {
-        font-size: 16px;
-    }
+    
 
     #features {
         height: 250vh;
@@ -2311,24 +2072,7 @@ l
 
 
 @media only screen and (max-width:337px) {
-    #about {
-        height: 130vh;
-    }
-    .about-container {
-        height: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } 
-    .about-container .image-left {
-        width: 100%;
-        height: 30%;
-    }
-
-    #about .about-container .content-right {
-        height: 70%;
-        margin-top: 20px;
-    }
+    
 
     #challenges {
         height: 130vh;
