@@ -1,2214 +1,495 @@
+/* ROOT VARIABLES */
+:root {
+    --primary: #054a91;
+    --primary-dark: #033a6e;
+    --text: #1b1b1b;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
 
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+}
 
-.banner_about {
-    background-image: url(../Assets/Images/about/ban-about.png);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NAVzBAR - FIXED & CENTERED */
+.navbar {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 100vh;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
 }
 
-.banner_about .wrap {
-    width: 90%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.banner_about .wrap h2 {
-    color: white;
-    font-size: 34px;
-}
-
-.banner_about .wrap p {
-    width: 40%;
-    color: white;
-    font-size: 20px;
-}
-
-.banner_about .wrap a {
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary) !important;
     text-decoration: none;
 }
 
-.banner_about .wrap a button {
-    width: 145px;
-    height: 55px;
-    border-radius: 15px;
-    border: none;
-    background-color: #38A1FF;
-    color: white;
+.nav-menu {
     display: flex;
-    align-items: center;
-    font-size: 16px;
-    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary), #007bff);
+    border-radius: 2px;
+}
+
+.get-app {
+    background: linear-gradient(135deg, var(--primary), #007bff);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.get-app:hover {
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
     cursor: pointer;
-    margin-top: 30px;
+    gap: 4px;
+    padding: 5px;
 }
 
-/* MAIN SECTION */
-#info-section {
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary);
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* HERO */
+.hero-about {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: var(--white);
+    padding: 140px 0 100px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.highlight {
+    background: linear-gradient(45deg, #ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-desc {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    opacity: 0.95;
+}
+
+.btn-primary {
+    background: var(--white);
+    color: var(--primary);
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ABOUT INFO */
+.about-info {
+    padding: 120px 0;
+    background: var(--light);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.image-wrapper img {
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: var(--shadow-lg);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* FEATURES COMPACT - RESPONSIVE */
+.features-compact {
     padding: 80px 0;
-    background: #f5f8ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Main Container */
-.info-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 90%;
-    /* margin: auto; */
+.compact-header {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-/* LEFT IMAGE BOX */
-.info-image-box img {
+.compact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.compact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f1f3f4;
+    transition: all 0.3s;
+}
+
+.feature-icon-compact {
+    width: 80px;
+    height: 80px;
+}
+
+.feature-icon-compact img {
     width: 100%;
-    height: auto;
-    max-width: 550px;
+    height: 100%;
     object-fit: contain;
 }
 
-/* RIGHT CONTENT */
-.info-text-box {
+.feature-content {
+    text-align: center;
     flex: 1;
 }
 
-/* Headings */
-.info-title-block h1,
-.info-mission-block h1,
-.info-vision-block h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #38A1FF;
-}
-.info-title-block ,
-.info-mission-block ,
-.info-vision-block  {
-    background-color: white;
-    margin-bottom: 10px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid #38A1FF;
+.feature-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
 }
 
-/* Paragraphs */
-.info-title-block p,
-.info-mission-block p,
-.info-vision-block p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
+/* CHALLENGES */
+.challenges {
+    padding: 120px 0;
+    background: var(--light);
 }
 
-/* ------------------------------------------------------ */
-/*                  RESPONSIVE BREAKPOINTS                */
-/* ------------------------------------------------------ */
-
-/* 1️⃣ 1440px & above - make it clean large layout */
-@media (min-width: 1440px) {
-    .info-container {
-        width: 90%;
-        gap: 60px;
-    }
-
-    .info-title-block h1,
-    .info-mission-block h1,
-    .info-vision-block h1 {
-        font-size: 38px;
-    }
-
-    .info-title-block p,
-    .info-mission-block p,
-    .info-vision-block p {
-        font-size: 18px;
-    }
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-/* 2️⃣ 1024px - Tablets / small laptops */
-@media (max-width: 1024px) {
-    .info-container {
-        gap: 30px;
-    }
-
-    .info-title-block h1,
-    .info-mission-block h1,
-    .info-vision-block h1 {
-        font-size: 30px;
-    }
-
-    .info-title-block p,
-    .info-mission-block p,
-    .info-vision-block p {
-        font-size: 15px;
-    }
+.challenge-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s;
+    position: relative;
 }
 
-/* 3️⃣ 768px - Tablets & portrait mode */
+.challenge-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary);
+}
+
+.challenge-card:hover {
+    transform: translateY(-8px);
+}
+
+/* SOLUTIONS */
+.solutions {
+    padding: 120px 0;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.solution-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: var(--shadow-lg);
+}
+
+.solution-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.solution-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary);
+}
+
+/* FOOTER */
+.simple-footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    height: 45px;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.footer-links h4,
+.footer-apps h4,
+.footer-contact h4 {
+    color: var(--primary);
+    margin-bottom: 1.2rem;
+}
+
+.footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 0.6rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-apps img {
+    height: 45px;
+    margin-bottom: 0.8rem;
+    transition: transform 0.3s;
+}
+
+.footer-apps img:hover {
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-icons a {
+    color: #ccc;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE - PERFECT CENTERING */
 @media (max-width: 768px) {
-    .info-container {
+    body {
+        padding-top: 80px;
+    }
+
+    /* NAVBAR MOBILE */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
         flex-direction: column;
-        /* text-align: center; */
-        gap: 40px;
-    }
-
-    .info-image-box img {
-        max-width: 85%;
-        margin: auto;
-    }
-
-    .info-text-box {
+        background: var(--white);
         width: 100%;
-    }
-}
-
-/* 4️⃣ 480px - Mobile screens */
-@media (max-width: 480px) {
-    #info-section {
-        padding: 50px 0;
-    }
-
-    .info-title-block h1,
-    .info-mission-block h1,
-    .info-vision-block h1 {
-        font-size: 25px;
-    }
-
-    .info-title-block p,
-    .info-mission-block p,
-    .info-vision-block p {
-        font-size: 14px;
-    }
-
-    .info-container {
-        width: 95%;
-        gap: 25px;
-    }
-}
-
-/* 5️⃣ 360px - Extra small mobile */
-@media (max-width: 360px) {
-    .info-title-block h1,
-    .info-mission-block h1,
-    .info-vision-block h1 {
-        font-size: 21px;
-    }
-
-    .info-title-block p,
-    .info-mission-block p,
-    .info-vision-block p {
-        font-size: 13px;
-    }
-}
-
-/* 6️⃣ 320px - Smallest mobile (safe layout) */
-@media (max-width: 320px) {
-    .info-title-block h1,
-    .info-mission-block h1,
-    .info-vision-block h1 {
-        font-size: 19px;
-    }
-
-    .info-title-block p,
-    .info-mission-block p,
-    .info-vision-block p {
-        font-size: 12px;
-    }
-}
-
-
-
-/* features start */
-#features {
-    width: 100%;
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #d2e7fa;
-    padding: 20px 0px;
-}
-
-#features .heading {
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-
-}
-
-#features .heading .headd h1 {
-    font-size: 32px;
-
-}
-
-#features .heading .headd {
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-#features .heading .headd .one {
-    font-size: 32px;
-
-    color: #38A1FF;
-}
-
-#features .heading .para {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#features .heading .para p {
-    font-size: 20px;
-    text-align: center;
-}
-
-#features .box {
-    width: 90%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 20px;
-
-
-}
-
-#features .box .card-one {
-    width: 85%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    /* background-color: lightgreen; */
-}
-
-#features .box .card-one .card {
-    width: 40%;
-    height: 100%;
-    background-color: #7EBAEF;
-    border-radius: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-
-}
-
-#features .box .card-one .card .text h2 {
-    width: 100%;
-    font-size: 24px;
-    text-align: start;
-
-}
-
-#features .box .card-one .card .text {
-    width: 80%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-        justify-content: space-evenly;
-
-}
-
-#features .box .card-one .card p {
-    width: 100%;
-    font-size: 20px;
-    text-align: start;
-}
-
-#features .box .card-one .card .image {
-        width: 100%;
-    height: 40%;
-
-}
-l 
-#features .box .card-one .image img {
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-}
-
-#features .box .card-two {
-    width: 85%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    /* background-color: lightgreen; */
-}
-
-#features .box .card-two .card {
-    width: 40%;
-    height: 100%;
-    background-color: #7EBAEF;
-    border-radius: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-
-}
-
-#features .box .card-two .card .text h2 {
-    width: 100%;
-    font-size: 24px;
-    text-align: start;
-
-}
-
-#features .box .card-two .card .text {
-    width: 80%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-#features .box .card-two .card p {
-    width: 100%;
-    font-size: 20px;
-    text-align: start;
-}
-
-#features .box .card-two .card .image {
-        width: 30%;
-    height: 50%;
-
-}
-
-#features .box .card-one .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-#features {
-        width: 100%;
-        height: 150vh;
-    }
-    #features .box .card-one .card {
-        width: 45%;
-    }
-
-    #features .box .card-two .card {
-        width: 45%;
-    }
-
-    #features .box .card-two .card .image {
-        width: 10%;
-        height: 40%;
-
-    }
-
-    #features .box .card-two .card .image img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    #features .box .card-one .card .image {
-        width: 450px;
-        height: 150px;
-
-    }
-
-    #features .box .card-one .card .image img {
-        width: 30%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    #features .box .card-two .card .image {
-        width: 450px;
-        height: 150px;
-
-    }
-
-    #features .box .card-two .card .image img {
-        width: 30%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    #features .box .card-two .card .text {
-        width: 90%;
-        height: 45%;
-
-    }
-
-    #features .box .card-one .card .text {
-        width: 90%;
-        height: 45%;
-
-    }
-
-    #features .box .card-one .card .text h2 {
-        font-size: 22px;
-    }
-
-    #features .box .card-two .card .text h2 {
-        font-size: 22px;
-    }
-
-    #features .box .card-one .card p {
-        font-size: 20px;
-    }
-
-    #features .box .card-two .card p {
-        font-size: 20px;
-    }
-
-
-
-
-/* fearures end */
-/* challenges start*/
-#challenges {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#challenges .container {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#challenges .container .text-card {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-
-}
-
-#challenges .container .text-card h1 {
-    width: 70%;
-    height: 10%;
-    display: flex;
-    align-self: self-start;
-    font-size: 36px;
-    font-weight: 800;
-    color: #38A1FF;
-    margin-bottom: 20px;
-}
-
-#challenges .container .text-card h2 {
-    font-size: 22px;
-
-}
-
-#challenges .container .text-card p {
-    width: 80%;
-
-    font-size: 18px;
-}
-
-#challenges .container .text-card .son {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-}
-
-#challenges .container .text-card .fear {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#challenges .container .text-card .confuse {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#challenges .container .text-card .dependency {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#challenges .container .image-container {
-    width: 40%;
-    height: 90%;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#challenges .container .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* challenges end */
-
-/* solution start */
-#solution {
-   width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#solution .cards {
-      width: 90%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        gap: 30px;
-
-
-
-}
-
-#solution .cards .image {
-  width: 40%;
-    height: 90%;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#solution .cards .image img {
-      width: 100%;
-    height: 100%;
-    object-fit: contain;;
-}
-
-#solution .cards .text-head {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-#solution .cards .text-head h1 {
-    width: 70%;
-    height: 10%;
-    display: flex;
-    align-self: self-start;
-    font-size: 36px;
-    font-weight: 800;
-    color: #38A1FF;
-    margin-bottom: 20px;
-}
-
-#solution .cards .text-head h2 {
-    font-size: 22px;
-
-}
-
-#solution .cards .text-head p {
-    font-size: 20px;
-}
-
-#solution .cards .text-head .tips {
-   
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#solution .cards .text-head .guides {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#solution .cards .text-head .practice {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* solution end */
-
-
-
-
-/*media query */
-
-
-@media only screen and (max-width:1440px) {
-   
-.banner_about{
-    height: 100vh;
-}
- .banner_about .wrap {
-        gap: 20px;
-
-    }
-    #about {
-        height: 110vh;
-    }
-
-    #features {
-        width: 100%;
-        height: 150vh;
-    }
-    #features .box .card-one .card {
-        width: 45%;
-    }
-
-    #features .box .card-two .card {
-        width: 45%;
-    }
-
-    #features .box .card-two .card .image {
-        width: 10%;
-        height: 40%;
-
-    }
-
-    #features .box .card-two .card .image img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    #features .box .card-one .card .image {
-        width: 450px;
-        height: 150px;
-
-    }
-
-    #features .box .card-one .card .image img {
-        width: 30%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    #features .box .card-two .card .image {
-        width: 450px;
-        height: 150px;
-
-    }
-
-    #features .box .card-two .card .image img {
-        width: 30%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    #features .box .card-two .card .text {
-        width: 90%;
-        height: 45%;
-
-    }
-
-    #features .box .card-one .card .text {
-        width: 90%;
-        height: 45%;
-
-    }
-
-    #features .box .card-one .card .text h2 {
-        font-size: 22px;
-    }
-
-    #features .box .card-two .card .text h2 {
-        font-size: 22px;
-    }
-
-    #features .box .card-one .card p {
-        font-size: 20px;
-    }
-
-    #features .box .card-two .card p {
-        font-size: 20px;
-    }
-
-    #challenges {
-        width: 100%;
-        height: 110vh;
-    }
-
-    /* #solution {
-        width: 100%;
-        height: 100vh;
-    }
-
-    #solution .cards .text-head {
-        height: 100%;
-    }
-
-    #solution .cards .image {
-        height: 60%;
-    } */
-
-
-}
-
-@media only screen and (max-width:1343px) {
-    #about-container .content-right {
-        width: 50%;
-        height: 70%;
-    }
-}
-
-@media only screen and (max-width:1342px) {
-    .about-container .content-right {
-        width: 50%;
-        height: 80%;
-    }
-
-    .about-container .content-right .head p {
-        font-size: 18px;
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 18px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 18px;
-    }
-
-    .about-container .content-right .head h1 {
-        font-size: 24px;
-    }
-
-    .about-container .content-right .mission h1 {
-        font-size: 24px;
-
-    }
-
-    .about-container .content-right .vision h1 {
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width:1341px) {
-    #features .box .card-one .card .image {
-        width: 100%;
-        height: 35%;
-    }
-
-    #features .box .card-two .card .image {
-        width: 100%;
-        height: 35%;
-    }
-
-}
-
-@media only screen and (max-width:1337px) {
-
-    .about-container .content-right .head p {
-        width: 100%;
-    }
-
-    .about-container .content-right .mission p {
-        width: 100%;
-
-    }
-
-    .about-container .content-right .vision p {
-        width: 100%;
-    }
-
-    .about-container .content-right .head {
-        gap: 10px;
-    }
-
-    .about-container .content-right .mission {
-        gap: 10px;
-    }
-
-    .about-container .content-right .vision {
-        gap: 10px;
-    }
-
-    .about-container .image-left {
-        width: 550px;
-    }
-
-    .about-container .content-right {
-        width: 600px;
-    }
-
-}
-
-@media only screen and (max-width:1317px) {
-    #features .box .card-one .card {
-        width: 45%;
-    }
-
-    #features .box .card-one .card .image {
-        width: 100%;
-        height: 35%;
-    }
-
-    #challenges {
-        height: 100vh;
-    }
-
-    #challenges .container {
-        height: 100%;
-    }
-
-    #challenges .container .text-card {
-        width: 50%;
-        height: 100%;
-        
-    }
-
-    #challenges .container .text-card p {
-        width: 90%;
-        font-size: 18px;
-    }
-
-
-    #challenges .container .image-container {
-        height: 80%;
-        width: 40%;
-    }
-
-    #challenges .container .image-container img {
-        width: 100%;
-        height: 65%;
-        object-fit: cover;
-
-    }
-    #solution .cards .image {
-        height: 80%;
-        width: 45%;
-    }
-    #solution .cards .image img{
-        height: 70%;
-        width: 90%;
-        object-fit: cover;
-    }
-
-
-}
-
-@media only screen and (max-width:1230px) {
-    #challenges{
-        height: 110vh;
-    }
-    #challenges .container {
-        height: 90%;
-    }
-    #challenges .container .text-card h1 {
-        /* margin-top: 50px; */
-    }
-
-    #features .box .card-one .card .image {
-        width: 90%;
-        height: 35%;
-        /* padding-left: 20px; */
-
-    }
-    #features .box .card-two .card .image {
-        width: 90%;
-        height: 35%;
-
-    }
-
-    .about-container .content-right {
-        width: 50%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .about-container .content-right .head p {
-        font-size: 18px;
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 18px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 18px;
-    }
-
-
-}
-
-@media only screen and (max-width:1171px) {
-    .about-container .content-right .head p {
-        font-size: 18px;
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 18px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 18px;
-    }
-
-}
-
-@media only screen and (max-width:1129px) {
-    .about-container .content-right {
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .about-container .content-right .head p {
-        font-size: 18px;
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 18px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 18px;
-    }
-}
-
-#features .box .card-one .image img {
-    width: 40%;
-}
-
-#features .box .card-two .image img {
-    width: 40%;
-}
-
-
-
-@media only screen and (max-width:1091px) {
-     #solution{
-        height: 90vh;
-     }
-    #solution .cards {
-        height: 100%;
-    }
-
-    #solution .cards .text-head {
-        height: 100%;
-    }
-    #solution .cards .text-head p {
-        font-size: 18px;
-    }
-    #solution .cards .text-head h2 {
-        font-size: 20px;
-    }
-
-
-}
-
-@media only screen and (max-width:1077px) {
-       #features{
-        height: 130vh;
-       }
-    #features .box {
-        height: 80%;
-        display: flex;
-        align-content: space-around;
-    }
-
-    #features .box .card-one .card {
-        height: 100%;
-
-    }
-
-    #features .box .card-two .card {
-        height: 100%;
-
-    }
-
-    #features .box .card-one .card .text h2 {
-        font-size: 20px;
-    }
-
-    #features .box .card-two .card .text h2 {
-        font-size: 20px;
-    }
-
-    #features .box .card-one .card p {
-        font-size: 18px;
-    }
-
-    #features .box .card-two .card p {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width:1073px) {
-    .about-container .content-right .mission h1 {
-        font-size: 20px;
-
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 16px;
-
-    }
-
-    .about-container .content-right .head h1 {
-        font-size: 20px;
-
-    }
-
-    .about-container .content-right .head p {
-        font-size: 16px;
-
-    }
-
-    .about-container .content-right .vision h1 {
-        font-size: 20px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 16px;
-
-    }
-
-    .about-container .image-left {
-        height: 450px;
-    }
-
-    .about-container .content-right {
-        width: 70%;
-        height: 50%;
-        /* background-color: aqua; */
-    }
-
-    #about {
-        height: 100vh;
-    }
-
-    #about .content-right {
-        height: 100%;
-        justify-content: center;
-    }
-
-    #about .content-right .head p {
-        font-size: 20px;
-    }
-
-    #about .content-right .mission p {
-        font-size: 20px;
-
-    }
-
-    #about .content-right .vision p {
-        font-size: 20px;
-    }
-
-}
-
-@media only screen and (max-width:1069px) {
-    .banner_about .wrap p {
-        font-size: 18px;
-    }
-
-    .about-container .content-right .head p {
-        font-size: 19px;
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 19px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 19px;
-    }
-}
-
-@media only screen and (max-width:1035px) {
-    .about-container .content-right {
-        height: 80%;
-    }
-
-    #challenges .container .image-container {
-        height: 80%;
-        width: 50%;
-    }
-
-    #challenges .container .text-card {
-        width: 50%;
-        height: 100%;
-    }
-    #solution .cards .image {
-             height: 80%;
-        width: 50%;
-    }
-
-
-
-
-
-}
-
-@media only screen and (max-width:1025px) {
-    #features .box .card-one .card .text h2 {
-        font-size: 20px;
-
-    }
-
-    #features .box .card-one .card p {
-        font-size: 18px;
-    }
-
-    #features .box .card-one .card .text h2 {
-        font-size: 20px;
-
-    }
-
-    #features .box .card-two .card .text h2 {
-        font-size: 20px;
-
-    }
-
-    #features .box .card-two .card p {
-        font-size: 18px;
-    }
-
-    #features .heading .para p {
-        font-size: 18px;
-    }
-
-    #features .heading .headd {
-        font-size: 28px;
-    }
-}
-
-@media only screen and (max-width:989px) {
-    #solution {
-        height: 90vh;
-    }
-
-    #solution .cards .text-head {
-        height: 90%;
-
-    }
-
-    #solution .cards .text-head p {
-        font-size: 18px;
-    }
-
-    #solution .cards .image img{
-               height: 73%;
-        width: 90%;
-        object-fit: cover;
-    }
-}
-
-@media only screen and (max-width:953px) {
-    #features .heading .headd {
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width:950px) {
-    .banner_about .wrap p {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width:942px) {
-    /* #features .box .card-one .card .image {
-    width: 300px;
-    height: 130px;
-    } */
-
-
-}
-
-#features .box .card-one .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-    #features .box .card-two .card .image {
-    /* width: 300px; */
-    height: 130px;
-
-
-}
-
-#features .box .card-two .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-    #about {
-        width: 100%;
-        height: 100vh;
-    }
-
-    #about .about-container {
-        width: 90%;
-        height: 90%;
-
-    }
-
-    #about .about-container .image-left {
-        width: 50%;
-        height: 90%;
-    }
-
-    #about .about-container .content-right {
-        width: 50%;
-        height: 90%;
-    }
-
-    #about .about-container .content-right .head p {
-        font-size: 18px;
-    }
-
-    #about .about-container .content-right .mission p {
-        font-size: 18px;
-
-    }
-
-    #about .about-container .content-right .vision p {
-        font-size: 18px;
-    }
-
-
-
-@media only screen and (max-width:917px) {
-    #features .box .card-one .card .image {
-    /* width: 90%;
-    height: 40%;  */
-    display: flex;
-    justify-content: start;
-
-}
-    /* #features .box .card-one .card .image img{
-    width: 40%;
-    height: 100%;   
-
-} */
-    #features .box .card-two .card .image {
-    width: 90%;
-    height: 40%; 
-    display: flex;
-    justify-content: start;
-
-}
-    #features .box .card-two .card .image img{
-    width: 40%;
-    height: 100%;   
-
-}
-
-}
-@media only screen and (max-width:880px) {
-    .banner_about .wrap p {
-        width: 70%;
-        font-size: 24px;
-    }
-}
-
-@media only screen and (max-width:877px) {
-    .about-container .image-left {
-        width: 450px;
-        height: 500px;
-    }
-
-    .about-container .content-right {
-        width: 600px;
-        height: 100px;
-    }
-
-    .about-container .content-right .head p {
-        font-size: 16px;
-    }
-
-    .about-container .content-right .mission p {
-        font-size: 16px;
-
-    }
-
-    .about-container .content-right .vision p {
-        font-size: 16px;
-    }
-
-    .about-container .content-right .head h1 {
-        font-size: 20px;
-    }
-
-    .about-container .content-right .mission h1 {
-        font-size: 20px;
-
-    }
-
-    .about-container .content-right .vision h1 {
-        font-size: 20px;
-    }
-
-}
-
-
-
-@media only screen and (max-width:843px) {
-    #features .box .card-one .card {
-        width: 45%;
-    }
-
-    #features .box .card-two .card {
-        width: 45%;
-    }
-
-    #features .heading p {
-        font-size: 20px;
-    }
-
-    #features .heading .head {
-        font-size: 28px;
-    }
-
-    #features .box .card-one .card .text h2 {
-        font-size: 20px;
-
-    }
-
-    #features .box .card-two .card .text h2 {
-        font-size: 20px;
-
-    }
-
-    #features .box .card-one .card p {
-        font-size: 18px;
-    }
-
-}
-
-@media only screen and (max-width:817px) {
-    #challenges .container .text-card h1 {
-        font-size: 30px;
-    }
-
-    #challenges {
-        height: 150vh;
-        /* background-color: #becedb; */
-    }
-
-    #challenges .container {
-        height: 100%;
-        
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #challenges .container .text-card {
-        width: 85%;
-        height: 60%;
-        /* gap: 20px; */
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        
-        /* background-color: blanchedalmond; */
-    }
-
-    #challenges .container .text-card h2 {
-        font-size: 20px;
-    }
-
-
-    #challenges .container .image-container {
-        width: 80%;
-        height: 40%;
-        /* background-color: chartreuse; */
-    }
-
-    #challenges .container .image-container img {
-        width: 100%;
-        height: 90%;
-        object-fit: cover;
-    }
-
-    #solution {
-        height: 150vh;
-        /* background-color: aqua; */
-    }
-
-    #solution .cards {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    #solution .cards .image {
-           width: 80%;
-        height: 40%;
-    }
-
-    #solution .cards .image img {
-     width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    #solution .cards .text-head {
-        width: 80%;
-        height: 45%;
-        gap: 20px;  
-    }
-}
-
-@media only screen and (max-width:768px) {
-    .banner_about {
-        height: 80vh;
-    }
-
-    .banner_about .wrap h2 {
-        font-size: 30px;
-
-    }
-
-    .banner_about .wrap p {
-        width: 90%;
-        font-size: 24px;
-    }
-
-    #features {
-        width: 100%;
-        height: 150vh;
-    }
-
-    #features .box .card-one {
-        width: 100%;
-    }
-
-    #features .box .card-one .card {
-        width: 45%;
-    }
-
-    #features .box .card-two {
-        width: 100%;
-    }
-
-    #features .box .card-two .card {
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width:742px) {
-    #challenges {
-        height: 160vh;
-    }
-
-    #challenges .container .text-card {
-        width: 90%;
-    }
-
-    #challenges .container .image-container {
-        width: 85%;
-        height: 50%;
-    }
-
-    #challenges .container .image-container img {
-        width: 100%;
-        height: 90%;
-    }
-   
-      #solution{
-        height: 160vh;
-      }
-    #solution .cards .image {
-        width: 85%;
-        height: 50%;
-    }
-    #solution .cards .image img{
-          width: 100%;
-        height: 90%;
-    }
-    #solution .cards .text-head {
-        width: 85%;
-        height: 40%;
-    }
-}
-
-@media only screen and (max-width:705px) {
-    #features {
-        width: 100%;
-        height: 220vh;
-        /* margin-top: 20px; */
-    }
-
-    #features .heading {
-
-        width: 100%;
-        height: 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    #features .heading .head {
-
-        font-size: 22px;
-    }
-
-    #features .heading .para {
-        width: 60%;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    #features .heading .para p {
         text-align: center;
-
+        transition: 0.3s;
+        box-shadow: var(--shadow);
+        padding: 2rem 0;
+        gap: 1.5rem;
+        z-index: 999;
     }
 
-    #features .box {
-        width: 100%;
-        height: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* gap: 20px; */
-
+    .nav-menu.active {
+        left: 0;
     }
 
-    #features .box .card-one {
-        height: 48%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .get-app {
+        display: none;
     }
 
-    #features .box .card-one .card {
-             width: 401px;
-        height: 310px
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
     }
 
-    #features .box .card-one .card .text {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
     }
 
-    #features .box .card-two .card .text {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    #features .box .card-two .card {
-               width: 401px;
-        height: 310px;
+    /* SECTIONS */
+    .info-grid,
+    .solutions-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
     }
 
-    #features .box .card-two {
-        width: 100%;
-        height: 48%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
- #features .box .card-two .image{
-    width: 100px;
-    height: 50px;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    /* background-color: aqua; */
-    
- }
-
-    #features .box .card-one .image img {
-        width: 100%;
-        height: 90%;
-        object-fit: covers;
-          display: flex;
-    align-items: start;
-    justify-content: start;
-    object-position: left;
-
-    }
-    
-    #features .box .card-two .image img {
-        width: 100%;
-        height: 90%;
-        object-fit: covers;
-          display: flex;
-    align-items: start;
-    justify-content: start;
-    object-position: left;
-
-    }
-    
-    #challenges .container .image-container {
-        width: 95%;
-        height: 40%;
-    }
-    #challenges .container .image-container img{
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-}
-#solution{
-    height: 140vh;
-}
-#solution .cards{
-    height: 90%;
-
-}
-#solution .cards .image {
-    width: 85%;
-    height: 50%;
-
-}
-#solution .cards .image img{
-    width: 100%;
-    height: 90%;
-        object-fit: cover;
-}
-
-#solution .cards .text-head {
-    height: 50%;
-
-}
-
-}
-
-
-
-@media only screen and (max-width:630px) {
-    .banner_about .wrap {
-        height: 60%;
+    .compact-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-
-}
-
-@media only screen and (max-width:575px) {
- 
-
-    #features .box .card-one .card {
-        width: 400px;
+    .features-compact,
+    .about-info,
+    .challenges,
+    .solutions {
+        padding: 60px 0;
     }
 
-    #features .box .card-two .card {
-        width: 400px;
-    }
-    #challenges {
-        height: 160vh;
-        /* background-color: beige; */
-    }
-#challenges .container .image-container {
-    height: 50%;
-    width: 85%;
-}
-#challenges .container .image-container img{
-       width: 100%;
-        height: 80%;
-}
-#challenges .container .text-card {
-    height: 60%;
-    gap: 20px;
-}
-
-
-    #solution {
-        height: 140vh;
-        /* background-color: bisque; */
-    }
-
-    #solution .cards .image {
-        height: 50%;
-        width: 85%;
-    }
-
-    #solution .cards .image img {
-        width: 100%;
-        height: 80%;
-    }
-
-    #solution .cards .text-head {
-        width: 85%;
-    }
-    #solution .cards .text-head h1 {
-        font-size: 30px;
-    }
-
-    #solution .cards .text-head h2 {
-        font-size: 20px;
-    }
-
-    #solution .cards .text-head p {
-        font-size: 18px;
-    }
-
-}
-
-
-
-@media only screen and (max-width:453px) {
-    .banner_about .wrap h2 {
-        font-size: 24px;
-
-    }
-
-    .banner_about .wrap p {
-        width: 90%;
-        font-size: 20px;
-    }
-
-    #features {
-        height: 240vh;
-        display: flex;
-        flex-direction: column;
-        /* gap: 10px; */
-    }
-
-    /* #features .heading {
-        margin-top: 30px;
-    } */
-    /* #features .box .card-one .card .image {
-        width: 320px;
-        height: 180px
-    }
-
-    #features .box .card-two .card .image {
-        width: 320px;
-        height: 180px
-    }
-} */
-}
-
-
-@media only screen and (max-width:447px) {
-    .banner_about .wrap {
-        height: 50%;
-    }
-
-    .banner_about .wrap h2 {
-        font-size: 20px;
-
-    }
-
-    .banner_about .wrap p {
-        width: 90%;
-        font-size: 18px;
-    }
-
-    .banner_about .wrap a button {
-        width: 135px;
-        height: 45px;
-        border-radius: 15px;
-        border: none;
-        background-color: #38A1FF;
-        color: white;
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        justify-content: center;
-        cursor: pointer;
-    }
-#challenges .container .image-container {
-       width: 90%;
-        height: 40%;
-}
-#challenges .container .text-card{
-    width: 95%;
-}
-
-    #solution {
-        height: 150vh;
-        margin-bottom: 30px;
-    }
-
-    #solution .cards .image {
-        width: 90%;
-        height: 50%;
-    }
-
-    #solution .cards .image img {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-    }
-
-    #solution .cards .text-head {
-        height: 50%;
-    }
-
-
-}
-    @media only screen and (max-width:444px) {
-        .banner_about {
-            height: 80vh;
-        }
-    #solution{
-        height: 150vh;
-    }
-    #solution .cards .image {
-        width: 85%;
-    }
-
-    #solution .cards .text-head {
-        width: 85%;
-        height: 50%;
-    }
-    #challenges .container .text-card h1 {
-        /* margin-bottom: 10px; */
-            margin-top: 10px;
-    }
-
-
-}
-@media only screen and (max-width:443px) {
-    #features {
-        height: 240vh;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #features .heading {
-        height: 10%;
-    }
-
-    #features .box {
-        width: 100%;
-        height: 85%;
-    }
-
-    #features .box .card-one {
-        width: 100%;
-        height: 50%;
-
-    }
-
-    #features .box .card-one .card {
-        width: 80%;
-    }
-
-    #features .box .card-two {
-        width: 100%;
-        height: 50%;
-    }
-
-    #features .box .card-two .card {
-        width: 80%;
+    .footer-top {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
     }
 }
 
-
-
-@media only screen and (max-width:411px) {
-    /* #features .box .card-one .card .image {
-        width: 300px;
-        height: 180px
-    }
-    #features .box .card-two .card .image {
-        width: 300px;
-        height: 180px
-    } */
-}
-
-@media only screen and (max-width:392px) {
-    #challenges {
-        height: 150vh;
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
     }
 
-    #challenges .container .text-card {
-        width: 100%;
-    }
-    #challenges .container .image-container {
-        width: 95%;
-        height: 40%;
-    }
-    #challenges .container .image-container img {
-        width: 100%;
-        height: 75%;
-    }
-    #challenges .container .text-card h1 {
-        font-size: 28px;
+    .compact-grid {
+        grid-template-columns: 1fr;
     }
 
-    #challenges .container .son h2 {
-        font-size: 20px;
+    .hero-about {
+        padding: 100px 0 60px;
     }
-
-    #challenges .container .fear h2 {
-        font-size: 20px;
-    }
-
-    #challenges .container .confuse h2 {
-        font-size: 20px;
-    }
-
-    #challenges .container .dependency h2 {
-        font-size: 20px;
-    }
-
-    #challenges .container .son p {
-        font-size: 16px;
-    }
-
-    #challenges .container .fear p {
-        font-size: 16px;
-    }
-
-    #challenges .container .confuse p {
-        font-size: 16px;
-    }
-
-    #challenges .container .dependency p {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width:385px) {
-    #features .box .card-one .image img {
-        width: 40%;
-    }
-
-    #features .box .card-two .image img {
-        width: 40%;
-    }
-}
-
-@media only screen and (max-width:378px) {
-    
-
-    #features {
-        height: 250vh;
-    }
-
-    #features .box .card-one .card {
-        width: 90%;
-    }
-
-    #features .box .card-two .card {
-        width: 90%;
-    }
-
-    #solution {
-        height: 140vh;
-        margin-top: 30px;
-    }
-
-    #solution .cards .image {
-        height: 30%;
-        width: 95%;
-    }
-
-    #solution .cards .image img {
-        width: 100%;
-        height: 100%;
-    }
-
-    #solution .cards .text-head {
-        width: 95%;
-        height: 70%;
-    }
-
-}
-
-
-@media only screen and (max-width:337px) {
-    
-
-    #challenges {
-        height: 130vh;
-    }
-     #challenges .container {
-        gap: 50px;
-     }
-
-
-    #challenges .container .text-card {
-        width: 100%;
-        height: 50%;
-
-    }
-
-    #challenges .container .image-container {
-        width: 95%;
-        height: 40%;
-    }
-
-    #challenges .container .image-container img {
-        width: 100%;
-        height: 70%;
-    }
-    #challenges .container .text-card .son {
-        margin-bottom: 10px;
-    }
-    #challenges .container .text-card .fear {
-        margin-bottom: 10px;
-    }
-    #challenges .container .text-card .confuse {
-        margin-bottom: 10px;
-    }
-    #challenges .container .text-card .dependency {
-                margin-bottom: 10px;
-
-    }
-
-
-
-    #challenges .container .text-card h1 {
-        font-size: 24px;
-    }
-
-    #challenges .container .son h2 {
-        font-size: 20px;
-    }
-    #solution .cards .text-head h1 {
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width:332px) {
-    #about {
-        height: 130vh;
-
-    }
-
-    .about-container {
-        height: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .about-container .image-left {
-        width: 100%;
-        height: 30%;
-    }
-
-    #about .about-container .content-right {
-        height: 70%;
-        /* margin-top: 20px; */
-    }
-     #features .box .card-one .card{
-        align-items: start;
-     
-     }
-     #features .box .card-one .card .text {
-        margin-left: 20px;
-     }
-     #features .box .card-two .card .text {
-        margin-left: 20px;
-     }
-
-    #features .box .card-one .card .image {
-        width: 100px;
-        display: flex;
-        justify-content: start;
-                       
-
-    }
-    #features .box .card-one .card .image img{
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        margin-left: 15px;
-    }
-
-
-    #features .box .card-two .card{
-        align-items: start;
-     
-     }
-     #features .box .card-two .card .text {
-        margin-left: 20px;
-     }
-  
-
-    #features .box .card-two .card .image {
-        width: 100px;
-        display: flex;
-        justify-content: start;
-                       
-
-    }
-    #features .box .card-two .card .image img{
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        margin-left: 15px;
-    }
-       #features .box .card-two .card .text {
-        margin-left: 20px;
-     }
-   
-
-
-    #solution {
-        height: 130vh;
-
-    }
-    #solution .cards .text-head {
-        margin-top: 30px;
-    }
-
-  
-
 }

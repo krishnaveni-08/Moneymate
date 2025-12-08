@@ -4,217 +4,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Features - MoneyMate</title>
 
-    <link rel="stylesheet" href="./style/style.css">
+    <!-- Google Fonts: Montserrat for Headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
     <link rel="stylesheet" href="./style/feature.css">
     <link rel="shortcut icon" href="./Assets/Icons/fav-icon.ico" type="image/x-icon">
-
-
 </head>
 
 <body>
+  <!-- NAVBAR -->
     <header>
-        <!-- Navbar -->
-        <nav>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="./Assets/Images/about/logof.png" alt="logo">
-                </div>
-                <label for="check" class="menu_btn"><i class="bi bi-list"></i></label>
-                <input type="checkbox" id="check">
-
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./features.html" class="active">Features</a></li>
-
-                    <li><a href="./demo.html">ATM Demo</a></li>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="./index.html" class="logo">MoneyMate</a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./about.html" class="nav-link">About</a></li>
+                    <li><a href="./features.html" class="nav-link active">Features</a></li>
+                    <li><a href="./demo.html" class="nav-link">Demo</a></li>
                 </ul>
-
-
-                <a href="https://play.google.com/store/games?hl=en" target="_blank"><button>Get the app</button></a>
+                <a href="#" class="get-app">Get App</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
     </header>
 
 
-
-    <!--Banner -->
-    <div class="banner">
-        <div class="image">
-            <img src="./Assets/Images/feature/bannere.png" alt="banner">
+    <!-- HERO BANNER (SAME CONTENT) -->
+    <section class="hero-features">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Empowering Seniors with Simple and Safe ATM guidance</h1>
+                    <p>Many elderly individuals struggle with using ATMs due to lack of knowledge, language barriers,
+                        fear of losing money, or confusion with multiple options. Our platform provides a comprehensive
+                        learning experience to help them use ATMs independently and securely. Explore our features
+                        designed to make ATM usage simple and stress-free</p>
+                </div>
+                <div class="hero-image">
+                    <img src="./Assets/Images/feature/bannere.png" alt="Features Banner">
+                </div>
+            </div>
         </div>
-        <div class="text-content">
-            <h1>Empowering Seniors with Simple and Safe ATM guidance</h1>
-            <p>Many elderly individuals struggle with using ATMs due to lack of knowledge,
-                language barriers, fear of losing money, or confusion with multiple options.
-                Our platform provides a comprehensive learning experience to help them use ATMs independently and
-                securely.
-                Explore our features designed to make ATM usage simple and stress-free</p>
+    </section>
+
+    <!-- KEY FEATURES (6 CARDS - SAME CONTENT) -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Key <span class="highlight">Features</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="./Assets/Images/feature/paymentt.png" alt="Send money easily">
+                    </div>
+                    <h3>Send money easily</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="./Assets/Images/feature/image2.png" alt="Receive Money Safely">
+                    </div>
+                    <h3>Receive Money Safely</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="./Assets/Images/feature/image3.png" alt="Get Money Safely">
+                    </div>
+                    <h3>Get Money in Safely</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="./Assets/Images/feature/img4.png" alt="ATM Active Status">
+                    </div>
+                    <h3>ATM Active Status</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="./Assets/Images/feature/image5.png" alt="Easy Adaptable">
+                    </div>
+                    <h3>Easy Adaptable</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="./Assets/Images/feature/image6.png" alt="Smiling Older Adult">
+                    </div>
+                    <h3>Smiling Older Adult</h3>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-
-    <main>
-        <section id="features">
-            <div class="features-hd">
-                <h1>Our Key <span class="one">Features</span></h1>
+    <!-- ATM STATUS (SAME CONTENT) -->
+    <section id="map" class="status-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>ATM Active <span class="highlight">Status Identification</span></h2>
+                <p>Many younger individuals face challenges when visiting ATMs, only to find them out of service. Our
+                    website provides a simple and reliable ATM status identification feature to solve this problem</p>
             </div>
-            <div class="image-container">
-                <div class="wrap">
-                    <div class="image">
-                        <img src="./Assets/Images/feature/paymentt.png" alt="firstimage">
-                        <h3>Send money easly</h3>
-                    </div>
-                    <div class="image">
-                        <img src="./Assets/Images/feature/image2.png" alt="imagetwo">
-                        <h3>Receive Money Safely</h3>
-                    </div>
-                    <div class="image">
-                        <img src="./Assets/Images/feature/image3.png" alt="imagethree">
-                        <h3>Get Money in Safely</h3>
-                    </div>
-                    <div class="image">
-                        <img src="./Assets/Images/feature/img4.png" alt="imagethree">
-                        <h3>ATM Active Status </h3>
-                    </div>
-
-                    <div class="image">
-                        <img src="./Assets/Images/feature/image5.png" alt="imagefive">
-                        <h3>Easy Adaptable </h3>
-                    </div>
-                    <div class="image">
-                        <img src="./Assets/Images/feature/image6.png" alt="imagesix">
-                        <h3>Smiling Older Adult</h3>
-                    </div>
-
-
-
-                </div>
+            <div class="status-image">
+                <img src="./Assets/Images/feature/map f.png" alt="ATM Status Map">
             </div>
-        </section>
-
-        <section id="map">
-            <div class="status">
-                <div class="map-hd">
-                    <h1>ATM Active <span class="two">Status Identification</span></h1>
+            <div class="status-legends">
+                <div class="legend-item red">
+                    <img src="./Assets/Images/feature/red.png" alt="Red - Inactive">
+                    <p>Red Symbol - The ATM is inactive or under maintenance</p>
                 </div>
-                <p>Many yougers individuals face challenges when visiting ATMs, only to find them out of service. Our
-                    website provides a simple and reliable ATM status identification feature to solve this problem
-                </p>
-
-            </div>
-            <div class="map-image">
-                <div class="image">
-                    <img src="./Assets/Images/feature/map f.png" alt="map">
-                </div>
-            </div>
-            <div class="text">
-                <div class="red">
-
-                    <img src="./Assets/Images/feature/red.png" alt="red">
-                    <p> Red Symbol-The ATM is inactive or under maintenance</p>
-                </div>
-                <div class="green">
-                    <img src="./Assets/Images/feature/green.png" alt="green">
+                <div class="legend-item green">
+                    <img src="./Assets/Images/feature/green.png" alt="Green - Active">
                     <p>Green Symbol - The ATM is active and ready to use</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
-        <section id="service">
-            <div class="control">
-                <div class="service-hd">
-                    <h1> Our Easy <span class="three">ATM Services</span></h1>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="pic">
-                            <img src="./Assets/Images/feature/serv-one.jpg" alt="image one">
-                        </div>
-                        <div class="txt">
-                            <p>Experience the convenience and security of our ATM services.learn more
-                                about how we can help
-                            </p>
-                        </div>
+    <!-- ATM SERVICES (SAME CONTENT) -->
+    <section id="service" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Easy <span class="highlight">ATM Services</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./Assets/Images/feature/serv-one.jpg" alt="Service 1">
                     </div>
-
-
-                    <div class="card">
-                        <div class="pic">
-                            <img src="./Assets/Images/feature/serv-two.jpg" alt="image two">
-                        </div>
-                        <div class="txt">
-
-                            <p>Fast, secure, and easy ATM services at your fingertips. Manage your money with confidence
-                            </p>
-                        </div>
-
+                    <div class="service-text">
+                        <p>Experience the convenience and security of our ATM services. Learn more about how we can help
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./Assets/Images/feature/serv-two.jpg" alt="Service 2">
+                    </div>
+                    <div class="service-text">
+                        <p>Fast, secure, and easy ATM services at your fingertips. Manage your money with confidence</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-
-    <footer>
-
-        <div class="footer-logo">
-            <img src="./Assets/Images/feature/logof (2).png" alt="logo" class="logo">
         </div>
-        <div class="details">
-            <div class="menu">
-                <h3>Quicklink</h3>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./feature.html">
-                            <div class="active">Features</div>
-                        </a></li>
-                    <li><a href="./demo.html">ATM Demo</a></li>
-                </ul>
-            </div>
+    </section>
 
-            <div class="download">
-                <h3>Download Form</h3>
-                <div class="app">
-                    <a href="https://play.google.com/store/games?hl=en" target="_blank"><img
-                            src="./Assets/Images/Home/google pay.png" alt="gp"></a>
-
-                    <a href="https://www.apple.com/in/app-store/" target="_blank"><img
-                            src="./Assets/Images/Home/app store.png" alt="app"></a>
+  
+    <!-- FOOTER -->
+    <footer class="simple-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="./Assets/Images/footer/logof.png" alt="MoneyMate">
+                </div>
+                <div class="footer-info">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="./features.html">Features</a>
+                        <a href="./demo.html">Demo</a>
+                    </div>
+                    <div class="footer-apps">
+                        <h4>Get the App</h4>
+                        <a href="https://play.google.com/store/games?hl=en" target="_blank">
+                            <img src="./Assets/Images/Home/google pay.png" alt="Google Play">
+                        </a>
+                        <a href="https://www.apple.com/in/app-store/" target="_blank">
+                            <img src="./Assets/Images/Home/app store.png" alt="App Store">
+                        </a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p><i class="bi bi-telephone-fill"></i> +91 8110656575</p>
+                        <p><i class="bi bi-envelope"></i> Moneymate@atmhelp.com</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="contact">
-                <h3>Contact Us</h3>
-                <div class="phone">
-
-                    <a href="tel:1413190118"> <i class="bi bi-telephone-fill"></i> &nbsp;&nbsp;+91 8110656575</a>
-                </div>
-                <div class="email">
-
-                    <i class="bi bi-envelope-check"></i>
-                    <a href="mailto:Moneymate@atmhelp.com">
-                        <p> Moneymate@atmhelp.com</p>
-                    </a>
+            <div class="footer-bottom">
+                <p>© 2025 MONEYMATE. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 </div>
             </div>
         </div>
-
-        <hr>
-        <div class="end">
-            <p>MONEYMATE © 2025 - All rights reserved</p>
-            <div class="icon">
-                <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            </div>
-        </div>
-
     </footer>
+
+
+
 </body>
 
+
+   <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        // TOGGLE MENU
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // CLOSE ON LINK CLICK
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // CLOSE OUTSIDE CLICK
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+    </script>
 </html>
