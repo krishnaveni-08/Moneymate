@@ -357,13 +357,13 @@ section {
     right: 60px;
 }
 
-.pattern-circle.orange {
+/* .pattern-circle.orange {
     width: 60px;
     height: 60px;
     background: #f59e0b;
     bottom: 20px;
     left: 20px;
-}
+} */
 
 .section-badge {
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
@@ -564,6 +564,7 @@ section {
     gap: 1rem;
     margin-top: 2rem;
 }
+
 /* FOOTER */
 .simple-footer {
     background: #1a1a1a;
@@ -627,6 +628,21 @@ section {
     gap: 1rem;
 }
 
+.footer-contact a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 0.6rem;
+    transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+    color: var(--primary);
+}
+
+.footer-contact i {
+    margin-right: 0.5rem;
+}
 .social-icons {
     display: flex;
     gap: 1.2rem;
@@ -642,24 +658,7 @@ section {
     color: var(--primary);
     transform: translateY(-2px);
 }
-.footer-contact a {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 0.6rem;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
-.footer-contact a:hover {
-    color: var(--primary);
-}
-
-.footer-contact i {
-    font-size: 1.1rem;
-}
 /* RESPONSIVE - PERFECT CENTERING */
 @media (max-width: 768px) {
     body {
@@ -706,15 +705,22 @@ section {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    .hero-content,
-    .about-main,
-    .status-grid {
-        grid-template-columns: 1fr !important;
+    /* SECTIONS */
+    .info-grid,
+    .solutions-grid {
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 3rem;
     }
 
-    section {
+    .compact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-compact,
+    .about-info,
+    .challenges,
+    .solutions {
         padding: 60px 0;
     }
 
@@ -723,7 +729,17 @@ section {
         text-align: center;
         gap: 2rem;
     }
+        .hero-content,
+    .about-main,
+    .status-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
 }
+
+
+
 
 @media (max-width: 480px) {
     .container {
