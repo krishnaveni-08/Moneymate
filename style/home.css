@@ -121,7 +121,12 @@ body {
 /* HERO WITH BACKGROUND IMAGE + BLACK OVERLAY */
 .hero {
     /* background-image: url(../Assets/images/about/abt-ban.png); */
-    background: url(../Assets/Images/about/abt-ban.png);
+
+    background-image: url('../Assets/Images/about/abt-ban.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     position: relative;
     min-height: 100vh;
     display: flex;
