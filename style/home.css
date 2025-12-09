@@ -118,15 +118,10 @@ body {
     transition: 0.3s;
     border-radius: 2px;
 }
-/* HERO WITH BACKGROUND IMAGE + BLACK OVERLAY */
+
+
+/* HERO SECTION - RESPONSIVE */
 .hero {
-    /* background-image: url(../Assets/images/about/abt-ban.png); */
-
-    background-image: url('../Assets/Images/about/abt-ban.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -157,7 +152,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75); /* BLACK OVERLAY 75% */
+    background: rgba(0, 0, 0, 0.75);
     z-index: 2;
 }
 
@@ -172,6 +167,10 @@ body {
     gap: 4rem;
     align-items: center;
     color: var(--white);
+}
+
+.hero-text {
+    max-width: 500px;
 }
 
 .hero-title {
@@ -198,7 +197,6 @@ body {
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
     opacity: 0.9;
-    max-width: 500px;
 }
 
 .hero-buttons {
@@ -264,7 +262,7 @@ body {
     }
     
     .hero-overlay-black {
-        background: rgba(0, 0, 0, 0.85); /* DARKER ON MOBILE */
+        background: rgba(0, 0, 0, 0.85);
     }
 }
 
@@ -276,7 +274,13 @@ body {
     .hero-title {
         font-size: 2.2rem;
     }
+    
+    .btn-primary, .btn-secondary {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
 }
+
 
 /* SECTIONS */
 section {
