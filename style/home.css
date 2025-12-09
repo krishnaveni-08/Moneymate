@@ -335,27 +335,27 @@ section {
     z-index: -1;
 }
 
-.pattern-circle {
+/* .pattern-circle {
     position: absolute;
     border-radius: 50%;
     opacity: 0.1;
-}
+} */
 
-.pattern-circle.blue {
+/* .pattern-circle.blue {
     width: 120px;
     height: 120px;
     background: var(--primary);
     top: 0;
     right: 0;
-}
+} */
 
-.pattern-circle.green {
+/* .pattern-circle.green {
     width: 80px;
     height: 80px;
     background: #22c55e;
     top: 60px;
     right: 60px;
-}
+} */
 
 /* .pattern-circle.orange {
     width: 60px;
@@ -435,13 +435,15 @@ section {
     margin-bottom: 0.3rem;
 }
 
-/* FEATURES GRID */
+/* FEATURES GRID - FULL RESPONSIVE */
 .features-grid,
 .benefits-grid,
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .feature-card,
@@ -453,6 +455,9 @@ section {
     box-shadow: var(--shadow);
     transition: all 0.4s;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .feature-card:hover,
@@ -474,6 +479,103 @@ section {
     height: 100%;
     object-fit: contain;
 }
+
+/* RESPONSIVE BREAKPOINTS - 450px PERFECT */
+@media (max-width: 992px) {
+    .features-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.8rem;
+    }
+    
+    .feature-card,
+    .benefit-card {
+        padding: 2.5rem 2rem;
+    }
+    
+    .feature-icon,
+    .benefit-icon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 2rem;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        gap: 1.5rem;
+        padding: 0 15px;
+    }
+    
+    .feature-card,
+    .benefit-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .feature-icon,
+    .benefit-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .features-grid,
+    .benefits-grid,
+    .testimonials-grid {
+        max-width: 100%;
+        gap: 1.2rem;
+    }
+    
+    .feature-card,
+    .benefit-card {
+        padding: 1.8rem 1.2rem;
+        border-radius: 20px;
+    }
+    
+    .feature-icon,
+    .benefit-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 380px) {
+    .feature-card,
+    .benefit-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .feature-icon,
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 
 /* STATUS */
 .status {
@@ -531,10 +633,18 @@ section {
 .status-indicator.red {
     background: #ef4444;
 }
-
-/* TESTIMONIALS */
+/* TESTIMONIALS SECTION - FULL RESPONSIVE */
 .testimonials {
     background: linear-gradient(135deg, var(--light) 0%, #e9ecef 100%);
+    padding: 100px 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .testimonial-card {
@@ -544,6 +654,7 @@ section {
     box-shadow: var(--shadow);
     transition: all 0.4s;
     height: 100%;
+    text-align: center;
 }
 
 .testimonial-card:hover {
@@ -559,11 +670,106 @@ section {
     justify-content: center;
     gap: 2px;
 }
-.user-info{
+
+.rating i {
+    color: #ffd700;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 2rem;
+    /* font-style: italic; */
+}
+
+.user-info {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+.user-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--light);
+}
+
+.user-info h4 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 80px 0;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 2rem;
+        max-width: 500px;
+    }
+    
+    .testimonial-card {
+        padding: 2.5rem 2rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .user-info img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .user-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .rating {
+        font-size: 1.2rem;
+    }
+    
+    .rating i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 380px) {
+    .testimonials-grid {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .testimonial-card p {
+        font-size: 0.95rem;
+    }
 }
 
 /* FOOTER */
