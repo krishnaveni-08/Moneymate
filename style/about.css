@@ -120,9 +120,10 @@ body {
 
 /* HERO */
 .hero-about {
+    /* height: 100vh; */
     color: var(--white);
-    background: url(../Assets/Images/about/abt-banner.png);
-    padding: 140px 0 100px;
+    background: url(../Assets/Images/about/ban.jpg) no-repeat center center/cover;
+    padding: 180px 0 100px;
     text-align: center;
     position: relative;
 }
