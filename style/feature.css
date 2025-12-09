@@ -144,11 +144,42 @@ body {
 
 /* FIXED HERO SECTION - PERFECT RESPONSIVE IMAGE SIZE */
 .hero-features {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: var(--white);
     padding: 120px 0 80px;
-    /* Reduced padding */
+    background-size: cover;
+    position: relative;
+    text-align: center;
 }
+
+.hero-features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Assets/Images/Home/banner-home.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.hero-features::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+.hero-features > * {
+    position: relative;
+    z-index: 3;
+}
+
 
 .hero-grid {
     display: grid;
