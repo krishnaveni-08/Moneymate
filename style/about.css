@@ -128,7 +128,7 @@ body {
     position: relative;
 }
 
-.hero-about::before {
+.hero-about::before {   
     content: '';
     position: absolute;
     top: 0;
