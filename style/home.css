@@ -120,7 +120,8 @@ body {
 }
 /* HERO WITH BACKGROUND IMAGE + BLACK OVERLAY */
 .hero {
-    background-image: url(../Assets/images/about/abt-ban.png);
+    /* background-image: url(../Assets/images/about/abt-ban.png); */
+    background: url(../Assets/Images/about/abt-ban.png);
     position: relative;
     min-height: 100vh;
     display: flex;
